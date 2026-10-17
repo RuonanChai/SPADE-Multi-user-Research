@@ -1,0 +1,20 @@
+Read F:\WWW_N3_MUX\results\WWW285_NEXT_COMPARISON.csv before deciding.
+Return one JSON object and no other text. Do not edit files. Do not launch anything.
+
+Evidence already measured on scene coit-40m-sh1-lod, trace stop_go, Ethernet, development only:
+- Ledger executions=33 of cap 44. Do not reset it and do not repeat a run_id.
+- N=2 LRU slots=1 C3 send-to-first p50 174.0 and 171.1 ms, p95 269.5 and 238.2, completed 206s 273 and 277.
+- N=2 LRU slots=2 C3 p50 246.2 and 272.9, p95 373.6 and 430.7, 206s 384 and 378.
+- N=2 LRU slots=3 C3 p50 441.9 and 474.3, 206s 387 and 379. The extra slot raises p95 without a matching completion gain.
+- SPADE v1 matches slots=1 on N=2 and N=3. It is a concurrency cap.
+- SPADE v2 r3/r4 C3 p50 166.9 and 181.1, 206s 294 and 262. Header-release did not restore the slots=2 completion band.
+- Body after the first byte is about 30 ms. Slots=2 gains completions by overlapping header waits.
+- Offline always-ready fixture at header 165 ms and body 30 ms over 70 s: slots1=359, slots2=718, slots3=1077, header_release=424, adaptive_second_header=717. The delayed second header matches slots=2.
+- Draw inclusion, presentation, PSNR and SSIM are unmeasured. Missing visual metrics stay null.
+- There is no independent holdout scene or trace. Confirmation is not frozen.
+
+Choose proposed_action_type from OFFLINE_ANALYSIS, IMPLEMENTATION_TEST, DEVELOPMENT_PHYSICAL_CELL, FREEZE_REVIEW, WRITING, AUTH_REQUIRED, SAFETY_BLOCKED.
+A physical cell is eligible only for a mechanism that is not fixed slots 1, 2 or 3, not SPADE v1, not header-release, and not adaptive_second_header, and only with an offline fixture that moves the completion proxy by more than 15 percent away from slots=2.
+
+JSON keys: hypothesis_id, supporting_runs, scientific_question, competing_explanation, proposed_action_type, contract, falsifier, budget, duplicate_lookup, safety_gate.
+budget must be {"executions":33,"cap":44,"remaining":11}.

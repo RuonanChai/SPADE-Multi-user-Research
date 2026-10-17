@@ -1,0 +1,14 @@
+\documentclass[sigconf,anonymous,review]{acmart}
+\begin{document}
+\title{First-hop protocol is not the multi-user 3DGS wait}
+\begin{abstract}
+Matched N=2 Ethernet experiments show that replacing the Vite HTTP/1.1 hop with a direct HTTP/1.1 proxy or with HTTP/2 does not remove the roughly 360--495\,ms send-to-first-byte wait. Visual quality is not claimed: render-visible evidence is absent. This draft records a falsified first-hop hypothesis and the next concurrency question. It is not a submission.
+\end{abstract}
+\maketitle
+\section{Introduction}
+The measured wait survives three first-hop treatments under one cache, scene, and camera contract. A cache replacement policy is the wrong baseline for that wait.
+\section{Evidence}
+Valid N=2 slots=3 runs are the Vite pair r1/r2, the direct pair r1/r2, and the HTTP/2 pair r5/r6. Adjudications are H2\_ADJUDICATION.json and DIRECT\_ADJUDICATION.json. Missing visual metrics stay null.
+\section{Limitations}
+One scene and one trajectory cannot support a confirmatory claim. No new mechanism is qualified.
+\end{document}

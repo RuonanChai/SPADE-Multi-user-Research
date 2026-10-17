@@ -1,0 +1,11 @@
+WWW_N3_MUX  (G1 Range-mux, cell n3mux)
+  evidence/<run_id>/     hashed cell outputs (proxy, lifecycle, VALID/INVALID)
+  logs/<run_id>/         run_cell.log, vite/proxy/h2 stdout, client stdout
+  metrics/<run_id>/      cell_spec.json, hop_probe.json, score.json, state.json
+  metrics/G1_SCORES.json aggregate
+  runtime/               vite-cache, TLS, state_<run_id>.json
+  logs/orchestrator_master.log
+
+run_id = nsdi_N{n}_LRU_coit-40m-sh1-lod_stop_go_g1_{hop}_s{slots}_r{rep}
+  hop: viteh1 | radh2 | raddirect
+  N=2 is the mechanism pair; N=3 is the same contract at one more client.

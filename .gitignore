@@ -51,3 +51,23 @@
 # Local editor files
 .vscode/
 .idea/
+
+# Local ledgers and run state stay on F:
+/execution_count.json
+/runtime/state_*.json
+/runtime/tasks/
+/runtime/vite-cache/
+/runtime/**/tmp/
+/runtime/**/pkg/
+
+# Generated LaTeX and local PDFs
+*.aux
+*.out
+*.toc
+*.bbl
+*.blg
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+/paper/**/*.pdf
+/writing/**/*.pdf
