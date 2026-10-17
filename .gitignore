@@ -1,0 +1,53 @@
+# Raw scientific evidence and generated results
+/evidence/
+/logs/
+/metrics/
+/results/
+/checkpoints/
+/audits/
+/control/
+/research_control/
+
+# Dependencies and generated builds
+**/node_modules/
+**/target/
+**/dist/
+**/build/
+**/.cache/
+**/__pycache__/
+**/.venv/
+**/venv/
+
+# Secrets and credentials
+**/.env
+**/.env.*
+**/*secret*
+**/*credential*
+**/*private_key*
+**/id_ed25519*
+**/id_rsa*
+**/*.pem
+**/*.p12
+**/*.pfx
+**/*.key
+
+# Large raw experimental assets
+**/*.rad
+**/*.wasm
+**/*.bin
+**/*.npy
+**/*.npz
+**/*.zip
+**/*.7z
+**/*.tar
+**/*.gz
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+*.partial
+
+# Local editor files
+.vscode/
+.idea/
