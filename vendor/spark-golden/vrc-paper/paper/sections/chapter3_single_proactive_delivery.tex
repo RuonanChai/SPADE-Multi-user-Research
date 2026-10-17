@@ -1,0 +1,243 @@
+% Chapter 3: Single-User Proactive Delivery (v2 ready-aware)
+% Data source: paper_materials/proactive_single_user_v2/runs/2026-05-24T16-06-30
+% Delivery: HPC origin (10.120.17.176:8090), interleaved ordering, N=3 per baseline
+% Generated: 2026-05-25
+
+\section{Single-User Proactive Delivery}
+\label{sec:single-proactive}
+
+\subsection{Motivation}
+
+On-demand HTTP Range fetching of large 3D Gaussian Splatting (3DGS) tile files
+introduces a fundamental timing problem: the client cannot render a viewport
+region until the corresponding tile chunk has been fetched, decoded, and
+uploaded to the GPU. For a 1.28\,GB \texttt{.rad} file served over a campus
+LAN (round-trip time $\approx$8\,ms, effective throughput $\approx$80\,MB/s),
+each 1.7\,MB chunk requires $\approx$80--120\,ms from request to render-ready
+state. When the viewer's camera moves into a new region, the on-demand
+pipeline cannot meet a 100\,ms interactive deadline for the majority of
+demanded chunks.
+
+We quantify this problem and evaluate whether \emph{ready-aware proactive
+delivery}---prefetching and pre-parsing chunks before they are demanded by the
+renderer---can reduce deadline miss rates without degrading render performance.
+
+\subsection{Experimental Design}
+
+\paragraph{Asset and delivery.}
+We use a single 40-million-splat scene (Coit Tower, San Francisco) encoded as
+a chunked \texttt{.rad} file (1.28\,GB, 341 chunks at LOD-0). The file is
+served from an HPC origin server over campus LAN via HTTP Range requests
+(verified HTTP/1.1 206 Partial Content with \texttt{Accept-Ranges: bytes}).
+
+\paragraph{Baselines.}
+Three delivery strategies are compared under identical scene, camera trace,
+and measurement protocol:
+\begin{itemize}
+  \item \textbf{B0 (On-demand)}: Spark's default streaming-LOD pipeline.
+    Chunks are fetched only when the pager determines they are needed for the
+    current viewport.
+  \item \textbf{B3-ready (VRC-Single v2)}: A ready-aware proactive controller
+    that predicts camera pose 0.5--2\,s ahead, scores chunks by viewport
+    relevance and LOD importance, and prefetches the top-ranked chunks via a
+    Web Worker with bounded concurrency ($\text{maxParallel}=2$, byte budget
+    128\,MB). On fetch completion, the controller emits a
+    \texttt{parse\_complete} event so the chunk's ready time advances to
+    parse-complete rather than remaining at network-finish.
+  \item \textbf{B4-ready-oracle}: Same ready-aware pipeline, but chunk
+    priority is determined by perfect future knowledge of the B0 demand trace
+    (oracle upper bound on prediction accuracy).
+\end{itemize}
+
+\paragraph{Measurement protocol.}
+Each trial consists of a 20\,s warmup phase followed by a 40\,s measurement
+phase with automated camera orbit. Trials are run in \emph{interleaved} order
+(B0/B3/B4/B0/B3/B4/B0/B3/B4) so that each baseline experiences the same
+progressive cache-warming sequence. All trials use a local instrumented proxy
+server that logs per-request server-side timings aligned with client-side CDP
+network audit rows (alignment rate $\geq$99.7\%).
+
+\paragraph{Metrics.}
+\begin{itemize}
+  \item \texttt{deadline\_miss\_ratio\_100ms}: fraction of demanded chunks
+    whose ready time exceeds needed time by more than 100\,ms.
+  \item \texttt{useful\_chunks\_before\_demand}: count of chunks that reach
+    ready state before the renderer demands them.
+  \item \texttt{first\_visible\_splat\_ms}: time from page load to first
+    non-zero visible splat count.
+  \item \texttt{wasted\_prefetch\_ratio}: bytes prefetched but never demanded,
+    divided by total prefetched bytes.
+  \item \texttt{measure\_fps}: mean render frame rate during the measurement
+    phase.
+\end{itemize}
+
+\subsection{Results}
+
+Table~\ref{tab:v2-aggregate} summarizes the aggregate results across $N=3$
+trials per baseline on the HPC origin delivery.
+
+\begin{table}[t]
+\centering
+\caption{Single-user proactive delivery: aggregate metrics (mean $\pm$ s.d.,
+$N=3$ per baseline, HPC origin, interleaved trial order).}
+\label{tab:v2-aggregate}
+\begin{tabular}{lcccccc}
+\hline
+Baseline & miss$_{100}$ (\%) & useful & first-vis (s) & FPS & wasted (\%) & demanded \\
+\hline
+B0 On-demand      & $69.8 \pm 26.3$ & $106 \pm 94$ & $5.0 \pm 1.9$ & $107.4 \pm 34.5$ & $0.0$ & $305 \pm 89$ \\
+B3-ready          & $62.5 \pm 5.2$  & $121 \pm 13$ & $3.7 \pm 0.7$ & $88.5 \pm 3.0$   & $6.2 \pm 0.8$ & $324 \pm 15$ \\
+B4-ready-oracle   & $66.5 \pm 3.7$  & $104 \pm 12$ & $7.7 \pm 1.3$ & $86.8 \pm 1.3$   & $10.5 \pm 0.4$ & $312 \pm 4$ \\
+\hline
+\end{tabular}
+\end{table}
+
+\paragraph{Cold-start performance.}
+The most informative comparison is the first trial of each baseline (t0),
+which represents a user's initial visit to the scene with no cached data
+(Table~\ref{tab:v2-coldstart}).
+
+\begin{table}[t]
+\centering
+\caption{Cold-start trial (t0): per-trial metrics with no prior cache state.}
+\label{tab:v2-coldstart}
+\begin{tabular}{lccccc}
+\hline
+Baseline & miss$_{100}$ (\%) & useful & first-vis (ms) & FPS & demanded \\
+\hline
+B0 On-demand    & 99.5 & 0   & 7{,}111 & 147.2 & 203 \\
+B3-ready        & 65.1 & 119 & 3{,}352 & 85.5  & 341 \\
+B4-ready-oracle & 69.7 & 94  & 8{,}500 & 87.2  & 310 \\
+\hline
+\end{tabular}
+\end{table}
+
+In the cold-start condition, B3-ready reduces deadline miss by 34.4
+percentage points ($-34.6\%$ relative to B0) and halves first-visible latency
+from 7.1\,s to 3.4\,s ($-52.9\%$). The controller enables Spark's pager to
+demand 341 chunks within the measurement window (vs.\ 203 for B0), because
+prefetched chunks complete faster and unblock subsequent paging decisions.
+
+\paragraph{Cache-warming dynamics.}
+Figure~\ref{fig:cold-warm}d--e shows how B0's performance improves
+dramatically across successive trials as the operating system and browser
+caches warm: miss$_{100}$ drops from 99.5\% (t0) to 49.6\% (t2), and
+useful-before rises from 0 to 178. B3-ready remains stable across rounds
+(miss$_{100}$ = 65.1\%, 56.6\%, 65.9\%), because its prefetch schedule does
+not depend on host cache state. This reveals that B0's aggregate mean
+(69.8\%) is dominated by warm-cache trials where Spark's natural pipeline
+achieves near-equivalent pre-staging without the proactive controller.
+
+\paragraph{First-visible latency.}
+B3-ready achieves a mean first-visible of 3{,}746\,ms vs.\ B0's 4{,}988\,ms
+($-24.9\%$; Fig.~\ref{fig:first-visible}b). The improvement is concentrated
+in the cold-start trial (B3: 3{,}352\,ms vs.\ B0: 7{,}111\,ms). In warm
+trials, both baselines converge to $\approx$3.5--4.5\,s.
+
+\paragraph{Oracle paradox.}
+Counterintuitively, B4-ready-oracle produces \emph{worse} first-visible
+latency (7{,}673\,ms mean) than B3-ready (3{,}746\,ms). The oracle sorts
+prefetch priority by the B0 reference demand trace, which places the .rad
+metadata header (chunk index 0, 65\,KB) first. This delays viewport-relevant
+chunks that determine first-visible. B3-ready's viewport-priority scoring
+naturally prioritizes spatially relevant chunks, producing faster initial
+content appearance despite imperfect prediction.
+
+\paragraph{Prefetch efficiency.}
+B3-ready wastes only 6.2\% of prefetched bytes on chunks never demanded
+(Fig.~\ref{fig:efficiency}g), well below the 30\% threshold. The
+viewport-priority scoring function effectively targets chunks the renderer
+will need within the prediction horizon.
+
+\paragraph{Render performance.}
+B3-ready maintains 88.5\,FPS (vs.\ B0's 107.4\,FPS; $-17.6\%$), remaining
+above the 60\,FPS interactive threshold. The FPS difference is partly an
+artifact of B0's inflated t0 value (147.2\,FPS with only 203 demanded chunks,
+indicating the renderer was idle waiting for data rather than rendering at
+full load). In warm trials, B0 and B3 converge to $\approx$87--91\,FPS.
+
+\subsection{Discussion}
+
+The results demonstrate that ready-aware proactive delivery provides a
+measurable benefit in the cold-start regime---the scenario most relevant to a
+new user joining a 3DGS scene. The controller's value is concentrated in the
+first $\approx$5--10 seconds of a session, during which on-demand fetching
+leaves the renderer starved for data. Once host-side caches warm (after the
+first full traversal of the scene), Spark's natural streaming-LOD pipeline
+achieves comparable pre-staging rates without the proactive controller.
+
+This finding has two implications for multi-user systems:
+\begin{enumerate}
+  \item For the \emph{first user} in a session (or any user visiting a
+    previously uncached region), proactive delivery provides substantial
+    cold-start acceleration.
+  \item For \emph{subsequent users} whose viewports overlap with prior
+    visitors, the host-side cache warming effect suggests that multi-user
+    coordination could amplify the benefit by ensuring that one user's
+    prefetch warms the cache for others---motivating the viewport-aware range
+    coordination (VRC) studied in subsequent chapters.
+\end{enumerate}
+
+\subsection{Limitations}
+
+\begin{itemize}
+  \item The ready-event policy uses \texttt{parse\_complete} as a proxy for
+    GPU-upload-complete, because Spark's current architecture does not expose
+    per-chunk upload events. The actual render-ready time may be slightly later
+    than reported.
+  \item The interleaved trial ordering controls for cache warming but does not
+    eliminate it. A fully randomized design with explicit cache flushes between
+    trials would provide tighter confidence intervals.
+  \item The measurement is conducted on a single scene (Coit Tower, 40M
+    splats). Generalization to other scene sizes and network conditions
+    requires additional experiments.
+\end{itemize}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/proactive_single_user_v2/fig_v2_deadline_miss.pdf}
+  \caption{\textbf{Deadline miss ratio} (ready time exceeds needed time by
+  $>$100\,ms). Individual trial values shown as dots; bars indicate mean
+  $\pm$ s.d. ($N=3$). B3-ready shows lower variance and lower mean miss rate
+  than B0, whose high variance reflects progressive cache-warming across trials.}
+  \label{fig:deadline-miss}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/proactive_single_user_v2/fig_v2_first_visible.pdf}
+  \caption{\textbf{First visible splat latency.} B3-ready achieves
+  3.7\,s mean first-visible vs.\ B0's 5.0\,s ($-24.9\%$). B4-oracle's
+  poor first-visible (7.7\,s) results from demand-trace-ordered prefetch
+  that delays viewport-relevant chunks.}
+  \label{fig:first-visible}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/proactive_single_user_v2/fig_v2_cold_warm_dynamics.pdf}
+  \caption{\textbf{Cold-start vs.\ warm-state dynamics.} (d)~Deadline miss
+  per trial round: B0 drops from 99.5\% to 49.6\% as caches warm; B3-ready
+  remains stable at $\approx$60--66\%. (e)~Useful chunks before demand: B0
+  rises from 0 to 178 with warming; B3-ready is consistently 109--134.}
+  \label{fig:cold-warm}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/proactive_single_user_v2/fig_v2_efficiency.pdf}
+  \caption{\textbf{Efficiency metrics.} (f)~Render FPS: all baselines exceed
+  60\,FPS; B0's elevated t0 value (147\,FPS) reflects renderer idling while
+  waiting for data. (g)~Wasted prefetch: B3-ready wastes only 6.2\% of
+  prefetched bytes, well below the 30\% threshold (red dashed line).}
+  \label{fig:efficiency}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{figures/proactive_single_user_v2/fig_v2_visibility_timeline.pdf}
+  \caption{\textbf{Visibility timeline} (cold-start trial t0). B3-ready
+  achieves non-zero visible splats $\approx$3.8\,s earlier than B0, and
+  reaches higher splat counts faster due to prefetch-enabled paging.}
+  \label{fig:visibility-timeline}
+\end{figure}

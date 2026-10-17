@@ -1,0 +1,40 @@
+{
+  "name": "distributed_network_round1",
+  "profiles": [
+    "local_loopback",
+    "hpc_server",
+    "cdn1_r2",
+    "cdn2_gcs",
+    "lan_controller",
+    "cdn1_r2_throttled_50mbps_100ms",
+    "cdn1_r2_throttled_10mbps_100ms"
+  ],
+  "scenarios": ["single_user", "lockstep_4users", "nearby_4users", "divergent_4users"],
+  "arms": ["E3_normal_streaming", "E5_fetch_only", "E8_pure_render", "E4_normal_dpr05"],
+  "trials_per_condition": 3,
+  "reduced_matrix": {
+    "enabled": true,
+    "single_user_all_profiles": true,
+    "multi_user_arms": ["E3_normal_streaming", "E5_fetch_only"],
+    "multi_user_trials_per_condition": 2
+  },
+  "warmup_ms": 20000,
+  "move_ms": 40000,
+  "timeout_ms": 1200000,
+  "scenario_timing": {
+    "single_user": { "startup_mode": "steady_state", "warmup_ms": 20000 },
+    "lockstep_4users": { "startup_mode": "steady_state", "warmup_ms": 20000 },
+    "nearby_4users": { "startup_mode": "steady_state", "warmup_ms": 20000 },
+    "divergent_4users": { "startup_mode": "steady_state", "warmup_ms": 20000 },
+    "cold_start_single_user": { "startup_mode": "cold_start", "warmup_ms": 0 }
+  },
+  "cold_start": {
+    "enabled": true,
+    "scenario": "cold_start_single_user",
+    "profiles": ["local_loopback", "cdn1_r2", "hpc_server", "lan_controller"],
+    "arms": ["E3_normal_streaming"],
+    "trials_per_condition": 2,
+    "warmup_ms": 0,
+    "move_ms": 40000
+  }
+}

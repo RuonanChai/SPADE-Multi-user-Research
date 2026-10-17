@@ -1,0 +1,37 @@
+{
+  "hpc_upstream_origin": "http://10.120.17.176:8090",
+  "profiles": [
+    {
+      "id": "hpc_server_direct",
+      "description": "Chunks from HPC HTTP (flat keys). Replace base if your mount path differs.",
+      "env": {
+        "VRC_RAD_ASSET_BASE": "http://10.120.17.176:8090",
+        "VRC_USE_GCS_ONLY": ""
+      }
+    },
+    {
+      "id": "cdn_r2_primary",
+      "description": "Default paper R2 public bucket.",
+      "env": {
+        "VRC_RAD_ASSET_BASE": "https://pub-0429777a95db48e192b4c665413f8eb2.r2.dev",
+        "VRC_USE_GCS_ONLY": ""
+      }
+    },
+    {
+      "id": "cdn_r2_secondary",
+      "description": "Second R2 pub URL (EDIT to your second bucket). Committed default duplicates primary for pipeline smoke only.",
+      "env": {
+        "VRC_RAD_ASSET_BASE": "https://pub-0429777a95db48e192b4c665413f8eb2.r2.dev",
+        "VRC_USE_GCS_ONLY": ""
+      }
+    },
+    {
+      "id": "cdn_gcs_forge_public",
+      "description": "Google forge-dev-public via use_gcs_rad (VRC_USE_GCS_ONLY=1).",
+      "env": {
+        "VRC_USE_GCS_ONLY": "1",
+        "VRC_RAD_ASSET_BASE": ""
+      }
+    }
+  ]
+}

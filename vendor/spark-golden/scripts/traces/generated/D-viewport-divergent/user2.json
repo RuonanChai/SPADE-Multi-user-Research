@@ -1,0 +1,28 @@
+{
+  "trace_id": "viewport-divergent-user2",
+  "user_id": "user2",
+  "workload": "D-viewport-divergent",
+  "created_at": "2026-05-06T00:00:00.000Z",
+  "sample_interval_ms": 100,
+  "start_offset_ms": 836,
+  "samples": [
+    {
+      "t_ms": 836,
+      "position": [0.8156640604554923, 0, 2.4603911743021243],
+      "quaternion": [0, 0, 0, 1],
+      "fov": 60
+    },
+    {
+      "t_ms": 936,
+      "position": [0.8566705800271944, 0, 2.446796773294533],
+      "quaternion": [0, 0.0087, 0, 0.9999],
+      "fov": 60
+    },
+    {
+      "t_ms": 1036,
+      "position": [0.8976770995988966, 0, 2.4332023722869414],
+      "quaternion": [0, 0.0174, 0, 0.9998],
+      "fov": 60
+    }
+  ]
+}

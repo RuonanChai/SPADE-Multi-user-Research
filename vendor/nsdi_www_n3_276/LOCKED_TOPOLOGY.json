@@ -1,0 +1,46 @@
+{
+  "locked": true,
+  "network_epoch": "ETHERNET_20261015",
+  "gateway": "192.168.1.1",
+  "prefix": "192.168.1.0/24",
+  "ssh_user": "p5remote",
+  "interactive_user": "Z8",
+  "task_logon_type": "InteractiveToken",
+  "ssh_key": "C:/Users/IoT/.ssh/id_ed25519",
+  "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com",
+  "hosts": {
+    "S": {
+      "ip": "192.168.1.200",
+      "role": "controller_scheduler"
+    },
+    "C3": {
+      "ip": "192.168.1.197",
+      "hostname": "P5-C3",
+      "user_id": "C3_0",
+      "ssh_ed25519": "AAAAC3NzaC1lZDI1NTE5AAAAIH03O/x/iAO6pspT7Xq7JUtmzCyU/OFRGqcaoG6YGxv9",
+      "wifi_epoch_ip": "192.168.0.197"
+    },
+    "C4": {
+      "ip": "192.168.1.196",
+      "hostname": "P5-C4",
+      "user_id": "C4_1",
+      "ssh_ed25519": "AAAAC3NzaC1lZDI1NTE5AAAAICPblL89MMMfFWzYwMHiDICiaKdFZqMuPBFzXjVw5Sdc",
+      "wifi_epoch_ip": "192.168.0.196"
+    },
+    "C5": {
+      "ip": "192.168.1.195",
+      "hostname": "P5-C5",
+      "user_id": "C5_2",
+      "ssh_ed25519": "AAAAC3NzaC1lZDI1NTE5AAAAINzUMeBwdZ5I8qZWpJ4P954GHQH1bw5dYHaqLli1uze9",
+      "wifi_epoch_ip": "192.168.0.195"
+    }
+  },
+  "sources": [
+    "D:/Program/P5_3DGS_ICASSP_CLEAN/research_archive/icassp_campaign_v1/22_state/ETHERNET_TOPOLOGY.json",
+    "D:/Program/P5_3DGS_ICASSP_CLEAN/research_archive/icassp_campaign_v1/22_state/NETWORK_EPOCH_ETHERNET_20261015.json",
+    "D:/Program/P5_3DGS_ICASSP_CLEAN/research_archive/icassp_campaign_v1/22_state/CANONICAL_SSH_KNOWN_HOSTS",
+    "D:/Program/P5_3DGS_ICASSP_CLEAN/research_archive/icassp_campaign_v1/22_state/STUDY_V2_PREREGISTRATION.json",
+    "D:/Program/P5_3DGS_ICASSP_CLEAN/research_archive/icassp_campaign_v1/22_state/M1_GOLDEN_EXECUTION_CONTRACT.json"
+  ],
+  "note": "WiFi 192.168.0.0/24 is a prior epoch with the same host keys. Do not treat WiFi CSV and Ethernet CSV as a causal medium comparison. Chromium must launch as Z8 InteractiveToken, not p5remote session 0."
+}

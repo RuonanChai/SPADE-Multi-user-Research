@@ -1,0 +1,55 @@
+{
+  "trace_id": "master-butterfly-near-cohort-user3",
+  "user_id": "user3",
+  "workload": "near-cohort",
+  "created_at": "2026-04-24T04:43:24.606Z",
+  "sample_interval_ms": 100,
+  "start_offset_ms": -41,
+  "samples": [
+    {
+      "t_ms": -41,
+      "position": [
+        0.05250958131838533,
+        0,
+        3.084575590634892
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "fov": 60
+    },
+    {
+      "t_ms": 59,
+      "position": [
+        0.10391917449563354,
+        0,
+        3.0837004309462523
+      ],
+      "quaternion": [
+        0,
+        0.0087,
+        0,
+        0.9999
+      ],
+      "fov": 60
+    },
+    {
+      "t_ms": 159,
+      "position": [
+        0.15532876767288173,
+        0,
+        3.0828252712576125
+      ],
+      "quaternion": [
+        0,
+        0.0174,
+        0,
+        0.9998
+      ],
+      "fov": 60
+    }
+  ]
+}

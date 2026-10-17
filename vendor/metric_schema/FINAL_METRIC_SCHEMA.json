@@ -1,0 +1,1204 @@
+{
+  "schema_version": "2.0.0",
+  "authority": "command224 Section 3, command226 Section 3, command227 PHASE 3",
+  "generated_by": "SCHEMA_DETERMINATION_AGENT",
+  "generated_at": "2026-10-06",
+  "description": "Complete metric schema for ICASSP campaign with all extraction fields, categories, types, units, and directionality",
+  "metrics": [
+    {
+      "name": "cell_id",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "SHA256-based unique cell identifier from frozen matrix"
+    },
+    {
+      "name": "run_id",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Unique run identifier: method_N_trace_regime_repN_timestamp"
+    },
+    {
+      "name": "logical_id",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "optional",
+      "missing_representation": "null",
+      "description": "Optional logical cell identifier from matrix"
+    },
+    {
+      "name": "N",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Number of concurrent clients (2 or 3)"
+    },
+    {
+      "name": "method",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Cache eviction method: IND, FIFO, LRU, SIEVE, S3-FIFO, SPADE"
+    },
+    {
+      "name": "scene",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "3DGS scene identifier"
+    },
+    {
+      "name": "trace",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Camera trajectory trace: burst_turn, stop_go"
+    },
+    {
+      "name": "regime",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Demand regime: synchronized, staggered"
+    },
+    {
+      "name": "rep",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "int",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Repetition index: 0, 1, or 2"
+    },
+    {
+      "name": "started_at",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "ISO8601",
+      "direction": "neutral",
+      "required": "optional",
+      "missing_representation": "NULL",
+      "description": "Run start timestamp (provenance, optional)"
+    },
+    {
+      "name": "completed_at",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "ISO8601",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Run completion timestamp"
+    },
+    {
+      "name": "duration_seconds",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "float",
+      "unit": "seconds",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Average measured duration across clients (measurement window)"
+    },
+    {
+      "name": "selected_clients",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "array",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "[]",
+      "description": "Array of client identifiers (C3, C4, C5)"
+    },
+    {
+      "name": "physical_hostnames",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "object",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "{}",
+      "description": "Map of client_id to physical hostname (P5-C3, P5-C4, P5-C5)"
+    },
+    {
+      "name": "scientific_epoch",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "sha256",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Scientific epoch hash binding semantic components"
+    },
+    {
+      "name": "matrix_sha256",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "sha256",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Frozen 288-cell matrix hash"
+    },
+    {
+      "name": "controller_sha256",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "sha256",
+      "direction": "neutral",
+      "required": "optional",
+      "missing_representation": "null",
+      "description": "Controller script hash"
+    },
+    {
+      "name": "worker_sha256",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "sha256",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Remote worker bundle hash from READY"
+    },
+    {
+      "name": "trace_sha256",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "sha256",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Trace file hash from READY"
+    },
+    {
+      "name": "raw_evidence_path",
+      "category": "IDENTITY_PROVENANCE",
+      "type": "string",
+      "unit": "path",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "NULL",
+      "description": "Path to raw evidence directory"
+    },
+    {
+      "name": "origin_bytes",
+      "category": "TRAFFIC",
+      "type": "int",
+      "unit": "bytes",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Total bytes fetched from origin (scheduler-level)"
+    },
+    {
+      "name": "client_bytes_total",
+      "category": "TRAFFIC",
+      "type": "int",
+      "unit": "bytes",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Sum of all client RAD 206 bytes delivered"
+    },
+    {
+      "name": "cache_bytes",
+      "category": "TRAFFIC",
+      "type": "int",
+      "unit": "bytes",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Total bytes served from cache (scheduler-level)"
+    },
+    {
+      "name": "total_requests",
+      "category": "TRAFFIC",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Total RAD requests handled by scheduler"
+    },
+    {
+      "name": "request_counts",
+      "category": "TRAFFIC",
+      "type": "object",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "optional",
+      "missing_representation": "{}",
+      "description": "Detailed request accounting by type"
+    },
+    {
+      "name": "HTTP_status_accounting",
+      "category": "TRAFFIC",
+      "type": "object",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "optional",
+      "missing_representation": "{}",
+      "description": "HTTP status code distribution"
+    },
+    {
+      "name": "errors_count",
+      "category": "ERRORS",
+      "type": "int",
+      "unit": "count",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "0",
+      "description": "Total error count across all clients"
+    },
+    {
+      "name": "request_ttfb_mean",
+      "category": "REQUEST_LIFECYCLE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "optional",
+      "missing_representation": "null",
+      "description": "Mean time to first byte across all client requests (command227 PHASE 3 BG1)"
+    },
+    {
+      "name": "request_ttfb_p50",
+      "category": "REQUEST_LIFECYCLE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "optional",
+      "missing_representation": "null",
+      "description": "Median time to first byte (command227 PHASE 3 BG1)"
+    },
+    {
+      "name": "request_ttfb_p95",
+      "category": "REQUEST_LIFECYCLE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "optional",
+      "missing_representation": "null",
+      "description": "95th percentile time to first byte (command227 PHASE 3 BG1)"
+    },
+    {
+      "name": "request_completion_mean",
+      "category": "REQUEST_LIFECYCLE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "optional",
+      "missing_representation": "null",
+      "description": "Mean request completion time (command227 PHASE 3 BG1)"
+    },
+    {
+      "name": "request_completion_p50",
+      "category": "REQUEST_LIFECYCLE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "optional",
+      "missing_representation": "null",
+      "description": "Median request completion time (command227 PHASE 3 BG1)"
+    },
+    {
+      "name": "request_completion_p95",
+      "category": "REQUEST_LIFECYCLE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "optional",
+      "missing_representation": "null",
+      "description": "95th percentile request completion time (command227 PHASE 3 BG1)"
+    },
+    {
+      "name": "request_lifecycle_sample_count",
+      "category": "REQUEST_LIFECYCLE",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "optional",
+      "missing_representation": "0",
+      "description": "Number of sampled requests for lifecycle metrics"
+    },
+    {
+      "name": "request_retries",
+      "category": "ERRORS",
+      "type": "int",
+      "unit": "count",
+      "direction": "lower_better",
+      "required": "optional",
+      "missing_representation": "0",
+      "description": "Request retry count (command227 PHASE 3 BG2, NOT_APPLICABLE for fail-fast scheduler)"
+    },
+    {
+      "name": "request_cancellations",
+      "category": "ERRORS",
+      "type": "int",
+      "unit": "count",
+      "direction": "lower_better",
+      "required": "optional",
+      "missing_representation": "0",
+      "description": "Request cancellation count (command227 PHASE 3 BG2, NOT_APPLICABLE for fail-fast scheduler)"
+    },
+    {
+      "name": "cache_hits",
+      "category": "CACHE",
+      "type": "int",
+      "unit": "count",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Number of cache hits (scheduler-level)"
+    },
+    {
+      "name": "cache_misses",
+      "category": "CACHE",
+      "type": "int",
+      "unit": "count",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Number of cache misses requiring origin fetch (PRIMARY METRIC per command217)"
+    },
+    {
+      "name": "request_hit_ratio",
+      "category": "CACHE",
+      "type": "float",
+      "unit": "ratio",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Request-level hit ratio: cache_hits / (cache_hits + cache_misses)"
+    },
+    {
+      "name": "byte_hit_ratio",
+      "category": "CACHE",
+      "type": "float",
+      "unit": "ratio",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Byte-level hit ratio from scheduler"
+    },
+    {
+      "name": "cache_evictions",
+      "category": "CACHE",
+      "type": "int",
+      "unit": "count",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Number of cache evictions"
+    },
+    {
+      "name": "cache_admissions",
+      "category": "CACHE",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "optional",
+      "missing_representation": "null",
+      "description": "Number of items admitted to cache"
+    },
+    {
+      "name": "cache_occupancy_peak",
+      "category": "CACHE",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "optional",
+      "missing_representation": "null",
+      "description": "Peak cache occupancy during run"
+    },
+    {
+      "name": "cache_size_final",
+      "category": "CACHE",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Final cache entry count at end of run"
+    },
+    {
+      "name": "cache_max_bytes",
+      "category": "CACHE",
+      "type": "int",
+      "unit": "bytes",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Maximum cache capacity in bytes"
+    },
+    {
+      "name": "inflight_merges",
+      "category": "INFLIGHT",
+      "type": "int",
+      "unit": "count",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Number of inflight request merges"
+    },
+    {
+      "name": "inflight_peak",
+      "category": "INFLIGHT",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Peak concurrent inflight fetches"
+    },
+    {
+      "name": "shared_hits",
+      "category": "INFLIGHT",
+      "type": "int",
+      "unit": "count",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Requests satisfied by inflight sharing"
+    },
+    {
+      "name": "duplicate_requests_avoided",
+      "category": "INFLIGHT",
+      "type": "int",
+      "unit": "count",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Duplicate origin requests avoided by inflight merging"
+    },
+    {
+      "name": "duplicate_bytes_avoided",
+      "category": "INFLIGHT",
+      "type": "int",
+      "unit": "bytes",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Origin bytes saved by inflight sharing"
+    },
+    {
+      "name": "peak_active_fetches",
+      "category": "INFLIGHT",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Peak number of concurrent active fetches"
+    },
+    {
+      "name": "slot_utilization",
+      "category": "INFLIGHT",
+      "type": "float",
+      "unit": "ratio",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Slot utilization ratio"
+    },
+    {
+      "name": "work_conserving_ratio",
+      "category": "INFLIGHT",
+      "type": "float",
+      "unit": "ratio",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Work-conserving behavior ratio"
+    },
+    {
+      "name": "prefetch_issued",
+      "category": "PREFETCH",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "method_conditional",
+      "missing_representation": "null",
+      "description": "Number of prefetch requests issued (SPADE only)"
+    },
+    {
+      "name": "prefetch_completed",
+      "category": "PREFETCH",
+      "type": "int",
+      "unit": "count",
+      "direction": "higher_better",
+      "required": "method_conditional",
+      "missing_representation": "null",
+      "description": "Number of prefetch requests completed (SPADE only)"
+    },
+    {
+      "name": "prefetch_cancelled",
+      "category": "PREFETCH",
+      "type": "int",
+      "unit": "count",
+      "direction": "lower_better",
+      "required": "method_conditional",
+      "missing_representation": "null",
+      "description": "Number of prefetch requests cancelled (SPADE only)"
+    },
+    {
+      "name": "prefetch_useful",
+      "category": "PREFETCH",
+      "type": "int",
+      "unit": "count",
+      "direction": "higher_better",
+      "required": "method_conditional",
+      "missing_representation": "null",
+      "description": "Number of useful prefetches (used before eviction, SPADE only)"
+    },
+    {
+      "name": "prefetch_wasted",
+      "category": "PREFETCH",
+      "type": "int",
+      "unit": "count",
+      "direction": "lower_better",
+      "required": "method_conditional",
+      "missing_representation": "null",
+      "description": "Number of wasted prefetches (evicted before use, SPADE only)"
+    },
+    {
+      "name": "dls_enabled",
+      "category": "PREFETCH",
+      "type": "bool",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "method_conditional",
+      "missing_representation": "false",
+      "description": "Whether DLS (lookahead gate) is enabled (SPADE only)"
+    },
+    {
+      "name": "dls_gate_open_ratio",
+      "category": "PREFETCH",
+      "type": "float",
+      "unit": "ratio",
+      "direction": "neutral",
+      "required": "method_conditional",
+      "missing_representation": "0",
+      "description": "Fraction of time DLS gate was open (SPADE only)"
+    },
+    {
+      "name": "dls_lookahead_admitted_count",
+      "category": "PREFETCH",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "method_conditional",
+      "missing_representation": "0",
+      "description": "Number of lookahead requests admitted by DLS (SPADE only)"
+    },
+    {
+      "name": "dls_lookahead_wasted_count",
+      "category": "PREFETCH",
+      "type": "int",
+      "unit": "count",
+      "direction": "lower_better",
+      "required": "method_conditional",
+      "missing_representation": "0",
+      "description": "Number of wasted lookahead requests (SPADE only)"
+    },
+    {
+      "name": "FV_min",
+      "category": "QOE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Minimum First Visible time across clients"
+    },
+    {
+      "name": "FV_max",
+      "category": "QOE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Maximum First Visible time across clients"
+    },
+    {
+      "name": "FV_mean",
+      "category": "QOE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Mean First Visible time across clients"
+    },
+    {
+      "name": "Q5_min",
+      "category": "QOE",
+      "type": "int",
+      "unit": "splats",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Worst Q5 (lowest max visible splats in first 5s) across clients - QUALITY METRIC"
+    },
+    {
+      "name": "Q5_max",
+      "category": "QOE",
+      "type": "int",
+      "unit": "splats",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Best Q5 (highest max visible splats in first 5s) across clients - QUALITY METRIC"
+    },
+    {
+      "name": "Q5_mean",
+      "category": "QOE",
+      "type": "float",
+      "unit": "splats",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Mean Q5 (max visible splats in first 5s) across clients - QUALITY METRIC"
+    },
+    {
+      "name": "Q10_min",
+      "category": "QOE",
+      "type": "int",
+      "unit": "splats",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Worst Q10 (lowest max visible splats in first 10s) across clients - QUALITY METRIC"
+    },
+    {
+      "name": "Q10_max",
+      "category": "QOE",
+      "type": "int",
+      "unit": "splats",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Best Q10 (highest max visible splats in first 10s) across clients - QUALITY METRIC"
+    },
+    {
+      "name": "Q10_mean",
+      "category": "QOE",
+      "type": "float",
+      "unit": "splats",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Mean Q10 (max visible splats in first 10s) across clients - QUALITY METRIC"
+    },
+    {
+      "name": "T1M_min",
+      "category": "QOE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Best T1M (fastest time to 1M splats) across clients, null if never reached"
+    },
+    {
+      "name": "T1M_max",
+      "category": "QOE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Worst T1M (slowest time to 1M splats) across clients, null if never reached"
+    },
+    {
+      "name": "T1M_mean",
+      "category": "QOE",
+      "type": "float",
+      "unit": "milliseconds",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Mean T1M (time to 1M splats) across clients, null if never reached"
+    },
+    {
+      "name": "blank_ratio_max",
+      "category": "QOE",
+      "type": "float",
+      "unit": "ratio",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Worst blank ratio (highest fraction of zero-splat samples) across clients"
+    },
+    {
+      "name": "blank_ratio_mean",
+      "category": "QOE",
+      "type": "float",
+      "unit": "ratio",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Mean blank ratio across clients"
+    },
+    {
+      "name": "max_visible_splats_min",
+      "category": "QOE",
+      "type": "int",
+      "unit": "splats",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Worst max visible splats across clients"
+    },
+    {
+      "name": "max_visible_splats_max",
+      "category": "QOE",
+      "type": "int",
+      "unit": "splats",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Best max visible splats across clients"
+    },
+    {
+      "name": "max_visible_splats_mean",
+      "category": "QOE",
+      "type": "float",
+      "unit": "splats",
+      "direction": "higher_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Mean max visible splats across clients"
+    },
+    {
+      "name": "resource_S_CPU_mean",
+      "category": "RESOURCE",
+      "type": "float",
+      "unit": "percent",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Mean server CPU utilization (command227 PHASE 3)"
+    },
+    {
+      "name": "resource_S_CPU_max",
+      "category": "RESOURCE",
+      "type": "float",
+      "unit": "percent",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Peak server CPU utilization (command227 PHASE 3)"
+    },
+    {
+      "name": "resource_S_CPU_samples",
+      "category": "RESOURCE",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "0",
+      "description": "Number of server CPU samples collected at 1Hz"
+    },
+    {
+      "name": "resource_client_CPU_mean",
+      "category": "RESOURCE",
+      "type": "float",
+      "unit": "percent",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Mean client CPU utilization aggregated across all clients (command227 PHASE 3)"
+    },
+    {
+      "name": "resource_client_CPU_max",
+      "category": "RESOURCE",
+      "type": "float",
+      "unit": "percent",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Peak client CPU utilization across all clients (command227 PHASE 3)"
+    },
+    {
+      "name": "resource_client_CPU_samples",
+      "category": "RESOURCE",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "0",
+      "description": "Total client CPU samples collected at 1Hz"
+    },
+    {
+      "name": "resource_client_GPU_util_mean",
+      "category": "RESOURCE",
+      "type": "float",
+      "unit": "percent",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Mean client GPU utilization aggregated across all clients (command227 PHASE 3)"
+    },
+    {
+      "name": "resource_client_GPU_util_max",
+      "category": "RESOURCE",
+      "type": "float",
+      "unit": "percent",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Peak client GPU utilization across all clients (command227 PHASE 3)"
+    },
+    {
+      "name": "resource_client_GPU_util_samples",
+      "category": "RESOURCE",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "0",
+      "description": "Total client GPU utilization samples collected at 1Hz"
+    },
+    {
+      "name": "resource_client_VRAM_used_mean",
+      "category": "RESOURCE",
+      "type": "float",
+      "unit": "megabytes",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Mean client VRAM usage aggregated across all clients (command227 PHASE 3)"
+    },
+    {
+      "name": "resource_client_VRAM_used_max",
+      "category": "RESOURCE",
+      "type": "float",
+      "unit": "megabytes",
+      "direction": "lower_better",
+      "required": "always",
+      "missing_representation": "null",
+      "description": "Peak client VRAM usage across all clients (command227 PHASE 3)"
+    },
+    {
+      "name": "resource_client_VRAM_used_samples",
+      "category": "RESOURCE",
+      "type": "int",
+      "unit": "count",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "0",
+      "description": "Total client VRAM usage samples collected at 1Hz"
+    },
+    {
+      "name": "clients",
+      "category": "EXECUTION_INTEGRITY",
+      "type": "object",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "{}",
+      "description": "Per-client detailed metrics including hostname, pid, duration_actual, visual_ready_ms, trace_loaded, frames_replayed_at_ready, frames_replayed, camera_changed, verdict, RAD counts, request errors, request lifecycle timing, QoE metrics, and provenance hashes"
+    },
+    {
+      "name": "missing_collection",
+      "category": "EXECUTION_INTEGRITY",
+      "type": "array",
+      "unit": "none",
+      "direction": "neutral",
+      "required": "always",
+      "missing_representation": "[]",
+      "description": "List of metrics not collected with reason codes (MISSING, NOT_APPLICABLE, EXTRACTION_ERROR)"
+    }
+  ],
+  "per_client_metrics": [
+    {
+      "name": "hostname",
+      "type": "string",
+      "description": "Physical hostname from READY"
+    },
+    {
+      "name": "pid",
+      "type": "int",
+      "description": "Browser process ID"
+    },
+    {
+      "name": "duration_actual",
+      "type": "float",
+      "unit": "seconds",
+      "description": "Measured duration (measurement window, not total runtime)"
+    },
+    {
+      "name": "visual_ready_ms",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "Time to visual readiness from READY"
+    },
+    {
+      "name": "trace_loaded",
+      "type": "bool",
+      "description": "Whether trace was loaded successfully"
+    },
+    {
+      "name": "frames_replayed_at_ready",
+      "type": "int",
+      "description": "Frames replayed when READY was emitted"
+    },
+    {
+      "name": "frames_replayed",
+      "type": "int",
+      "description": "Total frames replayed during measurement window from DONE"
+    },
+    {
+      "name": "camera_changed",
+      "type": "bool",
+      "description": "Whether camera position changed during trace replay (critical validity signal)"
+    },
+    {
+      "name": "verdict",
+      "type": "string",
+      "description": "Client verdict: VALID, INVALID, TIMEOUT, CANCELLED, ERROR"
+    },
+    {
+      "name": "invalid_reason",
+      "type": "string",
+      "description": "Reason for invalid verdict if applicable"
+    },
+    {
+      "name": "timeout",
+      "type": "bool",
+      "description": "Whether client timed out"
+    },
+    {
+      "name": "cancelled",
+      "type": "bool",
+      "description": "Whether client was cancelled"
+    },
+    {
+      "name": "error",
+      "type": "string",
+      "description": "Error message if any"
+    },
+    {
+      "name": "rad_206_count",
+      "type": "int",
+      "description": "Number of RAD 206 partial content responses"
+    },
+    {
+      "name": "rad_206_bytes_total",
+      "type": "int",
+      "unit": "bytes",
+      "description": "Total bytes from RAD 206 responses"
+    },
+    {
+      "name": "rad_206_bytes_from_origin",
+      "type": "int",
+      "unit": "bytes",
+      "description": "Bytes from origin based on proxy headers"
+    },
+    {
+      "name": "rad_206_bytes_from_cache",
+      "type": "int",
+      "unit": "bytes",
+      "description": "Bytes from cache based on proxy headers"
+    },
+    {
+      "name": "request_errors",
+      "type": "int",
+      "description": "Total HTTP error count (status >= 400)"
+    },
+    {
+      "name": "request_errors_4xx",
+      "type": "int",
+      "description": "HTTP 4xx error count"
+    },
+    {
+      "name": "request_errors_5xx",
+      "type": "int",
+      "description": "HTTP 5xx error count"
+    },
+    {
+      "name": "request_ttfb_mean",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "Mean TTFB for this client (command227 PHASE 3 BG1)"
+    },
+    {
+      "name": "request_ttfb_p50",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "Median TTFB for this client"
+    },
+    {
+      "name": "request_ttfb_p95",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "95th percentile TTFB for this client"
+    },
+    {
+      "name": "request_completion_mean",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "Mean request completion time for this client"
+    },
+    {
+      "name": "request_completion_p50",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "Median request completion time for this client"
+    },
+    {
+      "name": "request_completion_p95",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "95th percentile request completion time for this client"
+    },
+    {
+      "name": "request_lifecycle_sample_count",
+      "type": "int",
+      "description": "Number of requests sampled for lifecycle metrics"
+    },
+    {
+      "name": "request_retries",
+      "type": "int",
+      "description": "Request retry count (command227 PHASE 3 BG2, NOT_APPLICABLE)"
+    },
+    {
+      "name": "request_cancellations",
+      "type": "int",
+      "description": "Request cancellation count (command227 PHASE 3 BG2, NOT_APPLICABLE)"
+    },
+    {
+      "name": "visual_timeline_count",
+      "type": "int",
+      "description": "Number of visual timeline samples"
+    },
+    {
+      "name": "first_visible_timestamp",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "Timestamp of first visual sample"
+    },
+    {
+      "name": "last_visible_timestamp",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "Timestamp of last visual sample"
+    },
+    {
+      "name": "visible_duration_ms",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "Duration from first to last visible sample"
+    },
+    {
+      "name": "FV",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "First Visible (ms relative to measurement origin)"
+    },
+    {
+      "name": "Q5",
+      "type": "int",
+      "unit": "splats",
+      "description": "Max visible splats in first 5s - QUALITY METRIC (higher is better)"
+    },
+    {
+      "name": "Q10",
+      "type": "int",
+      "unit": "splats",
+      "description": "Max visible splats in first 10s - QUALITY METRIC (higher is better)"
+    },
+    {
+      "name": "T1M",
+      "type": "float",
+      "unit": "milliseconds",
+      "description": "Time to 1M splats (null if never reached, CENSORED)"
+    },
+    {
+      "name": "blank_ratio",
+      "type": "float",
+      "unit": "ratio",
+      "description": "Fraction of visual samples with 0 splats"
+    },
+    {
+      "name": "max_visible_splats",
+      "type": "int",
+      "unit": "splats",
+      "description": "Maximum visible splats achieved during measurement window"
+    },
+    {
+      "name": "worker_sha256",
+      "type": "string",
+      "description": "Worker bundle hash from this client's READY"
+    },
+    {
+      "name": "trace_sha256",
+      "type": "string",
+      "description": "Trace hash from this client's READY"
+    },
+    {
+      "name": "config_sha256",
+      "type": "string",
+      "description": "Config hash from this client's READY"
+    },
+    {
+      "name": "ready_parse_error",
+      "type": "string",
+      "description": "READY file parse error if any"
+    },
+    {
+      "name": "done_parse_error",
+      "type": "string",
+      "description": "DONE file parse error if any"
+    },
+    {
+      "name": "visual_timeline_parse_error",
+      "type": "string",
+      "description": "Visual timeline parse error if any"
+    },
+    {
+      "name": "evidence_parse_error",
+      "type": "string",
+      "description": "Evidence.json parse error if any"
+    }
+  ],
+  "notes": [
+    "Q5 and Q10 are QUALITY metrics where higher values indicate better visual quality (more splats visible)",
+    "cache_misses is the PRIMARY traffic-reduction metric per command217 N2 campaign",
+    "request_retries and request_cancellations are NOT_APPLICABLE for current fail-fast scheduler (command227 PHASE 3 BG2)",
+    "pipeline_decode and pipeline_GPU_upload are NOT_APPLICABLE for P5 3DGS streaming architecture (per CONTROL_AGENT audit 2026-10-06)",
+    "camera_changed is a critical validity signal that must be boolean true for valid runs",
+    "Resource metrics (CPU/GPU/VRAM) are aggregated across all clients at 1Hz sampling (command227 PHASE 3)",
+    "All lifecycle timing metrics (TTFB, completion) are in milliseconds and derive from Puppeteer CDP timing (command227 PHASE 3 BG1)",
+    "T1M (Time to 1M splats) may be null if 1M splats never reached (CENSORED)",
+    "Prefetch and DLS metrics are method_conditional (SPADE only)",
+    "metric_schema_version tracks evolution of metric definitions for backfill/compatibility",
+    "All SHA256 hashes bind scientific components for provenance and epoch integrity"
+  ]
+}

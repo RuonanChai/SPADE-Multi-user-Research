@@ -1,0 +1,13 @@
+{
+  "$comment": "Worker2 (ssh_host) is Ruonan's machine — ssh_user=Ruonan. ssh_key_path is on the orchestrator PC. Optional: cdn2_asset_base, cdn2_object_path, cdn2_object_path_hobbiton (merged to VRC_CDN2_* when env empty; see vrc-paper/experiments/distributed_lab_cdn2_env.mjs).",
+  "controller_host": "10.4.158.143",
+  "vite_port": 9200,
+  "sync_port": 9201,
+  "ssh_user": "Ruonan",
+  "ssh_host": "10.4.146.68",
+  "ssh_port": 22,
+  "ssh_key_path": "C:/Users/IoT/.ssh/id_ed25519_spark_bench",
+  "remote_repo_path": "D:/Program Files/Spark-main",
+  "remote_results_root": "D:/SparkRuns",
+  "remote_output_root": "D:/SparkRuns"
+}

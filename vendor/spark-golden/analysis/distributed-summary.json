@@ -1,0 +1,260 @@
+{
+  "generated_at": "2026-04-23T13:43:18.926Z",
+  "runs": [
+    {
+      "run_id": "A-baseline",
+      "scenario": "A-baseline",
+      "users": 1,
+      "coverage_check": {
+        "has_scene_request": false,
+        "has_range_request": false,
+        "total_fetch_logs": 9
+      },
+      "latency": {
+        "client_p95": 2299.8809999990044,
+        "client_p99": 2299.8809999990044,
+        "upstream_p95": null,
+        "upstream_p99": null
+      },
+      "per_user": [
+        {
+          "user_id": "user0",
+          "completion": 9,
+          "stall": 3
+        }
+      ],
+      "fairness": 1,
+      "replay_start_alignment_ms": null,
+      "sensitivity": [
+        {
+          "page_size": 131072,
+          "B_client_agg": 1179648,
+          "B_unique": 1048576,
+          "B_upstream": 0,
+          "delta_client_unique": 131072,
+          "delta_upstream_unique": -1048576
+        },
+        {
+          "page_size": 262144,
+          "B_client_agg": 2359296,
+          "B_unique": 2097152,
+          "B_upstream": 0,
+          "delta_client_unique": 262144,
+          "delta_upstream_unique": -2097152
+        },
+        {
+          "page_size": 524288,
+          "B_client_agg": 4718592,
+          "B_unique": 4194304,
+          "B_upstream": 0,
+          "delta_client_unique": 524288,
+          "delta_upstream_unique": -4194304
+        }
+      ]
+    },
+    {
+      "run_id": "B-lockstep-1776951630102",
+      "scenario": "B-lockstep",
+      "users": 4,
+      "coverage_check": {
+        "has_scene_request": false,
+        "has_range_request": false,
+        "total_fetch_logs": 36
+      },
+      "latency": {
+        "client_p95": 6021.896999998717,
+        "client_p99": 6185.694999992847,
+        "upstream_p95": null,
+        "upstream_p99": null
+      },
+      "per_user": [
+        {
+          "user_id": "user0",
+          "completion": 9,
+          "stall": 3
+        },
+        {
+          "user_id": "user1",
+          "completion": 9,
+          "stall": 3
+        },
+        {
+          "user_id": "user2",
+          "completion": 9,
+          "stall": 3
+        },
+        {
+          "user_id": "user3",
+          "completion": 9,
+          "stall": 3
+        }
+      ],
+      "fairness": 1,
+      "replay_start_alignment_ms": null,
+      "sensitivity": [
+        {
+          "page_size": 131072,
+          "B_client_agg": 4718592,
+          "B_unique": 1441792,
+          "B_upstream": 0,
+          "delta_client_unique": 3276800,
+          "delta_upstream_unique": -1441792
+        },
+        {
+          "page_size": 262144,
+          "B_client_agg": 9437184,
+          "B_unique": 2883584,
+          "B_upstream": 0,
+          "delta_client_unique": 6553600,
+          "delta_upstream_unique": -2883584
+        },
+        {
+          "page_size": 524288,
+          "B_client_agg": 18874368,
+          "B_unique": 5767168,
+          "B_upstream": 0,
+          "delta_client_unique": 13107200,
+          "delta_upstream_unique": -5767168
+        }
+      ]
+    },
+    {
+      "run_id": "C-nearcohort-1776951687401",
+      "scenario": "C-nearcohort",
+      "users": 4,
+      "coverage_check": {
+        "has_scene_request": false,
+        "has_range_request": false,
+        "total_fetch_logs": 36
+      },
+      "latency": {
+        "client_p95": 4830.812999993213,
+        "client_p99": 6026.612000001478,
+        "upstream_p95": null,
+        "upstream_p99": null
+      },
+      "per_user": [
+        {
+          "user_id": "user0",
+          "completion": 9,
+          "stall": 3
+        },
+        {
+          "user_id": "user1",
+          "completion": 9,
+          "stall": 3
+        },
+        {
+          "user_id": "user2",
+          "completion": 9,
+          "stall": 3
+        },
+        {
+          "user_id": "user3",
+          "completion": 9,
+          "stall": 3
+        }
+      ],
+      "fairness": 1,
+      "replay_start_alignment_ms": null,
+      "sensitivity": [
+        {
+          "page_size": 131072,
+          "B_client_agg": 4718592,
+          "B_unique": 1441792,
+          "B_upstream": 0,
+          "delta_client_unique": 3276800,
+          "delta_upstream_unique": -1441792
+        },
+        {
+          "page_size": 262144,
+          "B_client_agg": 9437184,
+          "B_unique": 2883584,
+          "B_upstream": 0,
+          "delta_client_unique": 6553600,
+          "delta_upstream_unique": -2883584
+        },
+        {
+          "page_size": 524288,
+          "B_client_agg": 18874368,
+          "B_unique": 5767168,
+          "B_upstream": 0,
+          "delta_client_unique": 13107200,
+          "delta_upstream_unique": -5767168
+        }
+      ]
+    },
+    {
+      "run_id": "D-divergent-1776951740890",
+      "scenario": "D-divergent",
+      "users": 4,
+      "coverage_check": {
+        "has_scene_request": false,
+        "has_range_request": false,
+        "total_fetch_logs": 36
+      },
+      "latency": {
+        "client_p95": 6783.265999998548,
+        "client_p99": 7145.466999994824,
+        "upstream_p95": null,
+        "upstream_p99": null
+      },
+      "per_user": [
+        {
+          "user_id": "user0",
+          "completion": 9,
+          "stall": 3
+        },
+        {
+          "user_id": "user1",
+          "completion": 9,
+          "stall": 3
+        },
+        {
+          "user_id": "user2",
+          "completion": 9,
+          "stall": 3
+        },
+        {
+          "user_id": "user3",
+          "completion": 9,
+          "stall": 3
+        }
+      ],
+      "fairness": 1,
+      "replay_start_alignment_ms": null,
+      "sensitivity": [
+        {
+          "page_size": 131072,
+          "B_client_agg": 4718592,
+          "B_unique": 1441792,
+          "B_upstream": 0,
+          "delta_client_unique": 3276800,
+          "delta_upstream_unique": -1441792
+        },
+        {
+          "page_size": 262144,
+          "B_client_agg": 9437184,
+          "B_unique": 2883584,
+          "B_upstream": 0,
+          "delta_client_unique": 6553600,
+          "delta_upstream_unique": -2883584
+        },
+        {
+          "page_size": 524288,
+          "B_client_agg": 18874368,
+          "B_unique": 5767168,
+          "B_upstream": 0,
+          "delta_client_unique": 13107200,
+          "delta_upstream_unique": -5767168
+        }
+      ]
+    }
+  ],
+  "significance": {
+    "client_agg_minus_unique_significant": true,
+    "upstream_minus_unique_significant": false,
+    "p95_p99_amplified": true,
+    "per_user_divergence_severe": false
+  }
+}

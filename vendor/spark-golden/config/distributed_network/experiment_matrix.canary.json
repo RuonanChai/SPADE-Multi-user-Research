@@ -1,0 +1,11 @@
+{
+  "name": "distributed_network_canary",
+  "profiles": ["local_loopback"],
+  "scenarios": ["single_user"],
+  "arms": ["E3_normal_streaming", "E5_fetch_only", "E8_pure_render"],
+  "trials_per_condition": 1,
+  "measurement_modes": ["streaming_in_loop_mode", "warm_steady_render_mode"],
+  "warmup_ms": 12000,
+  "move_ms": 18000,
+  "timeout_ms": 900000
+}

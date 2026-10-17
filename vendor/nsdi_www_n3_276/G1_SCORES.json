@@ -1,0 +1,2709 @@
+{
+  "runs": {
+    "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r1": {
+      "spec": {
+        "run_id": "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r1",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 1,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r2": {
+      "spec": {
+        "run_id": "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r2",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 1,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "INVALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 0,
+          "inflight": {},
+          "inflight3_p50_ms": null,
+          "inflight1_p50_ms": null,
+          "all_p50_ms": null,
+          "hop": {
+            "n_rad_urls": 2,
+            "n_18443": 2,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r3": {
+      "spec": {
+        "run_id": "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r3",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 1,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "INVALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 0,
+          "inflight": {},
+          "inflight3_p50_ms": null,
+          "inflight1_p50_ms": null,
+          "all_p50_ms": null,
+          "hop": {
+            "n_rad_urls": 2,
+            "n_18443": 2,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r4": {
+      "spec": {
+        "run_id": "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r4",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 1,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "INVALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 0,
+          "inflight": {},
+          "inflight3_p50_ms": null,
+          "inflight1_p50_ms": null,
+          "all_p50_ms": null,
+          "hop": {
+            "n_rad_urls": 2,
+            "n_18443": 2,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r1": {
+      "spec": {
+        "run_id": "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r1",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 1,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 1,
+        "demand_bytes": 1024,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024
+        },
+        "saved_fraction": 0.0,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 2,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r2": {
+      "spec": {
+        "run_id": "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r2",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 1,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 472,
+        "demand_bytes": 785755928,
+        "origin_bytes": 785755928,
+        "counts": {
+          "origin_fetch": 472
+        },
+        "bytes": {
+          "origin_fetch": 785755928
+        },
+        "saved_fraction": 0.0,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 364,
+          "inflight": {
+            "1": {
+              "n": 4,
+              "send_to_first_p50_ms": 286.4974999683909
+            },
+            "2": {
+              "n": 19,
+              "send_to_first_p50_ms": 319.90699999732897
+            },
+            "3": {
+              "n": 443,
+              "send_to_first_p50_ms": 446.62499998230487
+            }
+          },
+          "inflight3_p50_ms": 446.62499998230487,
+          "inflight1_p50_ms": 286.4974999683909,
+          "all_p50_ms": 443.92400002107024,
+          "hop": {
+            "n_rad_urls": 466,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 466,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 471,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r3": {
+      "spec": {
+        "run_id": "nsdi_N1_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r3",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 1,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 468,
+        "demand_bytes": 779551064,
+        "origin_bytes": 779551064,
+        "counts": {
+          "origin_fetch": 468
+        },
+        "bytes": {
+          "origin_fetch": 779551064
+        },
+        "saved_fraction": 0.0,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 383,
+          "inflight": {
+            "1": {
+              "n": 4,
+              "send_to_first_p50_ms": 277.55500000785105
+            },
+            "2": {
+              "n": 8,
+              "send_to_first_p50_ms": 354.0785000077449
+            },
+            "3": {
+              "n": 454,
+              "send_to_first_p50_ms": 440.21100000827573
+            }
+          },
+          "inflight3_p50_ms": 440.21100000827573,
+          "inflight1_p50_ms": 277.55500000785105,
+          "all_p50_ms": 439.05549999908544,
+          "hop": {
+            "n_rad_urls": 466,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 466,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 467,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_raddirect_s3_r1": {
+      "spec": {
+        "run_id": "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_raddirect_s3_r1",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_direct",
+        "slots": 3,
+        "n": 2,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "http://192.168.1.200:18081/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 1081,
+        "demand_bytes": 1798449152,
+        "origin_bytes": 1137619136,
+        "counts": {
+          "origin_fetch": 682,
+          "cache_hit": 155,
+          "inflight_merge": 244
+        },
+        "bytes": {
+          "origin_fetch": 1137619136,
+          "cache_hit": 257794400,
+          "inflight_merge": 403035616
+        },
+        "saved_fraction": 0.3674443702036898,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.9578163771712159
+        },
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 384,
+          "inflight": {
+            "1": {
+              "n": 1,
+              "send_to_first_p50_ms": 375.2149999490939
+            },
+            "2": {
+              "n": 2,
+              "send_to_first_p50_ms": 402.0170000148937
+            },
+            "3": {
+              "n": 1,
+              "send_to_first_p50_ms": 526.5970000182278
+            },
+            "4": {
+              "n": 17,
+              "send_to_first_p50_ms": 600.3870000131428
+            },
+            "5": {
+              "n": 23,
+              "send_to_first_p50_ms": 577.0279999705963
+            },
+            "6": {
+              "n": 33,
+              "send_to_first_p50_ms": 493.98299999302253
+            },
+            "7": {
+              "n": 28,
+              "send_to_first_p50_ms": 523.4570000029635
+            },
+            "8": {
+              "n": 27,
+              "send_to_first_p50_ms": 444.84999997075647
+            },
+            "9": {
+              "n": 25,
+              "send_to_first_p50_ms": 463.8299999642186
+            },
+            "10": {
+              "n": 28,
+              "send_to_first_p50_ms": 525.8710000198334
+            },
+            "11": {
+              "n": 28,
+              "send_to_first_p50_ms": 506.47349999053404
+            },
+            "12": {
+              "n": 28,
+              "send_to_first_p50_ms": 478.57049998128787
+            },
+            "13": {
+              "n": 32,
+              "send_to_first_p50_ms": 464.0604999731295
+            },
+            "14": {
+              "n": 27,
+              "send_to_first_p50_ms": 414.0880000195466
+            },
+            "15": {
+              "n": 30,
+              "send_to_first_p50_ms": 476.3985000026878
+            },
+            "16": {
+              "n": 31,
+              "send_to_first_p50_ms": 462.483000010252
+            },
+            "17": {
+              "n": 23,
+              "send_to_first_p50_ms": 518.5010000132024
+            },
+            "18": {
+              "n": 27,
+              "send_to_first_p50_ms": 534.6140000037849
+            },
+            "19": {
+              "n": 28,
+              "send_to_first_p50_ms": 462.6329999882728
+            },
+            "20": {
+              "n": 31,
+              "send_to_first_p50_ms": 382.1720000123605
+            },
+            "21": {
+              "n": 31,
+              "send_to_first_p50_ms": 427.4750000331551
+            },
+            "22": {
+              "n": 24,
+              "send_to_first_p50_ms": 475.28550002607517
+            },
+            "23": {
+              "n": 8,
+              "send_to_first_p50_ms": 549.1589999874122
+            }
+          },
+          "inflight3_p50_ms": 526.5970000182278,
+          "inflight1_p50_ms": 375.2149999490939,
+          "all_p50_ms": 495.0529999914579,
+          "hop": {
+            "n_rad_urls": 553,
+            "n_18443": 0,
+            "n_18081": 553,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C4": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 368,
+          "inflight": {
+            "1": {
+              "n": 1,
+              "send_to_first_p50_ms": 339.5299999974668
+            },
+            "2": {
+              "n": 2,
+              "send_to_first_p50_ms": 461.0075000091456
+            },
+            "3": {
+              "n": 1,
+              "send_to_first_p50_ms": 493.69800003478304
+            },
+            "4": {
+              "n": 21,
+              "send_to_first_p50_ms": 484.2289999942295
+            },
+            "5": {
+              "n": 29,
+              "send_to_first_p50_ms": 481.2000000383705
+            },
+            "6": {
+              "n": 38,
+              "send_to_first_p50_ms": 445.408999978099
+            },
+            "7": {
+              "n": 36,
+              "send_to_first_p50_ms": 298.5354999837
+            },
+            "8": {
+              "n": 38,
+              "send_to_first_p50_ms": 416.9790000014473
+            },
+            "9": {
+              "n": 30,
+              "send_to_first_p50_ms": 333.93349999096245
+            },
+            "10": {
+              "n": 31,
+              "send_to_first_p50_ms": 413.72800001408905
+            },
+            "11": {
+              "n": 30,
+              "send_to_first_p50_ms": 467.2965000208933
+            },
+            "12": {
+              "n": 27,
+              "send_to_first_p50_ms": 384.7390000009909
+            },
+            "13": {
+              "n": 28,
+              "send_to_first_p50_ms": 511.0114999988582
+            },
+            "14": {
+              "n": 30,
+              "send_to_first_p50_ms": 470.5610000237357
+            },
+            "15": {
+              "n": 26,
+              "send_to_first_p50_ms": 566.1180000170134
+            },
+            "16": {
+              "n": 26,
+              "send_to_first_p50_ms": 527.8814999619499
+            },
+            "17": {
+              "n": 27,
+              "send_to_first_p50_ms": 589.5009999512695
+            },
+            "18": {
+              "n": 30,
+              "send_to_first_p50_ms": 473.7294999649748
+            },
+            "19": {
+              "n": 29,
+              "send_to_first_p50_ms": 449.1480000433512
+            },
+            "20": {
+              "n": 26,
+              "send_to_first_p50_ms": 425.8059999847319
+            },
+            "21": {
+              "n": 25,
+              "send_to_first_p50_ms": 504.59199998294935
+            },
+            "22": {
+              "n": 9,
+              "send_to_first_p50_ms": 465.20800003781915
+            }
+          },
+          "inflight3_p50_ms": 493.69800003478304,
+          "inflight1_p50_ms": 339.5299999974668,
+          "all_p50_ms": 467.24600001471117,
+          "hop": {
+            "n_rad_urls": 559,
+            "n_18443": 0,
+            "n_18081": 559,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_raddirect_s3_r2": {
+      "spec": {
+        "run_id": "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_raddirect_s3_r2",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_direct",
+        "slots": 3,
+        "n": 2,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "http://192.168.1.200:18081/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 1219,
+        "demand_bytes": 2026438648,
+        "origin_bytes": 1283030592,
+        "counts": {
+          "origin_fetch": 769,
+          "cache_hit": 180,
+          "inflight_merge": 270
+        },
+        "bytes": {
+          "origin_fetch": 1283030592,
+          "cache_hit": 299100400,
+          "inflight_merge": 444307656
+        },
+        "saved_fraction": 0.36685446003199207,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.9669811320754716
+        },
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 393,
+          "inflight": {
+            "1": {
+              "n": 1,
+              "send_to_first_p50_ms": 347.4639999913052
+            },
+            "2": {
+              "n": 2,
+              "send_to_first_p50_ms": 324.2514999874402
+            },
+            "3": {
+              "n": 1,
+              "send_to_first_p50_ms": 480.1079999888316
+            },
+            "4": {
+              "n": 20,
+              "send_to_first_p50_ms": 514.6710000117309
+            },
+            "5": {
+              "n": 25,
+              "send_to_first_p50_ms": 481.7519999924116
+            },
+            "6": {
+              "n": 33,
+              "send_to_first_p50_ms": 429.30399999022484
+            },
+            "7": {
+              "n": 29,
+              "send_to_first_p50_ms": 462.7960000070743
+            },
+            "8": {
+              "n": 36,
+              "send_to_first_p50_ms": 447.9480000154581
+            },
+            "9": {
+              "n": 23,
+              "send_to_first_p50_ms": 443.1229999754578
+            },
+            "10": {
+              "n": 28,
+              "send_to_first_p50_ms": 446.6690000263043
+            },
+            "11": {
+              "n": 29,
+              "send_to_first_p50_ms": 475.1570000080392
+            },
+            "12": {
+              "n": 33,
+              "send_to_first_p50_ms": 463.9210000168532
+            },
+            "13": {
+              "n": 35,
+              "send_to_first_p50_ms": 477.02200000640005
+            },
+            "14": {
+              "n": 32,
+              "send_to_first_p50_ms": 357.4080000107642
+            },
+            "15": {
+              "n": 33,
+              "send_to_first_p50_ms": 368.1370000122115
+            },
+            "16": {
+              "n": 28,
+              "send_to_first_p50_ms": 423.0185000342317
+            },
+            "17": {
+              "n": 32,
+              "send_to_first_p50_ms": 317.3900000110734
+            },
+            "18": {
+              "n": 29,
+              "send_to_first_p50_ms": 379.9599999911152
+            },
+            "19": {
+              "n": 37,
+              "send_to_first_p50_ms": 422.2719999961555
+            },
+            "20": {
+              "n": 31,
+              "send_to_first_p50_ms": 428.79499995615333
+            },
+            "21": {
+              "n": 29,
+              "send_to_first_p50_ms": 446.9890000182204
+            },
+            "22": {
+              "n": 29,
+              "send_to_first_p50_ms": 451.84100000187755
+            },
+            "23": {
+              "n": 26,
+              "send_to_first_p50_ms": 445.8300000114832
+            },
+            "24": {
+              "n": 14,
+              "send_to_first_p50_ms": 426.3829999836162
+            }
+          },
+          "inflight3_p50_ms": 480.1079999888316,
+          "inflight1_p50_ms": 347.4639999913052,
+          "all_p50_ms": 443.80999996792525,
+          "hop": {
+            "n_rad_urls": 636,
+            "n_18443": 0,
+            "n_18081": 636,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C4": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 380,
+          "inflight": {
+            "1": {
+              "n": 1,
+              "send_to_first_p50_ms": 351.85599996475503
+            },
+            "2": {
+              "n": 2,
+              "send_to_first_p50_ms": 292.1364999783691
+            },
+            "3": {
+              "n": 1,
+              "send_to_first_p50_ms": 398.4020000207238
+            },
+            "4": {
+              "n": 25,
+              "send_to_first_p50_ms": 425.48099998384714
+            },
+            "5": {
+              "n": 30,
+              "send_to_first_p50_ms": 434.7849999903701
+            },
+            "6": {
+              "n": 41,
+              "send_to_first_p50_ms": 400.0430000014603
+            },
+            "7": {
+              "n": 38,
+              "send_to_first_p50_ms": 326.04499999433756
+            },
+            "8": {
+              "n": 39,
+              "send_to_first_p50_ms": 321.16000005044043
+            },
+            "9": {
+              "n": 34,
+              "send_to_first_p50_ms": 325.4294999933336
+            },
+            "10": {
+              "n": 39,
+              "send_to_first_p50_ms": 339.5460000028834
+            },
+            "11": {
+              "n": 36,
+              "send_to_first_p50_ms": 353.14250001101755
+            },
+            "12": {
+              "n": 28,
+              "send_to_first_p50_ms": 330.07050000014715
+            },
+            "13": {
+              "n": 31,
+              "send_to_first_p50_ms": 476.74700000789016
+            },
+            "14": {
+              "n": 31,
+              "send_to_first_p50_ms": 415.82400002516806
+            },
+            "15": {
+              "n": 30,
+              "send_to_first_p50_ms": 450.63000000664033
+            },
+            "16": {
+              "n": 32,
+              "send_to_first_p50_ms": 361.0130000161007
+            },
+            "17": {
+              "n": 32,
+              "send_to_first_p50_ms": 419.32899999665096
+            },
+            "18": {
+              "n": 31,
+              "send_to_first_p50_ms": 414.50700000859797
+            },
+            "19": {
+              "n": 28,
+              "send_to_first_p50_ms": 424.8969999898691
+            },
+            "20": {
+              "n": 28,
+              "send_to_first_p50_ms": 431.6854999924544
+            },
+            "21": {
+              "n": 27,
+              "send_to_first_p50_ms": 448.895999987144
+            },
+            "22": {
+              "n": 19,
+              "send_to_first_p50_ms": 415.554000006523
+            }
+          },
+          "inflight3_p50_ms": 398.4020000207238,
+          "inflight1_p50_ms": 351.85599996475503,
+          "all_p50_ms": 409.53800000716,
+          "hop": {
+            "n_rad_urls": 622,
+            "n_18443": 0,
+            "n_18081": 622,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r1": {
+      "spec": {
+        "run_id": "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r1",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 2,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 0,
+        "demand_bytes": 0,
+        "origin_bytes": 0,
+        "counts": {},
+        "bytes": {},
+        "saved_fraction": null,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null,
+        "C4": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r2": {
+      "spec": {
+        "run_id": "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r2",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 2,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null,
+        "C4": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r3": {
+      "spec": {
+        "run_id": "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r3",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 2,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "INVALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 0,
+          "inflight": {},
+          "inflight3_p50_ms": null,
+          "inflight1_p50_ms": null,
+          "all_p50_ms": null,
+          "hop": {
+            "n_rad_urls": 2,
+            "n_18443": 2,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C4": {
+          "verdict": "INVALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 0,
+          "inflight": {},
+          "inflight3_p50_ms": null,
+          "inflight1_p50_ms": null,
+          "all_p50_ms": null,
+          "hop": {
+            "n_rad_urls": 2,
+            "n_18443": 2,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r4": {
+      "spec": {
+        "run_id": "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r4",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 2,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "INVALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 0,
+          "inflight": {},
+          "inflight3_p50_ms": null,
+          "inflight1_p50_ms": null,
+          "all_p50_ms": null,
+          "hop": {
+            "n_rad_urls": 2,
+            "n_18443": 2,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C4": {
+          "verdict": "INVALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 0,
+          "inflight": {},
+          "inflight3_p50_ms": null,
+          "inflight1_p50_ms": null,
+          "all_p50_ms": null,
+          "hop": {
+            "n_rad_urls": 2,
+            "n_18443": 2,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r5": {
+      "spec": {
+        "run_id": "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r5",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 2,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 1165,
+        "demand_bytes": 1936885880,
+        "origin_bytes": 1209795864,
+        "counts": {
+          "origin_fetch": 725,
+          "cache_hit": 198,
+          "inflight_merge": 242
+        },
+        "bytes": {
+          "origin_fetch": 1209795864,
+          "cache_hit": 328847480,
+          "inflight_merge": 398242536
+        },
+        "saved_fraction": 0.37539125227140385,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.9782082324455206
+        },
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 390,
+          "inflight": {
+            "1": {
+              "n": 1,
+              "send_to_first_p50_ms": 421.0820000153035
+            },
+            "2": {
+              "n": 2,
+              "send_to_first_p50_ms": 378.01449999096803
+            },
+            "3": {
+              "n": 1,
+              "send_to_first_p50_ms": 455.5610000388697
+            },
+            "4": {
+              "n": 18,
+              "send_to_first_p50_ms": 506.723000027705
+            },
+            "5": {
+              "n": 26,
+              "send_to_first_p50_ms": 445.4169999808073
+            },
+            "6": {
+              "n": 22,
+              "send_to_first_p50_ms": 528.9919999777339
+            },
+            "7": {
+              "n": 30,
+              "send_to_first_p50_ms": 485.8174999826588
+            },
+            "8": {
+              "n": 23,
+              "send_to_first_p50_ms": 482.0000000181608
+            },
+            "9": {
+              "n": 31,
+              "send_to_first_p50_ms": 420.33599998103455
+            },
+            "10": {
+              "n": 29,
+              "send_to_first_p50_ms": 460.836999991443
+            },
+            "11": {
+              "n": 33,
+              "send_to_first_p50_ms": 417.7489999565296
+            },
+            "12": {
+              "n": 24,
+              "send_to_first_p50_ms": 381.96150001022033
+            },
+            "13": {
+              "n": 40,
+              "send_to_first_p50_ms": 403.3950000011828
+            },
+            "14": {
+              "n": 25,
+              "send_to_first_p50_ms": 373.1670000124723
+            },
+            "15": {
+              "n": 24,
+              "send_to_first_p50_ms": 298.9815000037197
+            },
+            "16": {
+              "n": 9,
+              "send_to_first_p50_ms": 169.04900001827627
+            },
+            "17": {
+              "n": 29,
+              "send_to_first_p50_ms": 260.12099999934435
+            },
+            "18": {
+              "n": 35,
+              "send_to_first_p50_ms": 368.7360000330955
+            },
+            "19": {
+              "n": 31,
+              "send_to_first_p50_ms": 270.70000005187467
+            },
+            "20": {
+              "n": 40,
+              "send_to_first_p50_ms": 340.815500007011
+            },
+            "21": {
+              "n": 34,
+              "send_to_first_p50_ms": 240.65750002046116
+            },
+            "22": {
+              "n": 30,
+              "send_to_first_p50_ms": 305.2425000059884
+            },
+            "23": {
+              "n": 29,
+              "send_to_first_p50_ms": 367.4260000116192
+            },
+            "24": {
+              "n": 24,
+              "send_to_first_p50_ms": 395.42899999651127
+            }
+          },
+          "inflight3_p50_ms": 455.5610000388697,
+          "inflight1_p50_ms": 421.0820000153035,
+          "all_p50_ms": 397.5875000178348,
+          "hop": {
+            "n_rad_urls": 612,
+            "n_18443": 612,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C4": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 379,
+          "inflight": {
+            "1": {
+              "n": 1,
+              "send_to_first_p50_ms": 419.66999997384846
+            },
+            "2": {
+              "n": 2,
+              "send_to_first_p50_ms": 201.95849999436177
+            },
+            "3": {
+              "n": 2,
+              "send_to_first_p50_ms": 411.81999997934327
+            },
+            "4": {
+              "n": 23,
+              "send_to_first_p50_ms": 420.62600003555417
+            },
+            "5": {
+              "n": 30,
+              "send_to_first_p50_ms": 388.58849997632205
+            },
+            "6": {
+              "n": 41,
+              "send_to_first_p50_ms": 365.53200002526864
+            },
+            "7": {
+              "n": 31,
+              "send_to_first_p50_ms": 268.7110000406392
+            },
+            "8": {
+              "n": 35,
+              "send_to_first_p50_ms": 340.95300000626594
+            },
+            "9": {
+              "n": 31,
+              "send_to_first_p50_ms": 373.42900002840906
+            },
+            "10": {
+              "n": 35,
+              "send_to_first_p50_ms": 338.618999987375
+            },
+            "11": {
+              "n": 40,
+              "send_to_first_p50_ms": 383.0399999860674
+            },
+            "12": {
+              "n": 28,
+              "send_to_first_p50_ms": 348.20200002286583
+            },
+            "13": {
+              "n": 30,
+              "send_to_first_p50_ms": 373.1724999961443
+            },
+            "14": {
+              "n": 22,
+              "send_to_first_p50_ms": 400.3824999963399
+            },
+            "15": {
+              "n": 26,
+              "send_to_first_p50_ms": 415.61499997624196
+            },
+            "16": {
+              "n": 9,
+              "send_to_first_p50_ms": 295.3470000065863
+            },
+            "17": {
+              "n": 21,
+              "send_to_first_p50_ms": 388.472999969963
+            },
+            "18": {
+              "n": 16,
+              "send_to_first_p50_ms": 194.29650000529364
+            },
+            "19": {
+              "n": 35,
+              "send_to_first_p50_ms": 357.7190000214614
+            },
+            "20": {
+              "n": 28,
+              "send_to_first_p50_ms": 280.7469999825116
+            },
+            "21": {
+              "n": 33,
+              "send_to_first_p50_ms": 358.7830000324175
+            },
+            "22": {
+              "n": 25,
+              "send_to_first_p50_ms": 268.7739999964833
+            },
+            "23": {
+              "n": 4,
+              "send_to_first_p50_ms": 306.8630000052508
+            },
+            "24": {
+              "n": 26,
+              "send_to_first_p50_ms": 401.54749996145256
+            }
+          },
+          "inflight3_p50_ms": 411.81999997934327,
+          "inflight1_p50_ms": 419.66999997384846,
+          "all_p50_ms": 360.49399999319576,
+          "hop": {
+            "n_rad_urls": 596,
+            "n_18443": 596,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r6": {
+      "spec": {
+        "run_id": "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r6",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 2,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 1170,
+        "demand_bytes": 1945299552,
+        "origin_bytes": 1216143440,
+        "counts": {
+          "origin_fetch": 729,
+          "cache_hit": 191,
+          "inflight_merge": 250
+        },
+        "bytes": {
+          "origin_fetch": 1216143440,
+          "cache_hit": 317259744,
+          "inflight_merge": 411896368
+        },
+        "saved_fraction": 0.3748297331638927,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.9832134292565947
+        },
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 387,
+          "inflight": {
+            "1": {
+              "n": 1,
+              "send_to_first_p50_ms": 428.5280000185594
+            },
+            "2": {
+              "n": 2,
+              "send_to_first_p50_ms": 320.04200003575534
+            },
+            "3": {
+              "n": 1,
+              "send_to_first_p50_ms": 420.9739999496378
+            },
+            "4": {
+              "n": 19,
+              "send_to_first_p50_ms": 488.3939999854192
+            },
+            "5": {
+              "n": 27,
+              "send_to_first_p50_ms": 451.2969999923371
+            },
+            "6": {
+              "n": 34,
+              "send_to_first_p50_ms": 436.6419999860227
+            },
+            "7": {
+              "n": 25,
+              "send_to_first_p50_ms": 458.91999994637445
+            },
+            "8": {
+              "n": 20,
+              "send_to_first_p50_ms": 433.3205000148155
+            },
+            "9": {
+              "n": 5,
+              "send_to_first_p50_ms": 326.3349999906495
+            },
+            "10": {
+              "n": 25,
+              "send_to_first_p50_ms": 388.894000032451
+            },
+            "11": {
+              "n": 30,
+              "send_to_first_p50_ms": 403.26600000844337
+            },
+            "12": {
+              "n": 32,
+              "send_to_first_p50_ms": 428.31449999357574
+            },
+            "13": {
+              "n": 29,
+              "send_to_first_p50_ms": 402.9069999814965
+            },
+            "14": {
+              "n": 28,
+              "send_to_first_p50_ms": 385.23949999944307
+            },
+            "15": {
+              "n": 37,
+              "send_to_first_p50_ms": 307.0329999900423
+            },
+            "16": {
+              "n": 33,
+              "send_to_first_p50_ms": 362.11300001014024
+            },
+            "17": {
+              "n": 28,
+              "send_to_first_p50_ms": 344.7555000020657
+            },
+            "18": {
+              "n": 35,
+              "send_to_first_p50_ms": 380.57899998966604
+            },
+            "19": {
+              "n": 31,
+              "send_to_first_p50_ms": 316.4689999539405
+            },
+            "20": {
+              "n": 37,
+              "send_to_first_p50_ms": 330.6379999849014
+            },
+            "21": {
+              "n": 29,
+              "send_to_first_p50_ms": 324.64900001650676
+            },
+            "22": {
+              "n": 34,
+              "send_to_first_p50_ms": 360.93199998140335
+            },
+            "23": {
+              "n": 24,
+              "send_to_first_p50_ms": 344.6704999660142
+            },
+            "24": {
+              "n": 23,
+              "send_to_first_p50_ms": 394.0219999640249
+            },
+            "25": {
+              "n": 5,
+              "send_to_first_p50_ms": 331.4859999809414
+            }
+          },
+          "inflight3_p50_ms": 420.9739999496378,
+          "inflight1_p50_ms": 428.5280000185594,
+          "all_p50_ms": 390.3985000215471,
+          "hop": {
+            "n_rad_urls": 616,
+            "n_18443": 616,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C4": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 379,
+          "inflight": {
+            "1": {
+              "n": 1,
+              "send_to_first_p50_ms": 407.8330000047572
+            },
+            "2": {
+              "n": 2,
+              "send_to_first_p50_ms": 327.79999999911524
+            },
+            "3": {
+              "n": 4,
+              "send_to_first_p50_ms": 345.50300001865253
+            },
+            "4": {
+              "n": 21,
+              "send_to_first_p50_ms": 413.2850000169128
+            },
+            "5": {
+              "n": 31,
+              "send_to_first_p50_ms": 396.38599997852
+            },
+            "6": {
+              "n": 37,
+              "send_to_first_p50_ms": 398.2099999557249
+            },
+            "7": {
+              "n": 28,
+              "send_to_first_p50_ms": 277.23549999063835
+            },
+            "8": {
+              "n": 35,
+              "send_to_first_p50_ms": 334.34800000395626
+            },
+            "9": {
+              "n": 17,
+              "send_to_first_p50_ms": 93.35999999893829
+            },
+            "10": {
+              "n": 30,
+              "send_to_first_p50_ms": 270.7694999699015
+            },
+            "11": {
+              "n": 33,
+              "send_to_first_p50_ms": 315.23800001014024
+            },
+            "12": {
+              "n": 33,
+              "send_to_first_p50_ms": 298.9940000115894
+            },
+            "13": {
+              "n": 31,
+              "send_to_first_p50_ms": 293.29699999652803
+            },
+            "14": {
+              "n": 30,
+              "send_to_first_p50_ms": 374.33699998655356
+            },
+            "15": {
+              "n": 26,
+              "send_to_first_p50_ms": 407.69100000034086
+            },
+            "16": {
+              "n": 32,
+              "send_to_first_p50_ms": 386.40650000888854
+            },
+            "17": {
+              "n": 23,
+              "send_to_first_p50_ms": 389.7039999719709
+            },
+            "18": {
+              "n": 9,
+              "send_to_first_p50_ms": 182.4299999861978
+            },
+            "19": {
+              "n": 34,
+              "send_to_first_p50_ms": 389.87049998831935
+            },
+            "20": {
+              "n": 27,
+              "send_to_first_p50_ms": 316.80200004484504
+            },
+            "21": {
+              "n": 24,
+              "send_to_first_p50_ms": 369.9199999682605
+            },
+            "22": {
+              "n": 9,
+              "send_to_first_p50_ms": 248.86200000764802
+            },
+            "23": {
+              "n": 22,
+              "send_to_first_p50_ms": 371.63449998479337
+            },
+            "24": {
+              "n": 4,
+              "send_to_first_p50_ms": 303.1819999741856
+            },
+            "25": {
+              "n": 27,
+              "send_to_first_p50_ms": 389.08100000116974
+            },
+            "26": {
+              "n": 5,
+              "send_to_first_p50_ms": 352.5939999963157
+            }
+          },
+          "inflight3_p50_ms": 345.50300001865253,
+          "inflight1_p50_ms": 407.8330000047572,
+          "all_p50_ms": 368.8590000383556,
+          "hop": {
+            "n_rad_urls": 598,
+            "n_18443": 598,
+            "n_18081": 0,
+            "n_p5rad": 0,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r1": {
+      "spec": {
+        "run_id": "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r1",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 2,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 1165,
+        "demand_bytes": 1937774232,
+        "origin_bytes": 1271777824,
+        "counts": {
+          "origin_fetch": 762,
+          "cache_hit": 172,
+          "inflight_merge": 231
+        },
+        "bytes": {
+          "origin_fetch": 1271777824,
+          "cache_hit": 285339168,
+          "inflight_merge": 380657240
+        },
+        "saved_fraction": 0.34369143577299877,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.9566265060240964
+        },
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 387,
+          "inflight": {
+            "1": {
+              "n": 38,
+              "send_to_first_p50_ms": 46.199999982491136
+            },
+            "2": {
+              "n": 76,
+              "send_to_first_p50_ms": 311.3500000035856
+            },
+            "3": {
+              "n": 477,
+              "send_to_first_p50_ms": 466.39900002628565
+            }
+          },
+          "inflight3_p50_ms": 466.39900002628565,
+          "inflight1_p50_ms": 46.199999982491136,
+          "all_p50_ms": 441.88699999358505,
+          "hop": {
+            "n_rad_urls": 591,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 591,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C4": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 366,
+          "inflight": {
+            "1": {
+              "n": 38,
+              "send_to_first_p50_ms": 31.028499972308055
+            },
+            "2": {
+              "n": 80,
+              "send_to_first_p50_ms": 301.08750000363216
+            },
+            "3": {
+              "n": 455,
+              "send_to_first_p50_ms": 425.3309999476187
+            }
+          },
+          "inflight3_p50_ms": 425.3309999476187,
+          "inflight1_p50_ms": 31.028499972308055,
+          "all_p50_ms": 403.2239999505691,
+          "hop": {
+            "n_rad_urls": 573,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 573,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 1165,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r2": {
+      "spec": {
+        "run_id": "nsdi_N2_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r2",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 2,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 1122,
+        "demand_bytes": 1866867192,
+        "origin_bytes": 1183435352,
+        "counts": {
+          "origin_fetch": 709,
+          "cache_hit": 167,
+          "inflight_merge": 246
+        },
+        "bytes": {
+          "origin_fetch": 1183435352,
+          "cache_hit": 277874064,
+          "inflight_merge": 405557776
+        },
+        "saved_fraction": 0.36608487359394337,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.9779951100244498
+        },
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 379,
+          "inflight": {
+            "1": {
+              "n": 25,
+              "send_to_first_p50_ms": 161.2540000351146
+            },
+            "2": {
+              "n": 66,
+              "send_to_first_p50_ms": 281.43100001034327
+            },
+            "3": {
+              "n": 473,
+              "send_to_first_p50_ms": 492.17000004136935
+            }
+          },
+          "inflight3_p50_ms": 492.17000004136935,
+          "inflight1_p50_ms": 161.2540000351146,
+          "all_p50_ms": 474.34300000895746,
+          "hop": {
+            "n_rad_urls": 564,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 564,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C4": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 370,
+          "inflight": {
+            "1": {
+              "n": 29,
+              "send_to_first_p50_ms": 161.95799998240545
+            },
+            "2": {
+              "n": 84,
+              "send_to_first_p50_ms": 273.1979999807663
+            },
+            "3": {
+              "n": 437,
+              "send_to_first_p50_ms": 467.48599997954443
+            }
+          },
+          "inflight3_p50_ms": 467.48599997954443,
+          "inflight1_p50_ms": 161.95799998240545,
+          "all_p50_ms": 438.6299999896437,
+          "hop": {
+            "n_rad_urls": 550,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 550,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 1122,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r1": {
+      "spec": {
+        "run_id": "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r1",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 3,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          },
+          "C5": {
+            "ip": "192.168.1.195",
+            "user": "C5_2",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null,
+        "C4": null,
+        "C5": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 11,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r2": {
+      "spec": {
+        "run_id": "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r2",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 3,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          },
+          "C5": {
+            "ip": "192.168.1.195",
+            "user": "C5_2",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null,
+        "C4": null,
+        "C5": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r3": {
+      "spec": {
+        "run_id": "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r3",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 3,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          },
+          "C5": {
+            "ip": "192.168.1.195",
+            "user": "C5_2",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null,
+        "C4": null,
+        "C5": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r4": {
+      "spec": {
+        "run_id": "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_radh2_s3_r4",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "rad_h2",
+        "slots": 3,
+        "n": 3,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          },
+          "C5": {
+            "ip": "192.168.1.195",
+            "user": "C5_2",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "https://192.168.1.200:18443/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 2,
+        "demand_bytes": 2048,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1,
+          "inflight_merge": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024,
+          "inflight_merge": 1024
+        },
+        "saved_fraction": 0.5,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null,
+        "C4": null,
+        "C5": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 0,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r1": {
+      "spec": {
+        "run_id": "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r1",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 3,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          },
+          "C5": {
+            "ip": "192.168.1.195",
+            "user": "C5_2",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 116,
+        "demand_bytes": 195979224,
+        "origin_bytes": 195979224,
+        "counts": {
+          "origin_fetch": 116
+        },
+        "bytes": {
+          "origin_fetch": 195979224
+        },
+        "saved_fraction": 0.0,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.38095238095238093
+        },
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null,
+        "C4": null,
+        "C5": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 116,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r2": {
+      "spec": {
+        "run_id": "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r2",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 3,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          },
+          "C5": {
+            "ip": "192.168.1.195",
+            "user": "C5_2",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 1,
+        "demand_bytes": 1024,
+        "origin_bytes": 1024,
+        "counts": {
+          "origin_fetch": 1
+        },
+        "bytes": {
+          "origin_fetch": 1024
+        },
+        "saved_fraction": 0.0,
+        "jaccard_pairwise": {},
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null,
+        "C4": null,
+        "C5": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 3,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r3": {
+      "spec": {
+        "run_id": "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r3",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 3,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          },
+          "C5": {
+            "ip": "192.168.1.195",
+            "user": "C5_2",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 144,
+        "demand_bytes": 244090072,
+        "origin_bytes": 242384104,
+        "counts": {
+          "origin_fetch": 143,
+          "cache_hit": 1
+        },
+        "bytes": {
+          "origin_fetch": 242384104,
+          "cache_hit": 1705968
+        },
+        "saved_fraction": 0.006989092124975898,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.45454545454545453
+        },
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null,
+        "C4": null,
+        "C5": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 143,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r4": {
+      "spec": {
+        "run_id": "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r4",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 3,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          },
+          "C5": {
+            "ip": "192.168.1.195",
+            "user": "C5_2",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 157,
+        "demand_bytes": 265956688,
+        "origin_bytes": 264296568,
+        "counts": {
+          "origin_fetch": 156,
+          "cache_hit": 1
+        },
+        "bytes": {
+          "origin_fetch": 264296568,
+          "cache_hit": 1660120
+        },
+        "saved_fraction": 0.006242069009371932,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.4144144144144144
+        },
+        "jaccard_triple": null
+      },
+      "clients": {
+        "C3": null,
+        "C4": null,
+        "C5": null
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 156,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r5": {
+      "spec": {
+        "run_id": "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r5",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 3,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          },
+          "C5": {
+            "ip": "192.168.1.195",
+            "user": "C5_2",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 1963,
+        "demand_bytes": 3262554296,
+        "origin_bytes": 1714558576,
+        "counts": {
+          "origin_fetch": 1026,
+          "cache_hit": 484,
+          "inflight_merge": 453
+        },
+        "bytes": {
+          "origin_fetch": 1714558576,
+          "cache_hit": 802887816,
+          "inflight_merge": 745107904
+        },
+        "saved_fraction": 0.4744735503399573,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.9729119638826185,
+          "user_C3_0∩user_C5_2": 0.9819004524886877,
+          "user_C4_1∩user_C5_2": 0.9773755656108597
+        },
+        "jaccard_triple": 0.9662162162162162
+      },
+      "clients": {
+        "C3": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 392,
+          "inflight": {
+            "1": {
+              "n": 50,
+              "send_to_first_p50_ms": 32.55849998095073
+            },
+            "2": {
+              "n": 131,
+              "send_to_first_p50_ms": 220.57099995436147
+            },
+            "3": {
+              "n": 496,
+              "send_to_first_p50_ms": 452.1424999984447
+            }
+          },
+          "inflight3_p50_ms": 452.1424999984447,
+          "inflight1_p50_ms": 32.55849998095073,
+          "all_p50_ms": 377.4459999985993,
+          "hop": {
+            "n_rad_urls": 677,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 677,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C4": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 375,
+          "inflight": {
+            "1": {
+              "n": 46,
+              "send_to_first_p50_ms": 112.85149998730049
+            },
+            "2": {
+              "n": 126,
+              "send_to_first_p50_ms": 240.66049998509698
+            },
+            "3": {
+              "n": 478,
+              "send_to_first_p50_ms": 400.6680000165943
+            }
+          },
+          "inflight3_p50_ms": 400.6680000165943,
+          "inflight1_p50_ms": 112.85149998730049,
+          "all_p50_ms": 360.9839999990072,
+          "hop": {
+            "n_rad_urls": 650,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 650,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C5": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 361,
+          "inflight": {
+            "1": {
+              "n": 72,
+              "send_to_first_p50_ms": 62.12800001958385
+            },
+            "2": {
+              "n": 142,
+              "send_to_first_p50_ms": 210.38750003208406
+            },
+            "3": {
+              "n": 421,
+              "send_to_first_p50_ms": 382.1209999732673
+            }
+          },
+          "inflight3_p50_ms": 382.1209999732673,
+          "inflight1_p50_ms": 62.12800001958385,
+          "all_p50_ms": 305.28299999423325,
+          "hop": {
+            "n_rad_urls": 635,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 635,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 1963,
+      "send_to_vite_p50_ms": null
+    },
+    "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r6": {
+      "spec": {
+        "run_id": "nsdi_N3_LRU_coit-40m-sh1-lod_stop_go_g1_viteh1_s3_r6",
+        "cell_id": "n3mux",
+        "method": "LRU",
+        "hop": "vite_h1",
+        "slots": 3,
+        "n": 3,
+        "clients": {
+          "C3": {
+            "ip": "192.168.1.197",
+            "user": "C3_0",
+            "phaseOffset": 0
+          },
+          "C4": {
+            "ip": "192.168.1.196",
+            "user": "C4_1",
+            "phaseOffset": 0
+          },
+          "C5": {
+            "ip": "192.168.1.195",
+            "user": "C5_2",
+            "phaseOffset": 0
+          }
+        },
+        "rad_base": "/_p5rad/",
+        "origin": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com"
+      },
+      "ledger": {
+        "requests": 1843,
+        "demand_bytes": 3065235176,
+        "origin_bytes": 1682181512,
+        "counts": {
+          "origin_fetch": 1006,
+          "inflight_merge": 440,
+          "cache_hit": 397
+        },
+        "bytes": {
+          "origin_fetch": 1682181512,
+          "inflight_merge": 723225424,
+          "cache_hit": 659828240
+        },
+        "saved_fraction": 0.4512063788217469,
+        "jaccard_pairwise": {
+          "user_C3_0∩user_C4_1": 0.9770114942528736,
+          "user_C3_0∩user_C5_2": 0.9638009049773756,
+          "user_C4_1∩user_C5_2": 0.958904109589041
+        },
+        "jaccard_triple": 0.9502262443438914
+      },
+      "clients": {
+        "C3": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 374,
+          "inflight": {
+            "1": {
+              "n": 45,
+              "send_to_first_p50_ms": 66.40800001332536
+            },
+            "2": {
+              "n": 100,
+              "send_to_first_p50_ms": 294.7790000180248
+            },
+            "3": {
+              "n": 496,
+              "send_to_first_p50_ms": 477.1570000157226
+            }
+          },
+          "inflight3_p50_ms": 477.1570000157226,
+          "inflight1_p50_ms": 66.40800001332536,
+          "all_p50_ms": 429.24199998378754,
+          "hop": {
+            "n_rad_urls": 641,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 641,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C4": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 369,
+          "inflight": {
+            "1": {
+              "n": 37,
+              "send_to_first_p50_ms": 143.22999998694286
+            },
+            "2": {
+              "n": 95,
+              "send_to_first_p50_ms": 284.5450000022538
+            },
+            "3": {
+              "n": 472,
+              "send_to_first_p50_ms": 461.4095000142697
+            }
+          },
+          "inflight3_p50_ms": 461.4095000142697,
+          "inflight1_p50_ms": 143.22999998694286,
+          "all_p50_ms": 417.70600000745617,
+          "hop": {
+            "n_rad_urls": 604,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 604,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        },
+        "C5": {
+          "verdict": "VALID",
+          "frames": 2099,
+          "camera_changed": true,
+          "rad_206": 348,
+          "inflight": {
+            "1": {
+              "n": 71,
+              "send_to_first_p50_ms": 40.972999995574355
+            },
+            "2": {
+              "n": 117,
+              "send_to_first_p50_ms": 222.22499997587875
+            },
+            "3": {
+              "n": 410,
+              "send_to_first_p50_ms": 446.34749996475875
+            }
+          },
+          "inflight3_p50_ms": 446.34749996475875,
+          "inflight1_p50_ms": 40.972999995574355,
+          "all_p50_ms": 336.4869999932125,
+          "hop": {
+            "n_rad_urls": 598,
+            "n_18443": 0,
+            "n_18081": 0,
+            "n_p5rad": 598,
+            "treatment_leak": false
+          },
+          "send_to_vite_p50_ms": null
+        }
+      },
+      "treatment_leak": false,
+      "vite_stage_rows": 1844,
+      "send_to_vite_p50_ms": null
+    }
+  },
+  "stop_rule": {
+    "h1_inflight3_p50_ms": 462.84649999870453,
+    "h2_inflight3_p50_ms": 408.4644999966258,
+    "drop_ms": 54.38200000207871,
+    "stop_threshold_ms": 30.0,
+    "range_mux_works": true,
+    "cancel_slot_expansion": false,
+    "cancel_burst_turn": false
+  }
+}

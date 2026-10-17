@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "notes": "Set env vars for remote/lan; local_loopback uses in-process MonitoredAssetServer when asset_port is 0.",
+  "profiles": {
+    "local_loopback": {
+      "description": "127.0.0.1 loopback asset server — client ceiling baseline only",
+      "asset_host": "127.0.0.1",
+      "asset_port": 0,
+      "asset_path": "/examples/streaming-lod/coit-40m-sh1-lod.rad",
+      "use_local_monitored_server": true,
+      "throttle": null
+    },
+    "lan_server": {
+      "description": "LAN asset server — set VRC_LAN_SERVER_HOST",
+      "asset_host_env": "VRC_LAN_SERVER_HOST",
+      "asset_port_env": "VRC_LAN_ASSET_PORT",
+      "default_asset_port": 9200,
+      "asset_path": "/examples/streaming-lod/coit-40m-sh1-lod.rad",
+      "use_local_monitored_server": false,
+      "throttle": null
+    },
+    "remote_cdn": {
+      "description": "Remote CDN/R2 — set VRC_REMOTE_CDN_ASSET_URL",
+      "asset_url_env": "VRC_REMOTE_CDN_ASSET_URL",
+      "use_local_monitored_server": false,
+      "throttle": null
+    },
+    "remote_cdn_throttled_50mbps_100ms": {
+      "extends": "remote_cdn",
+      "throttle": { "bandwidth_mbps": 50, "rtt_ms": 100, "packet_loss_pct": 0 },
+      "throttle_note": "Requires external shaper (tc/netem/clumsy); Chrome DevTools throttle is best-effort only"
+    },
+    "remote_cdn_throttled_10mbps_100ms": {
+      "extends": "remote_cdn",
+      "throttle": { "bandwidth_mbps": 10, "rtt_ms": 100, "packet_loss_pct": 0 }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "trace_id": "master-butterfly-divergent-user0",
+  "user_id": "user0",
+  "workload": "divergent",
+  "created_at": "2026-04-24T04:43:24.607Z",
+  "sample_interval_ms": 100,
+  "start_offset_ms": 504,
+  "samples": [
+    {
+      "t_ms": 504,
+      "position": [
+        -0.15692294889696945,
+        0,
+        2.5324148196759966
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "fov": 60
+    },
+    {
+      "t_ms": 604,
+      "position": [
+        -0.11471603523570285,
+        0,
+        2.5350302021576123
+      ],
+      "quaternion": [
+        0,
+        0.0087,
+        0,
+        0.9999
+      ],
+      "fov": 60
+    },
+    {
+      "t_ms": 704,
+      "position": [
+        -0.07250912157443624,
+        0,
+        2.537645584639229
+      ],
+      "quaternion": [
+        0,
+        0.0174,
+        0,
+        0.9998
+      ],
+      "fov": 60
+    }
+  ]
+}

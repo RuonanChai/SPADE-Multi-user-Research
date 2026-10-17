@@ -10,6 +10,26 @@ crate-type = ["rlib", "cdylib"]
 name = "lod_bench"
 path = "src/main.rs"
 
+[[bin]]
+name = "export_tree"
+path = "src/bin/export_tree.rs"
+
+[[bin]]
+name = "oracle_quickcheck"
+path = "src/bin/oracle_quickcheck.rs"
+
+[[bin]]
+name = "h1_frontier_reuse"
+path = "src/bin/h1_frontier_reuse.rs"
+
+[[bin]]
+name = "real_trace_oracle"
+path = "src/bin/real_trace_oracle.rs"
+
+[[bin]]
+name = "h1_correctness_test"
+path = "src/bin/h1_correctness_test.rs"
+
 [dependencies]
 half = "2"
 ordered-float = "4"
