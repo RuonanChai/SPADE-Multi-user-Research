@@ -1,16 +1,11 @@
-SPADE-Multi-user-Research layout
+SPADE-Multi-user-Research layout (reproduction tree)
 
-experiments/                 latest sealed SPADE campaign (preferred entry)
-  EXPERIMENT_STEPS.md        English research steps
-  runtime_frozen/            hashed proxy/handoff/cache/worker sources
+experiments/                 only sealed campaign entry used for reproduction
+  EXPERIMENT_STEPS.md        English protocol
+  runtime_frozen/            hashed proxy / handoff / cache / worker sources
   protocol/                  SOURCE_LOCK, manifests, integrity CSVs
   contracts/                 visual matrices + scene contracts
-  metrics/                   P1/P2/equal-cache/post-eviction/visual/p50
-  sessions/                  SESSION.json only (no PNG)
+  metrics/                   P1 / P2 / equal-cache / post-eviction / visual / p50
+  sessions/                  SESSION.json only (no screenshots)
 
-runtime/www28x/              earlier WWW research sources
-vendor/                      reviewed production sources + provenance
-paper/                       draft TeX trees
-writing/                     notes and evaluation templates
-
-Excluded on purpose: figures, screenshots, draw*/plot* Python scripts.
+Excluded: figures, screenshots, draw*/plot* scripts, obsolete www28x/vendor drafts.

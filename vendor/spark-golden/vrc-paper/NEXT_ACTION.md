@@ -1,1 +1,0 @@
-Canary canary1 failed after retries. Inspect D:\Program\spark-main\spark-main\vrc-paper\runner_logs\orchestrator_20260509_185659.out.log and runner_logs\canary1_*.err.log. Re-launch master after manual fix.

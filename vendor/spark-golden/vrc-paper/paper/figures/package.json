@@ -1,9 +1,0 @@
-{
-  "name": "vrc-paper-figures",
-  "private": true,
-  "type": "module",
-  "dependencies": {
-    "@resvg/resvg-js": "^2.6.2",
-    "pdf-lib": "^1.17.1"
-  }
-}
