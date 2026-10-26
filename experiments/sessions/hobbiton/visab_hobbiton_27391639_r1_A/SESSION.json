@@ -1,0 +1,261 @@
+{
+  "run_id": "visab_hobbiton_27391639_r1_A",
+  "scene": "tijerin_w6_hobbiton-lod",
+  "seed": 27391639,
+  "rep": 1,
+  "arm": "A",
+  "method": "S3-FIFO",
+  "handoff": false,
+  "pair_id": "hobbiton_27391639_r1",
+  "finished_at": "2026-10-25T12:39:11.412Z",
+  "clients_done": 3,
+  "worker_error": null,
+  "capture_during_window": false,
+  "traffic": {
+    "origin_bytes": 237678064,
+    "peer_bytes": 0,
+    "requests": 567
+  },
+  "replay_window": {
+    "start_ms": 1792931873357,
+    "end_ms": 1792931943359,
+    "origin_bytes": 113955544,
+    "peer_bytes": 0,
+    "requests": 276,
+    "post_window_origin_bytes": 0
+  },
+  "structural_ok": true,
+  "clients": [
+    {
+      "client": "C3",
+      "pngs": 0,
+      "unique_hashes": 0,
+      "camera_moved": true,
+      "framebuffer_changed": false,
+      "post_window_png": true,
+      "post_window_ok": true,
+      "rows": [
+        {
+          "checkpoint_s": 2,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 5,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 10,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0,
+            0.20000000000000007,
+            0.8
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 20,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 40,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.5925,
+            0.39780000000000004,
+            0.5844
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 60,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.6000000000000001,
+            0.4,
+            -0.6000000000000001
+          ],
+          "false_blank": false
+        }
+      ]
+    },
+    {
+      "client": "C4",
+      "pngs": 0,
+      "unique_hashes": 0,
+      "camera_moved": true,
+      "framebuffer_changed": false,
+      "post_window_png": true,
+      "post_window_ok": true,
+      "rows": [
+        {
+          "checkpoint_s": 2,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 5,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 10,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0,
+            0.20000000000000007,
+            0.8
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 20,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.7920000000000001,
+            0.20000000000000007,
+            0.008899999999999996
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 40,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.5925,
+            0.39780000000000004,
+            0.5844
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 60,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.6000000000000001,
+            0.4,
+            -0.6000000000000001
+          ],
+          "false_blank": false
+        }
+      ]
+    },
+    {
+      "client": "C5",
+      "pngs": 0,
+      "unique_hashes": 0,
+      "camera_moved": true,
+      "framebuffer_changed": false,
+      "post_window_png": true,
+      "post_window_ok": true,
+      "rows": [
+        {
+          "checkpoint_s": 2,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 5,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 10,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0,
+            0.20000000000000007,
+            0.8
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 20,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 40,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.6000000000000001,
+            0.4,
+            0.6000000000000001
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 60,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.6000000000000001,
+            0.4,
+            -0.6000000000000001
+          ],
+          "false_blank": false
+        }
+      ]
+    }
+  ]
+}

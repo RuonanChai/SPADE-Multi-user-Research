@@ -1,0 +1,980 @@
+1          Evicted, Yet Available: SPADE for Cross-Viewer Web 3DGS                                                                                                                    59
+
+2                                  Delivery                                                                                                                                           60
+
+3                                                                                                                                                                                     61
+
+4                                                                                                                                                                                     62
+
+5                                  Anonymous Author(s)                                                                                                                                63
+
+6                                                                                                                                                                                     64
+
+7 Abstract                                                                      First fetch Origin refetch Residual window                                                            65
+
+8   Proxy eviction can remove an HTTP range from shared memory                                                                                                                        66
+
+9                                                                            2                                                                        2     Verified                  67
+                                                                                          Origin
+                                                                                         refetch
+
+                                                                             1
+    while a recent viewer still holds its exact bytes. SPADE makes this      Origin transfers                                                               handoff
+                                                                                / range
+10 residual a usable source by retaining trusted range identity beyond                                                                                                                68
+                                                                                                                                    Origin transfers
+11 payload residence and validating endpoint replies before delivery                                                                    / range                                       69
+
+12 or admission. It extends supply beyond completed-cache hits and                                                                                    1                               70
+
+13 in-flight sharing without changing S3-FIFO replacement. Six paired                                                                                          Residual               71
+
+14 physical HTTP replays preserve scheduled demand and reduce ori-                                                                                             window                 72
+
+15 gin payload by 54.5% to 59.0% on Coit and 41.6% to 42.4% on Poland        0                                                                        0                               73
+
+16 at a 50 MiB proxy. Endpoint supply nearly replaces the avoided               A  E                     B                                               A  E         B               74
+
+                                                                                Logical event order                                                      Logical event order
+
+17 origin bytes, and HTTP p50 improves in every pair, while p99 re-                                                                                                                   75
+
+18 gresses in three. Verified browser audits establish 707 post-eviction        (a) Proxy-only delivery                                               (b) Verified residual delivery  76
+
+19 transfers with two viewers and 3,488 with three; 709 three-viewer                                                                                                                                            77
+
+20 transfers recover ranges from a residence populated by an earlier         Figure 1: A range remains recoverable after proxy eviction.
+                                                                                                                                                                                                                78
+
+21 handoff. Separate reactive-browser and visual measurements iden-                                                                                                                   79
+
+22 tify how source recovery interacts with executed work. Twelve                                                                                                                      80
+
+23 matched visual pairs provide 432 frame observations: the visual                                                                                                                    81
+
+24 cohort increases full-log origin by 39.23% on Coit and 2.29% on           digest before delivery or admission. Endpoint retention and probe 82
+                                                                             waiting are finite, and origin fallback remains available. A candidate 83
+25 Poland and includes a severe early quality deficit. Together, the re-     endpoint supplies bytes; the proxy's retained origin-derived identity 84
+
+26 sults demonstrate practical verified Range recovery for constrained       determines whether those bytes are acceptable.
+
+27 proxies and identify the workload and quality conditions that de-                                                                                                                  85
+
+28 termine its application value.                                            This source extension complements bounded cache reten- 86
+
+29                                                                           tion [42]. Endpoint assistance, directories, hashing and fallback 87
+
+30 Keywords                                                                  have substantial precedent [16, 47, 50]. Our contribution is their 88
+                                                                             precise use across the proxy-residence boundary, with auditable 89
+31                                                                           Range ancestry and separate controls for scheduled demand and 90
+                                                                             storage placement. These controls distinguish an additional supply 91
+        Web content delivery, 3D Gaussian Splatting, byte-range caching,
+
+32
+
+        client-assisted distribution, temporal reuse
+
+33
+
+34 1 Introduction                                                            source from a cache-policy effect or an apparent traffic reduction 92
+
+35                                                                           caused by less executed work.                                                                            93
+
+36 Web 3D Gaussian Splatting progressively retrieves spatial detail          Recoverability beyond residence. The design exposes a finite 94
+
+37 through HTTP byte ranges [18, 30, 34]. Viewers need overlapping           interval in which another viewer can serve an accepted range after 95
+
+38 ranges at different times as their navigation and refinement progress     the proxy has released it. Event audits establish this mechanism 96
+
+39 diverge. A shared proxy can finish serving one viewer and evict           with two and three viewers. Among 3,488 three-viewer transfers, 97
+
+40 the response before another viewer requests it. The first viewer          709 follow a residence populated by an earlier verified handoff, 98
+
+41 may still retain the exact bytes. The scientific problem is therefore     demonstrating repeated reuse across eviction cycles.                                                     99
+
+42 to determine when content that has left proxy memory remains a            Physical offload under controlled demand. Six real HTTP 100
+
+43 trustworthy source, and how that source changes delivery under a          pairs preserve request-sequence hashes and scheduled demand. At 101
+
+44 fixed proxy budget.                                                       the same 50 MiB proxy, origin bytes fall in every pair by 41.6% to 102
+
+45  Figure 1 isolates this opportunity. A obtains the range, E marks         59.0%, and client HTTP medians improve in all six. The measured 103
+
+46 proxy eviction, and B requests it while A retains a usable residual.      endpoint supply accounts for almost all displaced origin payload. 104
+
+47 Completed-cache hits have ended, and there is no compatible out-          Thus the benefit survives actual Ethernet transfers and content 105
+
+48 standing transfer to join. Ordinary miss resolution must fetch the        verification rather than depending on a zero-delay model.                                                106
+
+49 range again. A resolver that preserves its trusted identity can in-       An application-level operating boundary. Reactive browsers 107
+
+50 stead recover the endpoint copy. The useful state survives payload        and twelve matched visual pairs test how this source benefit in- 108
+
+51 residence because identity and supply are maintained separately.          teracts with request feedback and visible progress. The original 109
+
+52  SPADE implements this separation at exact Range granularity.             browser cohort has lower origin traffic but slower request medi- 110
+
+53 The proxy first checks its S3-FIFO cache and compatible in-flight         ans; the completed visual cohort has higher full-log origin and an 111
+
+54 work, then consults recent holders. It validates the selected URL,        adverse early session. A modeled central cache is also stronger at 112
+
+55 byte interval, representation, length and origin-derived SHA-256          equal configured payload. These results locate SPADE's advantage 113
+
+56  WWW 2027, Dublin, Ireland                                                at constrained proxy storage and distinguish verified offload from 114
+
+57  2027.                                                                    the additional conditions needed for browser-quality gains.                                              115
+
+58                                                                        1                                                                                                           116
+     WWW 2027, May 10­14, 2027, Dublin, Ireland                                                                                                 Anon.
+
+117 2 From Residence to Verifiable Supply                                                                                       Origin                 175
+
+118 2.1 Why retention alone leaves an opportunity                                                        trusted body; proxy hashes fallback           176
+
+119                                                                                                                                                    177
+
+120 A cache miss can mean first demand, a completed body that was              SPADE shared proxy                         Proxy-held SHA-256
+                                                                                                                                                                                  178
+                                                                                                   miss                   miss
+121 evicted, or an available body outside the proxy. Replacement policies                                                                              179
+                                                                                          1 Cache        2 In-flight            3 Holder
+122 answer which local bodies to retain. They cannot turn a departed                                                                                   180
+                                                                               S3-FIFO 50 MiB            compatible join        lookup + probe
+123 body into a current cache hit. Historical FIFO, LRU, SIEVE and
+                                                                                                                                                       181
+
+124 S3-FIFO measurements illustrate why changing victim order is not             5 Deliver via proxy     valid                4 Validate               182
+                                                                               Admit under cache policy                    identity + range            183
+125 a scene-independent solution: S3-FIFO has the lowest mean origin                                                      length + SHA-256
+
+126 bytes on Coit, while FIFO and LRU are lower on Poland. Those                                                                                       184
+
+127 reactive runs are exploratory rather than controls for the later                               Endpoint residual store                             185
+
+128 physical replay. Appendix A.6 retains every policy and the earlier                             15 s / 160 MiB per viewer                           186
+
+129 adaptation contrasts.                                                                                                                              187
+
+130  The failed inference is more general than a particular eviction           Requester                                        Earlier viewer         188
+
+131 policy. Increasing a range's local residence helps only if another                                                                                 189
+
+132 request arrives before its next eviction and the displaced body is not     Figure 2: Source selection and proxy-side validation.                   190
+
+133 more valuable. Endpoint residuals expose a different state: the proxy                                                                              191
+
+134 may have discarded the payload even though its last recipient has                                                                                  192
+
+135 not. This supply is transient and request-dependent. Its existence         This current-state predicate is not an eviction-ancestry proof. The 193
+
+136 does not justify reserving additional proxy bytes or protecting every      reported post-eviction subset additionally requires admission, evic- 194
+
+137 previously shared body.                                                    tion before the request, a different supplier and accepted content. 195
+
+138                                                                            The latest admission may itself follow an earlier handoff. Ancestry 196
+
+139 2.2 Three tests that a reuse claim must pass                               is therefore tracked by residence episode rather than assumed to 197
+
+140 The first test is identity. A matching byte interval does not prove a      begin at origin.                                                        198
+
+141 matching representation. An endpoint can return a stale version, an                                                                                199
+
+142 incomplete body or equal-length corruption. Claimed validators and         3.2 Source priority and acceptance                                      200
+
+143 directory membership identify candidates; they do not authenticate         Figure 2 separates candidate discovery from accepted delivery. The 201
+
+144 those bodies. Trusted range identity must therefore remain available       proxy first serves a completed S3-FIFO entry, then joins compatible 202
+
+145 after the proxy releases the payload.                                      in-flight work. Only a miss in both reaches the holder directory. 203
+
+146  The second test is ancestry. A holder response can follow an              This avoids an endpoint probe when existing proxy work suffices. 204
+
+147 origin fetch, a previous verified handoff or concurrent work. To           A successful holder fetch follows ordinary cache admission and can 205
+
+148 call it post-eviction reuse, the evidence must identify a prior proxy      serve joined followers; it receives no permanent retention privilege. 206
+
+149 admission, a later eviction, a subsequent absent-key request from          For candidate body , acceptance requires correct representation 207
+
+150 another viewer and accepted content. An in-flight follower is a            and partial-response semantics , expected length  and digest 208
+
+151 beneficiary of an existing retrieval, not another independent source       equality:                                                               209
+
+152 transfer.                                                                              (, ) =  (, )  (, )  [SHA256() =  ].                                210
+
+153  The third test is benefit under a stated denominator. In a reactive                                                                        (2)
+                                                                                                                                                              211
+
+154 renderer, slower completion can suppress later requests, reducing          HTTP validators select a representation; they do not replace a 212
+
+155 windowed origin traffic without equivalent visual progress. Con- range-body hash [10, 11]. Multipart ETags are not treated as content 213
+
+156 versely, lower source cost may coexist with more executed work. hashes. Missing trusted identity, inconsistent range metadata or 214
+
+157 The serving comparison must first fix scheduled demand; the appli- a failed body check prevents acceptance. Validation occurs before 215
+
+158 cation comparison must then retain its own demand, timing and              requester delivery and cache admission. The guarantee assumes 216
+
+159 quality observations. This progression motivates our controlled            trustworthy origin bytes, coordinator and digest state; it does not 217
+
+160 HTTP replay and the separate paired visual cohort. Neither is re- establish confidentiality or authorization.                                      218
+
+161 placed by a favorable cache-hit rate or a nonblack screenshot.             Range granularity gives the source extension a useful fit with 219
+
+162                                                                            progressive Web delivery. Each viewer has already selected a partic- 220
+
+163 3 SPADE Design                                                             ular interval and representation. SPADE can satisfy that selection 221
+
+164 3.1 Trusted identity beyond payload residence                              from a recent recipient without re-encoding the scene, choosing 222
+
+165                                                                            a new quality layer or fetching speculative content. Retaining the 223
+
+166 Let  identify a canonical URL, inclusive byte interval and selected        trusted identity preserves the meaning of the response even when 224
+
+167 origin representation. The proxy retains the origin-derived digest         its proxy body has gone. The body remains subject to the original 225
+168  separately from completed-body residence. Let  () denote
+169 a completed cache entry,  () compatible outstanding work and               50 MiB cache budget, while the endpoint contributes a separately 226
+170 , () a candidate retained by viewer . For requester  , the addi-
+                                                                               bounded copy.                                                           227
+171 tional source opportunity is
+                                                                               The same rule supports continued reuse. A verified response can 228
+
+                                                                               be delivered, admitted under the existing policy and later supplied 229
+
+172            ¬ ( )  ¬ ( )  , ( ).                                 (1)        again after another eviction. Its provenance remains anchored in 230
+
+173                                                                            origin-derived identity through these residence episodes. The 709 231
+
+174                                                                         2                                                                          232
+     Evicted, Yet Available: SPADE for Cross-Viewer Web 3DGS Delivery                                      WWW 2027, May 10­14, 2027, Dublin, Ireland
+
+233 transfers following a handoff-populated residence demonstrate this         Table 1: Evidence cohorts and comparison boundaries.                    291
+
+234 propagation. The mechanism therefore recovers value from earlier                                                                                   292
+
+235 origin work across both viewers and eviction cycles, with content          Cohort Comparison and unit        Readout boundary                      293
+
+236 checked before delivery.                                                                                                                                                                                      294
+
+                                                                               Model Six fixed sequences; three Scheduled demand; modeled
+237                                                                                                                                                    295
+                                                                                         sources                 bytes
+238 3.3 Bounded residual opportunity
+                                                                               HTTP Six physical A/B pairs; no Full workload; client HTTP ser- 296
+
+239 Each viewer retains raw response bodies for at most 15 seconds                       Chrome                  vice                                  297
+
+240 within 160 MiB. Holder records can become stale when bodies ex-            Browser 12 N=3 and six N=2 pairs  Response-window origin; reac- 298
+
+241 pire, capacity evicts them or a viewer leaves. A probe has a config-                                         tive requests                         299
+
+242 ured 1,500 ms budget before origin fallback. This bounds intended          Visual 12 matched N=3 pairs; 432 Full-log origin; GPU-matched 300
+
+243 probe waiting, not the lifetime of a browser request; scheduling                     frames                  checkpoints                           301
+
+244 can extend observed wall-clock waits.                                                                                                              302
+
+245  For copies already present at proxy eviction , receipt and discard                                                                                303
+
+246 times obey ,   and ,  , + . Their remaining opportunity                                                                                            304
+
+247 envelope is                                                                                                                                        305
+
+248                                                                            4 Experimental Methodology                                              306
+
+249                 (, , ) = max(, - )+   .                            (3)                                                                             307
+
+                                                                               4.1 Cohorts and counterfactuals
+
+250                                                                                                                                                    308
+
+251 The envelope is zero without an eligible holder. Additional holders        The main proxy allocation is 50 MiB with 100 completed entries. 309
+
+252 can change which ranges survive, but cannot extend these copies            SPADE adds up to 160 MiB per viewer for 15 seconds. With three 310
+
+253 beyond one lease. Later receipts form new episodes. Reachability           viewers, configured payload totals 530 MiB. The central control 311
+
+254 and validation narrow the opportunity further. Trusted identities          places that total at the proxy. Capacity is not occupancy or process 312
+
+255 and directory records can outlive bodies, so a payload cap is not a        RSS, and equal configured bytes do not imply equal resource cost. 313
+
+256 bound on metadata occupancy.                                               Modeled fixed demand. Six immutable request sequences drive 314
+
+257                                                                            cold small-proxy, SPADE and central-cache models. Keys, order 315
+                                                                               and offsets are fixed within a sequence. Local modeled supply has 316
+258 3.4 Source savings and service savings differ
+
+259 A successful holder can replace origin payload without accelerating        zero completion delay. This comparison isolates source bytes and 317
+
+260 completion. For a fixed request population, let  be probe success          storage placement; it is not a physical latency baseline.               318
+
+261 probability,  successful holder cost including validation,  added          Physical fixed-demand HTTP. Three Ethernet clients replay 319
+
+262 failed-probe waiting and  the common counterfactual origin mean            six scheduled request sequences through the frozen proxy and real 320
+
+263 in both success strata. With unchanged fallback origin service, a          origin. Each sequence runs proxy-only before SPADE. Both arms 321
+
+264 probe lowers expected completion only when                                 preserve the full sequence hash, scheduled offsets and demand bytes. 322
+
+265                                                                            Retained responses and holder replies traverse the real endpoint 323
+
+266                  ( - ) > (1 - ) .                                  (4)     path and digest gate. All twelve executions finish without client er- 324
+
+267 The condition is explanatory, not fitted. Our holder timer stops           rors. Fixed scheduled demand does not imply identical proxy arrival 325
+268 before hashing, accepted counts do not define all eligible probes,
+269 and physical origin service can change between arms. We therefore          times, queues or cache state. Fixed A-then-B order can contain tem- 326
+270 measure complete client HTTP distributions rather than substitute
+271 conditional medians into an expectation. A finite budget selects a         poral drift. Identity with the older model trace is source-reported 327
+272 tradeoff; it is not established as optimal.
+                                                                               rather than independently reconstructed from shared hashes.             328
+273
+                                                                               Original reactive browsers. Three Ethernet browsers use zero, 329
+
+                                                                               five and ten-second starts on Coit and synchronized starts on 330
+
+                                                                               Poland. Each scene has one camera trajectory and three execution 331
+
+274 3.5 Implementation                                                         seeds, with two repetitions and balanced treatment order, produc- 332
+
+275 A range-aware shared proxy is interposed between Spark 2.0                 ing twelve pairs. Seeds repeat demand along the same trajectory; 333
+
+276 browser sessions1 and remote object storage. Endpoint stores               they are not independent navigation paths. Six separate central- 334
+
+277 retain raw fetched responses outside the proxy replacement pool.           cache sessions provide physical context without entering paired 335
+
+278 Viewer identity is maintained separately from loopback-facing              inference. The N=2 cohort has six pairs, proxy-only before SPADE, 336
+
+279 services. Cache hits, compatible joins, accepted holder fetches,           removes the third endpoint and retains Coit's zero and five-second 337
+
+280 rejected candidates and origin responses have separate counters.           offsets.                                                                338
+
+281  The proxy-only and SPADE treatments retain the same 50 MiB,               Completed visual browsers. Twelve matched N=3 pairs com- 339
+
+282 100-entry S3-FIFO configuration. The treatment enables the vali-           prise 24 sessions, three viewers and six checkpoints per viewer. 340
+
+283 dated holder path without the earlier queue-allocation controller.         The resulting 432 frame observations are nested within session 341
+
+284 The centralized capacity control instead uses 530 MiB and 1,024 en-        pairs. This cohort reports full-proxy-log origin and holder payload, 342
+
+285 tries, avoiding an object-count cap before the larger byte allocation      paired SSIM and PSNR, and first observed qualifying checkpoints. 343
+
+286 is used. The measured mechanism therefore changes supply rather            Runtime hashes, object versions, request-start demand, reset his- 344
+
+287 than simultaneously changing eviction and source selection.                tories and full source partitions are not available for cross-cohort 345
+
+288                                                                            reconciliation. The cohort is not pooled with the earlier browser 346
+
+289  1Spark 2.0 paging documentation.                                          study or treated as its equal-work repetition.                          347
+
+290                                                                         3                                                                          348
+     WWW 2027, May 10­14, 2027, Dublin, Ireland                                                                                                                         Anon.
+
+349 4.2 Measurement clocks and source ledgers                                   A: S3-FIFO                  Origin                                          Local cache/inflight  407
+                                                                                B: SPADE
+350 Original-browser origin bytes use responses within the union of                                         Holder                                                                408
+                                                                                   3
+351 viewer measurement windows, about 79.7 seconds on N=3 Coit                                                                                        2                           409
+
+352 and 70.1 on Poland. N=2 unions last about 75.0 and 70.0 seconds.            Delivered, GB                                                                                     410
+                                                                                                                                       Delivered, GB
+353 Demand uses request starts. Transfers crossing the boundary make            2                                                                                                 411
+
+354 those totals differ. Browser completion covers completed requests                                                                                 1                           412
+
+355 and is converted from Chrome seconds to milliseconds. Full-log              1                                                                                                 413
+
+356 browser exports are reported separately from response-window                                                                                                                  414
+
+357 totals.                                                                     0                                                                     0                           415
+
+358  For one selected request-start workload, delivered payload parti-                    1      2      3                                                   1        2  3         416
+
+359 tions as                                                                                     Seed                                                          Seed               417
+
+360                       =  +  +  + ,                                  (5)                                                                                                       418
+
+361                                                                             Figure 3: Coit real HTTP Figure 4: Poland real HTTP 419
+
+362 for completed cache, in-flight joining, holder and origin. A supplier       sources.                            sources.                                                      420
+
+363 fetch is counted once, while joined followers still receive bytes. No                                                                                                         421
+
+364 all-event classification is inferred merely because this byte partition                                                                                                                                        422
+
+365 closes. GB and MB are decimal traffic units; MiB denotes binary                The first sampled SSIM of at least 0.90 is a qualifying checkpoint
+                                                                                                                                                                                                                   423
+366 configured capacity. Headers, retransmissions and traffic summed
+                                                                                along this trace, not continuous time to a fixed image target. Later
+367 across all hops are outside this payload ledger.                                                                                                                                                               424
+
+368  Client HTTP service, origin TTFB and holder waiting use dif-               poses can fall below the threshold again. Unobserved 0.95 or 0.98
+                                                                                                                                                                                                                   425
+369 ferent clocks. Origin TTFB starts at the origin request; successful
+                                                                                qualifications remain censored at the final sample. We do not in-
+370 holder waiting includes body retrieval but stops before SHA-256.                                                                                                                                               426
+
+                                                                                terpolate a readiness duration between changing poses or assert
+                                                                                                                                                                                                                   427
+
+                                                                                quality equivalence without a specified margin and uncertainty.
+                                                                                                                                                                                                                   428
+
+371 Neither is whole-browser completion. Marginal percentiles cannot            5 Evaluation                                                                                      429
+
+372 be added or subtracted to recover unmeasured hashing, queueing                                                                                                                430
+
+373 or rendering costs.                                                         The evaluation follows the delivery chain: origin supply under 431
+
+374                                                                             fixed demand, complete HTTP service, reactive-browser traffic and 432
+
+375 4.3 Visual targets and statistical units                                    latency, matched visual quality, and source/resource costs. Each 433
+
+376 Reference qualification uses independent repeated renders for the           claim retains its own cohort and denominator. Contemporary nu- 434
+377 same scene, GPU and renderer. Every reference pair exceeds SSIM
+                                                                                meric comparisons include only S3-FIFO, SPADE and the modeled 435
+
+378 0.995 at all six checkpoints. Three execution seeds share that refer-       central-capacity control. Historical FIFO, LRU and SIEVE are not 436
+379 ence set only within the same scene and GPU. The 2-second and
+                                                                                inserted into newer experiments where they were not executed.                                     437
+
+380 5-second captures have the same pose; later checkpoints contain                                                                                                               438
+
+381 changing poses.                                                             5.1 Origin Payload under Matched Demand                                                           439
+
+382  Reference stability is distinct from completeness. On Coit at 20           Physical source substitution. Figures 3 and 4 show actual HTTP 440
+
+383 and 60 seconds, the default 256-page renderer retains 256 of 284            replay. Both arms receive the same scheduled workload in each pair, 441
+
+384 requested pages. A temporary 384-page cap reaches 284 of 284, with          so lower origin cannot be explained by fewer scheduled requests. 442
+
+385 SSIM 0.999984 and 0.999989 relative to default-cap images. Both             Origin reductions span 54.5% to 59.0% on Coit and 41.6% to 42.4% 443
+
+386 reference and treatment keep 256 pages. Poland is view-closed at            on Poland. Their median paired reductions are 57.1% and 41.8%.                                    444
+
+387 all checkpoints. A premature Poland C4 repeat with SSIM 0.909 is            Across the six pairs, baseline origin supplies 12,905,432,536 bytes 445
+
+388 excluded before treatment comparison; its later independent repeat          and SPADE origin supplies 6,098,802,088. The avoided 6,806,630,448 446
+
+389 qualifies.                                                                  bytes are accompanied by 6,815,965,032 bytes of endpoint supply. 447
+
+390  Let  () be SSIM against the matched GPU reference for                      At equal demand with no baseline holder path, Equation 5 gives                                    448
+
+              ,
+
+391 method , session-pair unit , viewer  and checkpoint . The                                 -      =      +  (    -      )  +                          (  -   ) .                      449
+
+                                                                                                                                                                           (8)
+                                                                                                                                                                                         450
+392 primary quality difference first averages viewers within a pair:
+
+393                               3                                             The 9,334,584-byte excess of holder delivery is exactly accounted 451
+
+394                      1                                                      for by cache and in-flight changes. Thus endpoint upload nearly 452
+395
+                       ( ) = 3 =1           (    )  -           ( )  .  (6)
+
+                                                       
+                                         ,             ,
+                                                                                replaces avoided origin payload; the bytes do not disappear from the 453
+
+396                                                                             network. Origin plus holder supply under SPADE is slightly larger 454
+
+397 For each scene and checkpoint we report all six   , their observed          than baseline origin supply. This is a supplier-payload comparison, 455
+
+398 range, median and signs. The least-viewer score is formed sepa-             not a measurement of every hop, header or retransmission.                                         456
+
+399 rately in each arm:                                                         The capacity alternative. Figures 5 and 6 retain the stronger 457
+
+400                             (  )  =  min           (  )  .          (7)     central-memory comparator under modeled fixed demand. SPADE 458
+401
+                          ,min                   
+
+                                                   ,
+
+                                                                                reduces origin by 54.7% to 59.0% on Coit and 41.2% to 41.4% on 459
+
+402 Its viewer identity can change between arms. A difference of these          Poland in that separate model cohort. Central 530 MiB uses 36.2% 460
+
+403 minima is not the minimum of paired viewer differences. The inde- to 47.6% fewer origin bytes than SPADE in every sequence. These 461
+
+404 pendent comparison unit is a session pair; neither 432 frames nor           are source-byte results with zero modeled local delay, not physical 462
+
+405 thousands of verifier events supply that many independent trials.           HTTP latency measurements.                                                                        463
+
+406                                                                          4                                                                                                    464
+     Evicted, Yet Available: SPADE for Cross-Viewer Web 3DGS Delivery                                                              WWW 2027, May 10­14, 2027, Dublin, Ireland
+
+465                      S3-FIFO SPADE                                    Central cache               Each dot: one paired origin-byte change; 6 pairs per scene               523
+
+466                      50 MiB 50 MiB + viewers 530 MiB                                                                                                                                            524
+                                                                                                                                                    New: full proxy log
+467                                                                                                           Old: response window
+                                                                                                                                                                                                    525
+
+468       3                                                                                                                                                                    526
+
+469  Origin, GB                                                      1.0                              Coit                                  Coit                               527
+                                                         Origin, GB
+470       2                                                                                                                                                                    528
+
+471                                                                  0.5                              Poland                                Poland                             529
+                      1
+472                                                                                                                                                                            530
+
+473       0                                                          0.0                                                                                                       531
+
+474                      1    2         3                                        1  2         3               -60  0  +50                           -60  0      +50            532
+
+475                           Sequence                                              Sequence                    Origin change (%)                   Origin change (%)          533
+                                                                                                                SPADE - S3-FIFO
+                                                                                                                                                    SPADE - S3-FIFO
+
+476                                                                                                                                                                            534
+
+477 Figure 5: Coit modeled capac- Figure 6: Poland modeled ca-                                        Figure 9: Original browser Figure 10: Visual cohort full 535
+
+478 ity.                                       pacity.                                                windows.                            logs.                                536
+
+479                                                                                                                                                                            537
+
+480                                                                                      B: SPADE     Table 2: Pooled browser origin change, B minus A, %.                     538
+                  A: S3-FIFO
+                                                                                                                                                                               539
+481
+
+482       Coit-1                                                     Coit-1                                                                                                    540
+
+483       Coit-2                                                     Coit-2                                     Cohort and accounting scope Coit Poland                        541
+
+484       Coit-3                                                         Coit-3                                 Original, response window -61.55 -26.22                        542
+                                                                     Poland-1
+485       Poland-1                                                   Poland-2                                   Original, full proxy log         -53.71 -19.30                 543
+                                                                     Poland-3
+486       Poland-2                                                                                              Visual, full proxy log           +39.23 +2.29                  544
+
+487       Poland-3                                                                                                                                                             545
+
+488                                                                                                   5.3 Reactive Origin Traffic across Cohorts                               546
+
+489                      0    80        160                               -40          0      40                                                                               547
+
+490                           Service p50, ms                                       p99 B - A, ms     The original N=3 browser cohort reduces response-window origin 548
+
+491                                                                                                   by 55.3% to 67.2% on Coit and 17.6% to 36.6% on Poland. Its request- 549
+
+492 Figure 7: Physical HTTP p50. Figure 8: Physical HTTP p99                                          start demand is only 66.0% to 94.4% of baseline. These are observed 550
+
+493                                            change.                                                operating outcomes rather than equal-work origin effects. Figure 9 551
+
+494                                                                                                   retains the paired relative changes.                                     552
+
+495                                                                                                   The completed visual cohort reverses the pooled origin result. 553
+
+496                                                                                                   Coit baseline supplies 5,937,050,584 origin bytes and SPADE 554
+
+            The control changes the deployment conclusion. Residual sup-                              8,266,196,848, an increase of 39.23%; all six pairs increase. Poland 555
+
+497                                                                                                   supplies 3,626,158,040 and 3,709,340,768 bytes, an increase of 2.29%, 556
+
+        ply helps a proxy whose own body storage stays at 50 MiB. It does                             with four pairs higher and two lower. Reported SPADE holder 557
+
+498                                                                                                   supply is 493,887,528 bytes on Coit and 12,247,888 on Poland. These 558
+
+        not outperform concentrating the same total configured payload                                positive source contributions coexist with higher origin totals.         559
+
+499                                                                                                   Table 2 rules out a window-only explanation. The original co- 560
+
+        at the proxy. The entry limit is raised to 1,024 in the central con-
+
+500
+
+        trol so a 100-object constraint does not preempt the byte-capacity
+
+501
+
+        comparison.
+
+502
+
+503                                                                                                   hort still has less origin supply in its own full-log export. The 561
+
+504 5.2 HTTP Service and Tail Cost                                                                    visual cohort has different sessions, capture instrumentation and 562
+
+505 Client-observed HTTP p50 decreases in all six matched-demand                                      unverified cross-cohort version/runtime alignment. Its summaries 563
+
+506 pairs by 24 to 126 ms. Coit medians move from 168 to 173 ms down                                  lack request-start demand, cache/in-flight bytes, retry/cancellation 564
+507 to 47 to 51 ms; Poland moves from 160 to 162 ms down to 75 to 138
+508 ms. Median paired differences are -119 ms and -83 ms. Figures 7                                   records and full source partitions. Those missing terms prevent a 565
+
+                                                                                                      causal attribution of the increase to extra demand, lost cache supply 566
+
+509 and 8 retain medians and tails separately.                                                        or another runtime difference.                                           567
+
+510  Successful holder-path p50 is 35 ms on Coit and 28 ms on Poland.                                 Equation 5 identifies the needed reconciliation:                         568
+
+511 Origin-conditioned p50 under SPADE is 173 to 183 ms and rises                                                   =  -  -  -  .                                       (9)    569
+
+512 in every pair. The lower aggregate median is consistent with a                                                                                                             570
+513 changed source mixture; it is not accompanied by a lower origin-
+514 conditioned median. The conditional request subsets differ, so this                               Unlike Equation 8, demand is not fixed. Recovering a valid residual 571
+
+                                                                                                      can reduce origin for that request while the session's aggregate 572
+
+515 is not a causal decomposition of the aggregate percentile.                                        origin grows. The present data establish coexistence, not the un- 573
+
+516  Tail behavior is mixed. One p95 and three p99 pairs regress; p99                                 observed causal terms. Neither browser cohort substitutes for the 574
+
+517 changes range from -33 to +42 ms. All twelve executions report                                    fixed-demand physical comparison.                                        575
+
+518 zero client errors. No empty-body response occurs in this replay,                                                                                                          576
+519 and the configured 1,500 ms budget is not a binding explanation for
+520 its service distribution. Improved p50 therefore does not establish a                             5.4 Browser Request Completion                                           577
+
+                                                                                                      Every original N=3 browser p50 paired difference is positive. Coit 578
+
+521 uniform tail benefit or explain the earlier live-browser slowdown.                                penalties range from about 124 to 183 ms and Poland from 55 to 102 579
+
+522                                                                                                5                                                                           580
+     WWW 2027, May 10­14, 2027, Dublin, Ireland                                                                                                                                            Anon.
+
+581                                                   Coit Poland                                                Table 3: Paired SSIM changes, 10-3, and mean PSNR change, 639
+                                                                            3
+582                                                                                                              dB.                                                                                           640
+
+583  p50 delta, ms         200                                                                                                                                                                                 641
+
+584                                                      p99 delta, s                                                        Scene, s  Min Median Max +/- PSNR                                                 642
+
+585                        100                                                 0                                                                                                                                                              643
+
+                                                                                                                             Coit 2 -286.44 +15.67 +29.11 5/1 -0.556
+586                                                                                                                                                                                                            644
+                                                                                                                             Coit 5    -61.24 +38.35 +119.01 5/1 +1.964
+
+587                                                                                                                          Coit 10 -17.84 -0.19 +53.39 3/3 +0.080                                            645
+
+588                             0                                              -3                                            Coit 20 -15.86 -8.44 +17.54 1/5 -0.259                                            646
+
+589                                1  3               6                             1  3                   6                 Coit 40   -3.99 -0.15 +9.90 3/3 +0.110                                            647
+
+590                                   Paired case                                      Paired case                           Coit 60 -18.75 -10.36 -5.21 0/6 -0.563                                            648
+
+591                                                                                                                          Poland 2 -1.03 +59.62 +66.37 5/1 +2.187                                           649
+
+592 Figure 11: Original browser Figure 12: Original browser                                                                  Poland 5 +0.94 +27.10 +46.89 6/0 +3.202                                           650
+
+593 p50.                                                 p99.                                                                Poland 10 -45.23 +3.29 +12.77 4/2 -0.227                                          651
+
+594                                                                                                                          Poland 20 -28.02 +15.94 +33.32 4/2 +0.480                                         652
+
+595                                                                                                                          Poland 40 -22.85 -6.88 +5.46 2/4 -0.259                                           653
+
+596                                   S3-FIFO (A) SPADE (B) Mean of 6 pairs                                                  Poland 60 -22.63 +0.27 +12.88 3/3 -0.213                                          654
+
+597                                   Coit                                                         Poland                                                                                                      655
+                                                                               1.0
+598  SSIM (3-viewer mean)  1.0                           SSIM (3-viewer mean)                                                6 pair deltas Median Min­max (not CI)                                             656
+
+599                                                                                                                                                                                                            657
+
+600                                                                                                                                 Coit: pair signs                                       Poland: pair signs  658
+
+601                        0.8                                                 0.8                                             +5 +5 +3 +1 +3 +0                                           +5 +6 +4 +4 +2 +3   659
+                                                                                                                               -1 -1 -3 -5 -3 -6
+602                                                                                                                   +0.1                                                                 -1 -0 -2 -2 -4 -3   660
+
+603                                                                                                                                                                                 +0.1                       661
+
+604                        0.6                                                 0.6                               Delta SSIM                                                                                    662
+                                                                                                                                                                        Delta SSIM
+605                             2 5 10 20 40 60                                     2 5 10 20 40 60                      0                                                          0                          663
+
+606                                   Checkpoint (s)                                   Checkpoint (s)                 -0.03                                                         -0.03                      664
+                                                                                                                       -0.3                                                          -0.3
+607                                                                                                                                             symlog                                     symlog              665
+
+608                                                                                                                          2 5 10 20 40 60                                               2 5 10 20 40 60     666
+                                                                                                                                 Checkpoint (s)
+609 Figure 13: Coit checkpoint Figure 14: Poland checkpoint                                                                                                                                Checkpoint (s)      667
+
+610 SSIM.                                                SSIM.                                                                                                                                                 668
+
+611                                                                                                                                                                                                            669
+
+612                                                                                                              Figure 15: Coit paired SSIM Figure 16: Poland paired 670
+
+613 ms; their median paired differences are 165 and 76 ms. Figure 11                                             changes.                               SSIM changes.                                          671
+
+614 shows this consistent regression. These are differences between                                                                                                                                            672
+
+615 session percentiles, not percentiles of matched-request differences.                                         Coit at 2 seconds illustrates why a mean alone is inadequate. 673
+
+616  The p99 signs differ: five of six Coit pairs improve, while four                                            Mean SSIM is 0.846039 for S3-FIFO and 0.814102 for SPADE, a mean 674
+                                                                                                                 paired difference of -0.031936. Five paired differences are positive, 675
+617 of six Poland pairs regress. One Poland SPADE session reaches                                                however, and the paired median is +0.015669. One large adverse 676
+
+618 5.70 seconds. Completed browser requests include local, holder and
+
+619 origin responses and do not directly measure decode, GPU upload or                                           session drives the negative mean. At 5 seconds, the same view has 677
+                                                                                                                 mean scores 0.888590 and 0.924082, with median paired change 678
+620 visible readiness. The new visual cohort supplies checkpoint quality,                                        +0.038347; five pairs improve and the adverse pair remains lower. 679
+
+621 not a matched browser-completion distribution that reverses this                                                The five favorable 2-second Coit pairs sum to +0.094820, whereas 680
+                                                                                                                 the adverse pair contributes -0.286438 after its three viewers are 681
+622 older median result.                                                                                         averaged. Excluding that valid session would therefore change the 682
+
+623  Source-path timers also limit an overhead explanation. Success-
+
+624 ful holder-wait p50 is 35 to 40 ms on Coit and 27 to 36 ms on Poland,
+
+625 with p95 between 69 and 99 ms. These include body transfer but                                               conclusion, not merely tighten a spread. The paired median exposes 683
+                                                                                                                 the common direction, while the arithmetic mean preserves the 684
+626 stop before hashing. Ten empty-body replies in the original browser                                          magnitude of the bad outcome. Both are needed: a majority of 685
+
+627 logs wait 1,500 to 1,514 ms before fallback. Rare long failures are
+
+628 real costs, but their existence does not establish the cause of every                                        improved sessions does not bound the cost experienced by a less 686
+                                                                                                                 successful viewer. The independently qualified reference prevents 687
+629 median penalty. Appendix A.1 retains the timing and population                                               replacing this treatment regression with a different calibration 688
+
+630 boundaries.
+
+631                                                                                                              image.                                                                                        689
+
+632 5.5 Matched Visual Fidelity                                                                                  Poland has five positive pairs at 2 seconds and all six at 5 seconds. 690
+
+633 Figures 13 and 14 compare GPU-matched SSIM at all checkpoints.                                               Its 5-second paired differences span +0.000943 to +0.046895, with 691
+634 Thin markers retain the six pair-level viewer means; emphasized
+635 diamonds are their arithmetic means. Only the 2-to-5-second same-                                            median +0.027098. Mean PSNR differences are +2.187 dB at 2 sec- 692
+636 pose observations are connected. Discrete later poses are not pre-
+                                                                                                                 onds and +3.202 dB at 5 seconds. Table 3 retains every checkpoint 693
+
+                                                                                                                 range and sign count, with paired PSNR summaries; Appendix A.3 694
+
+637 sented as convergence toward one fixed image.                                                                adds all twelve session pairs.                                                                695
+
+638                                                                                                           6                                                                                                696
+     Evicted, Yet Available: SPADE for Cross-Viewer Web 3DGS Delivery                                         WWW 2027, May 10­14, 2027, Dublin, Ireland
+
+697         S3-FIFO SSIM 0.868                 SPADE SSIM 0.501                 Table 4: Configured payload placement, MiB.                               755
+
+698                                                                                                                                                       756
+
+699                                                                             Method                        Proxy Three viewers Total                   757
+
+700                                                                             S3-FIFO                       50  0 50                                    758
+
+701                                                                             SPADE                         50  480 530                                 759
+
+702                                                                             Central S3-FIFO 530               0 530                                   760
+
+703                                                                                                                                                       761
+
+704                                                                                                                                                       762
+
+705                                                                                                                                                       763
+
+706                                                                             Across both scenes, all 72 viewer-arm traces have a sampled 0.90 764
+
+707                                                                             qualification by 60 seconds, but 68 subsequently fall below 0.90 at a 765
+
+708                                                                             later checkpoint. Higher 0.95 and 0.98 thresholds include censored 766
+
+709                                                                             cases. These are descriptive counts over nested traces, not 72 in- 767
+
+710 Figure 17: Early visual deficit in one three-viewer Coit ses-               dependent experiments. They explain why a first crossing along 768
+        sion.
+                                                                                a moving camera is an observation label rather than a continuous 769
+711
+                                                                                readiness metric.                                                         770
+712
+
+713                                                                                                                                                       771
+
+714  Small later averages do not imply interchangeable quality. Across          5.7 Validation and Resource Boundaries                                    772
+
+715 10, 20, 40 and 60 seconds, descriptive mean paired SSIM changes are         The physical replay records 4,383 accepted digests, no empty body 773
+
+716 -0.002465 for Coit and -0.002676 for Poland. Coit at 60 seconds is          and one unavailable-holder response. Its temporal audit reports 774
+
+717 uniformly lower across pairs: the six changes range from -0.018745          4,381 strictly ordered post-eviction chains and two millisecond 775
+
+718 to -0.005215, with median -0.010363. All six mean PSNR differ-              timestamp ties. The ties remain accepted bodies but do not enter 776
+
+719 ences are negative too. Figures 15 and 16 use a symmetric-log axis,         the strict-order count. Six follower joins are a separate category. The 777
+
+720 linear within ±0.01, to resolve small changes while retaining the           condensed Poland decision summaries leave six rows unclassified; 778
+
+721 large early deficit. No equivalence margin was specified, and the           neither arithmetic closure nor a matching join count identifies those 779
+
+722 scenes do not provide independent pose populations from which               rows without request IDs.                                                 780
+
+723 noninferiority follows.                                                     The original browser audit separately records 3,488 post-eviction 781
+
+724  The two quality metrics need not induce identical signs. At                transfers carrying 5.57 GB. Eviction-to-request lags among these ac- 782
+
+725 Poland 2 seconds, all six mean PSNR changes are positive while one          cepted events range from 1 to 14,371 ms, with median 2,115 ms and 783
+
+726 mean SSIM change is negative. At Coit 60 seconds, both metrics              p95 6,530 ms. This places realized reuse within the finite residual 784
+
+727 are lower in all six pairs; the mean paired PSNR changes range              horizon without estimating success probability over every eligi- 785
+
+728 from -1.124 to -0.032 dB. Reporting the metrics jointly prevents a          ble miss. The accepted-event distribution cannot select an optimal 786
+
+729 favorable structural or pixel-error summary from substituting for           lease: misses without a reachable or accepted copy are absent from 787
+
+730 the unfavorable one. Reference repeatability establishes a stable           that numerator. Of these, 709 follow a residence populated by an 788
+
+731 comparison target, whereas treatment quality measures how well a            earlier verified handoff, while all chains trace to earlier origin re- 789
+
+732 method reaches it. It supplies no license to discard a poor but valid       trieval. Seventeen isolated protocol cases cover corruption, stale 790
+
+733 frame.                                                                      or mismatched metadata, malformed bodies, absent suppliers and 791
+
+734                                                                             concurrency, with no tested incorrect body delivered or admitted. 792
+
+735 5.6 Worst Viewer and Observed Qualification                                 These finite checks do not establish universal security.                  793
+
+736 Worst-viewer and viewer-average conclusions differ. At Poland 2             Same-runtime N=2 measurements add 707 transfers totaling 794
+737 seconds, five paired viewer means improve, but the least-viewer
+                                                                                1.136 GB. Every scene-seed case exhibits reuse, and both cor- 795
+
+738 score improves in only three pairs and regresses in three. At 5             responding N=3 observations have more transfers. Changed 796
+739 seconds, all six least-viewer differences are positive. This endpoint       requester/supplier sets, Coit phase and reporting windows prevent 797
+740 preserves a poorly served viewer that an average can mask.                  an isolated count-scaling effect. The adverse N=2 Coit case retains 798
+
+741  One Coit session exhibits a three-viewer early deficit rather than         demand ratio 0.420 and p99 8.94 seconds. Appendix A.5 preserves 799
+
+742 a single isolated GPU fluctuation. At 2 seconds, C3 changes from            it rather than interpreting its large windowed origin reduction as 800
+
+743 SSIM 0.867630 to 0.501351, with PSNR difference -7.971 dB. C4               superior offload efficiency.                                              801
+
+744 and C5 have SSIM differences -0.271432 and -0.221605, with PSNR             Configured payload grows as 50 + 160 MiB, distinct from un- 802
+
+745 differences -7.295 and -6.058 dB. Figure 17 shows the exact C3              measured coordinator state and process overhead. Table 4 separates 803
+
+746 pair with one identical crop in both arms. No alternative seed or           the method name from its allocation. The viewer column is an 804
+
+747 generated reference replaces the unfavorable frame.                         additional payload budget, not measured occupancy or free up- 805
+                                                                                load. A model in which central bytes save more origin cannot be 806
+748  C3 is still lower at the 5-second same-pose check, 0.841109 versus         converted into a physical latency ranking because local modeled 807
+
+749 0.927940. Its first observed SSIM of at least 0.90 occurs at 40 seconds
+
+750 under SPADE and at 5 seconds under baseline. The camera changes             service is instantaneous. Conversely, a useful residual under the 808
+751 after 5 seconds, so the 35-second difference is not a measured delay        small proxy does not repay unmeasured metadata, CPU or energy 809
+752 to the same visual target. The poor 2-second sample likewise does           costs by definition. Supplier contribution is imbalanced: the largest 810
+
+753 not establish a two-second startup delay.                                   two original-browser holders provide 97.1% of verified bytes. Origin 811
+
+754                                                                          7                                                                            812
+     WWW 2027, May 10­14, 2027, Dublin, Ireland                                                                                   Anon.
+
+813 avoidance therefore does not imply balanced endpoint cost, and the          7 Related Work                                           871
+
+814 measured N=2-to-N=3 extension is not evidence of larger-group               Peer-assisted Web supply. Hybrid CDN/P2P, NetSession and 872
+
+815 throughput or verified Wi-Fi performance.                                   Maygh establish client-assisted delivery [16, 47, 50]. Swarm uses 873
+
+816                                                                             peer servers for video distribution [36]. Maygh already combines 874
+
+817                                                                             peer discovery, content verification and origin fallback. SPADE stud- 875
+
+       6 Discussion                                                             ies a narrower state boundary: an independently requested exact 876
+
+818                                                                             HTTP range after both proxy residence and compatible outstanding 877
+
+819 6.1 Where residual supply has value
+
+820 The experiments establish a concrete capability: useful source avail-       work have ended. Its eviction ancestry, matched-demand source 878
+
+821 ability can persist after bounded proxy residence ends. SPADE               ledger and central-memory control expose costs that a peer-hit 879
+
+822 converts that state into accepted delivery while retaining the same         count alone does not settle. HTTP semantics and caching define 880
+
+823 proxy replacement policy and body budget. The fixed-demand phys-            representation and range obligations [10, 11]; HTTP/2, HTTP/3 and 881
+
+824 ical comparison isolates its value particularly clearly. Scheduled          HLS provide transport or byte-range delivery contexts [4, 28, 33]. 882
+
+825 demand is unchanged, every origin comparison improves, and mea-             They do not turn a holder advertisement into authenticated payload. 883
+
+826 sured endpoint payload explains the source substitution. A byte             Cache retention and placement. ARC, TinyLFU, AdaptSize 884
+
+827 that would have required another origin retrieval can be recovered          and LHD optimize replacement, admission or storage efficiency [1, 885
+
+828 from a recent recipient.                                                    3, 8, 25]. S3-FIFO and SIEVE target scalable cache eviction [42, 49]. 886
+
+829  The deployment objective determines how valuable that capa-                Twitter traces emphasize workload diversity [40]; Segcache, Cache- 887
+
+830 bility is. A constrained proxy can exploit endpoint storage already         Lib, Flashield and Kangaroo organize memory or flash resources [2, 888
+
+831 assigned to residual retention. When central expansion is feasible,         9, 24, 41]. These systems ask which local bodies to retain and where 889
+
+832 the modeled 530 MiB cache is more origin-efficient at the same              to place storage. SPADE retains S3-FIFO and changes supply on a 890
+
+833 configured total payload. The two alternatives therefore answer dif-        miss. The central-capacity result prevents interpreting that added 891
+
+834 ferent placement questions. SPADE's measured advantage concerns             source as a generally superior placement policy.         892
+
+835 additional validated supply at a fixed small proxy, with endpoint           Interactive media demand. ViVo, YuZu, Habitus, Flare, Pano, 893
+
+836 upload as its explicit resource cost.                                       Furion and multi-user volumetric designs exploit visibility, enhance- 894
+
+837                                                                             ment, pose, split rendering or shared allocation [12, 13, 19, 29, 44­ 895
+
+838                                                                             46]. Pensieve, BOLA and Swift adapt bitrate or layers [7, 23, 31]. 896
+
+839 6.2 Connecting offload to application delivery                              Their requested work can change with network feedback, moti- 897
+
+840 The source ledger and the visual target are complementary parts of          vating our separation of fixed scheduled demand from reactive 898
+
+841 the evaluation. Fixed scheduled bytes establish source efficiency;          outcomes. LapisGS, L3GS and LTS organize progressive Gaussian 899
+
+842 a fixed visual target establishes application value. Coit's capacity        delivery [30, 32, 34]. GaussCast and MD2G-Cast coordinate shared 900
+
+843 sensitivity illustrates the difference: 28 additional requested pages       retrieval or overlapping receivers [5, 48]; preprint status is retained 901
+
+844 change two inspected images very little. Conversely, a nonblack             where a finalized proceedings record is unavailable. SPADE instead 902
+
+845 canvas can still omit useful detail. Neither byte residency nor image       asks whether a selected range remains verifiably recoverable after 903
+
+846 validity alone determines whether the viewer has reached its target.        proxy eviction.                                          904
+
+847  The browser cohorts show why this distinction matters in prac-             Representation size versus source choice. NeRF and 3DGS 905
+
+848 tice. Different windows change totals, but the original full-log ex-        establish the rendered representations [18, 26]. Spatial organization, 906
+
+849 port still has less origin traffic, so windows alone do not explain the     filtering and scale affect which detail is useful [21, 22, 39, 43]. Com- 907
+
+850 reversal. Runtime/version alignment, capture overhead, cache state          pression, pruning and coding reduce its bytes [6, 14, 20, 27, 35]; 908
+
+851 and executed demand remain unisolated. Equation 9 identifies the            dynamic representations and 4D coding extend the content do- 909
+
+852 ledger needed to attribute those changes. The visual results also           main [15, 17, 37, 38]. These approaches alter content or demand. 910
+
+853 preserve both Poland's early improvements and Coit's severe early           Verified residual recovery changes the supplier of an already se- 911
+
+854 deficit and consistently lower 60-second scores. This makes the             lected range and is therefore evaluated separately from representa- 912
+
+855 operating boundary measurable rather than assuming that every               tion quality.                                            913
+
+856 successful handoff improves every application endpoint.                                                                              914
+
+857                                                                             8 Conclusion                                             915
+
+858                                                                             SPADE extends trustworthy Range availability beyond proxy pay- 916
+                                                                                load residence. By combining retained origin-derived identity with 917
+859 6.3 Reuse across viewers and eviction cycles                                finite endpoint residuals, it recovers supply that completed-cache 918
+                                                                                hits and in-flight sharing no longer provide. Matched-demand phys- 919
+860 The N=2 cohort demonstrates that a single other viewer can sup-             ical experiments demonstrate substantial origin offload and lower 920
+861 ply genuine post-eviction content. Every corresponding N=3 ob-              HTTP medians at a fixed small proxy; two- and three-viewer au- 921
+862 servation has more handoffs, and the 709 transfers following a              dits establish reuse across viewers and eviction cycles. Endpoint 922
+863 handoff-populated residence show that recovered content can cre-            upload, capacity placement and paired browser-quality measure- 923
+864 ate later opportunities. These findings support extending verified          ments identify the conditions under which this source capability 924
+865 recovery across viewers and repeated evictions. Phase, demand and           becomes useful application delivery. SPADE makes verified content 925
+866 reporting-window changes prevent assigning the count increase                                                                        926
+867 solely to viewer number. Larger groups, metadata growth, endpoint           recoverable after eviction.
+868 energy, churn and Wi-Fi contention remain outside the measured                                                                       927
+869 extension.
+
+870                                                                          8                                                           928
+

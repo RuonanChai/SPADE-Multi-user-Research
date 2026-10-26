@@ -1,0 +1,13 @@
+{
+  "primary": "SSIM against the independent reference for the same scene, checkpoint, and client GPU",
+  "secondary": ["PSNR", "origin_bytes", "peer_bytes", "browser_p50_p95_p99"],
+  "ssim_thresholds": [0.9, 0.95, 0.98],
+  "time_to_quality": "first observed qualifying checkpoint only",
+  "not_reached": "NOT_REACHED_BY_60S",
+  "checkpoint_set": [2, 5, 10, 20, 40, 60],
+  "not_a_continuous_latency_distribution": true,
+  "invalid_if": ["scene_or_version_mismatch", "pose_mismatch", "canvas_size_or_dpr_mismatch", "renderer_mismatch", "missed_checkpoint", "reference_incomplete", "corrupt_image"],
+  "black_or_frozen_valid_capture": "outcome, retained",
+  "statistical_unit": "paired session at a camera-seed configuration",
+  "viewers_are_not_independent_replicates": true
+}

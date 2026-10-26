@@ -1,0 +1,16 @@
+{
+  "run_id": "visualref_coit_direct_r8",
+  "client": "C3",
+  "scene": "coit-40m-sh1-lod",
+  "wall_clock": "2026-10-25T02:17:18Z to 2026-10-25T02:19:09Z",
+  "full_view_reference_proven": false,
+  "reference_stable": "NOT_RUN",
+  "checkpoints": [
+    { "t": 2, "status": "VIEW_CLOSURE_PROVEN", "resident": "216/216", "png_bytes": 1908110, "wall_ms": 35459 },
+    { "t": 5, "status": "VIEW_CLOSURE_PROVEN", "resident": "216/216", "png_bytes": 1908110, "wall_ms": 363, "same_image_as_t2": true },
+    { "t": 10, "status": "VIEW_CLOSURE_PROVEN", "resident": "235/235", "png_bytes": 1909048, "wall_ms": 18473 },
+    { "t": 20, "status": "RENDERER_CAPACITY_LIMITED", "resident": "256/284", "png_bytes": 1885323, "wall_ms": 22439 },
+    { "t": 40, "status": "VIEW_CLOSURE_PROVEN", "resident": "187/187", "png_bytes": 1866318, "wall_ms": 11037 },
+    { "t": 60, "status": "RENDERER_CAPACITY_LIMITED", "resident": "256/284", "png_bytes": 1868893, "wall_ms": 14944 }
+  ]
+}

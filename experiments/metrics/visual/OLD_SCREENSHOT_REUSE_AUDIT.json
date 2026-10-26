@@ -1,0 +1,7 @@
+{
+  "checked_at": "2026-10-25T01:42:00Z",
+  "sample": "p2t005 C3 canvas_t2.json and canvas_t20.json",
+  "decision": "DO_NOT_REUSE",
+  "reason": "Saved canvas files are marked POST_WINDOW_HELD_POSE. The in-window capture is overwritten after the measurement. They are not the picture shown at the checkpoint during treatment, and they were produced inside a 50 MiB treatment session rather than an independent full-view reference.",
+  "pose_note": "The held t=2 position matches the frozen stop_go sample at 2 s and 5 s, which are the same stopped pose. The t=20 held position also matches the trace. Pose agreement does not make the file a valid treatment sample or a reference."
+}

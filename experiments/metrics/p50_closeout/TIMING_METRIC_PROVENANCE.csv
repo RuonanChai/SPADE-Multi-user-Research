@@ -1,0 +1,7 @@
+estimator,clock,formula,stored_field,unit_of_stored_number,covers_downstream_delivery,cohort,source
+p2_browser_completion_p50,"CDP Network timestamp, seconds since an arbitrary monotonic origin",loadingFinished.timestamp - requestWillBeSent.timestamp,browser_p50_ms,seconds,true,"P2 sealed browser, verified proxy, both arms S3-FIFO",remote_worker_bundle.js Network events; p2_metrics.js lines 140-143 and 197-198
+visual_proxy_span_p50,proxy process Date.now,proxy.jsonl timestamp - request_start_ms,proxy_span_p50_ms,milliseconds,false,"24 visual sessions, N23 proxy",proxy accept Date.now to log after res.end; excludes Vite forward and Playwright body buffering
+fixed_replay_service_ms,replay client done_ms - send_ms,"client jsonl service_ms, ceil percentile",client_service_ms.p50,milliseconds,false,"Node agents, no browser",summarize_run.js
+origin_ttfb,proxy Date.now,origin_first_byte_ms - origin_start_ms,origin_ttfb_p50_ms,milliseconds,false,P2 decision log,p0_existing_cost.js
+holder_wait,proxy Date.now,peer_wait_ms on peer_verify with DIGEST_MATCH,match_p50_ms,milliseconds,false,P2 B arms,verified_peer peerMs recorded before SHA-256 return
+checkpoint_capture_wall,client Date.now,captureCheckpoint finish Date.now minus function entry,capture_ms,milliseconds,false,"24 visual sessions, 432 canvases","capture_checkpoint.js finish(); includes wait, readPixels, IPC, PNG encode, write; no per-stage pair of timestamps"

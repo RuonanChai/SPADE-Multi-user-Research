@@ -1,0 +1,82 @@
+{
+  "manifest_sha256": "c2d2680ed206268d5afa244757ac752e12e60dc5128f765bddc58a6a10e48846",
+  "files": [
+    {
+      "component": "verified_peer.js",
+      "sha256": "b3bc789ccd1529f418c3647f0c1b5fcf3b12540652bd59ff5318127341a1c002",
+      "bytes": 7423
+    },
+    {
+      "component": "proxy.js",
+      "sha256": "df258c1954fec028bd1067fcf1625e01b7a701c2ee30626e8a1edb6daac758a5",
+      "bytes": 21347
+    },
+    {
+      "component": "client_handoff_buffer.js",
+      "sha256": "5485f0c8a7f8d0783b8d590667cc0e0a152dd112963f4fa4ee282faab68eca71",
+      "bytes": 2708
+    },
+    {
+      "component": "spade_byte_cache.js",
+      "sha256": "6d994ec13c87d4d791c724e5a647a5fb5240a4195e128842dc3ff14c1c12a65f",
+      "bytes": 5439
+    },
+    {
+      "component": "matched_cache.js",
+      "sha256": "96fe0a1d1acc1c3a8d3c3148f4f4d68db7e9a1ac8933db298df42afe6c7169a8",
+      "bytes": 7775
+    },
+    {
+      "component": "request_trace.js",
+      "sha256": "1940eb9f036d65a890f3390741ed6e89407d308b7e0cf42797cfc1b3571fff21",
+      "bytes": 1144
+    },
+    {
+      "component": "capture_checkpoint.js",
+      "sha256": "b4a992a0b8de7a86630959ef604c211dbacd238f807acb22140a13a81bdfcf6e",
+      "bytes": 12393
+    },
+    {
+      "component": "remote_worker_bundle.next.js",
+      "sha256": "b12c758064b1f96a00c4d4f27fb1db6e669696eb832d6127b8ad424fb51d2de8",
+      "bytes": 65433
+    },
+    {
+      "component": "isolated_run_cell.next.js",
+      "sha256": "aa80fb6246e5822b68c58a8adf9fba6aa1afab7ab22be5337e8d6718830d3b8e",
+      "bytes": 35953
+    },
+    {
+      "component": "phase_regimes.js",
+      "sha256": "269225c65a2e74de1bd5f2de0591b926c190fbc352de396a083f882bd5b10922",
+      "bytes": 1861
+    },
+    {
+      "component": "p0_negative_test.js",
+      "sha256": "34d4992b4b2ded12ce2a08bd2675ab3af788312a661c95f2517d382e9310d3d6",
+      "bytes": 14025
+    },
+    {
+      "component": "p0_wire_test.js",
+      "sha256": "e41076a1b6cb2641fde439d5c81562ad95942e03e997c5bff8850b3c0b77ff07",
+      "bytes": 1838
+    }
+  ],
+  "config": {
+    "runtime_version": "SPADE-VERIFIED-20261024",
+    "prior_runtime_version": "SPADE-BYTE-UNVERIFIED-20261023",
+    "proxy_budget_bytes": 52428800,
+    "proxy_max_objects": 100,
+    "sensitivity_budget_bytes": 555745280,
+    "handoff_hold_ms": 15000,
+    "client_cap_bytes": 167772160,
+    "peer_timeout_ms": 1500,
+    "hosts": {
+      "S": "192.168.1.200",
+      "C3": "192.168.1.197",
+      "C4": "192.168.1.196",
+      "C5": "192.168.1.195"
+    }
+  },
+  "config_sha256": "db72bcaa421145c50d672377983fb9d1cbf31f95efddc732efb98f98e4c08621"
+}

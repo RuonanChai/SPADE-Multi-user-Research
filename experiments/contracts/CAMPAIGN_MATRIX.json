@@ -1,0 +1,25 @@
+{
+  "experiment_epoch": "SPADE_WWW_VISUAL_COS_20261025",
+  "arms": {
+    "A": "S3-FIFO 50MiB 100 entries handoff off",
+    "B": "same S3-FIFO with verified handoff 15s 160MiB probe 1500ms"
+  },
+  "clients": ["C3", "C4", "C5"],
+  "primary": {
+    "sessions": 24,
+    "pairs": 12,
+    "order": "rep1 A then B; rep2 B then A",
+    "status": "BLOCKED_ON_REFERENCE_GATE"
+  },
+  "reference_gate": {
+    "first_session": "Coit stop_go seed 27391639 client C3 repeat 1 then repeat 2",
+    "pass_requires": "FULL_VIEW_REFERENCE_PROVEN at the six checkpoints and repeat SSIM meeting the calibrated gate",
+    "status": "RUNNING_OR_NEXT"
+  },
+  "third_scene": {
+    "preferred": "tijerin_w6_hobbiton-lod.rad",
+    "minimum_first": "1 preselected camera, synchronized and staggered, A/B x 2 = 8 sessions",
+    "status": "NOT_STARTED"
+  },
+  "do_not_retune": ["cache", "ttl", "probe_budget", "camera_trace", "digest_check"]
+}

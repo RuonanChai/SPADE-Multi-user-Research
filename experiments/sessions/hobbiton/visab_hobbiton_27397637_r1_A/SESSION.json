@@ -1,0 +1,263 @@
+{
+  "run_id": "visab_hobbiton_27397637_r1_A",
+  "scene": "tijerin_w6_hobbiton-lod",
+  "seed": 27397637,
+  "rep": 1,
+  "arm": "A",
+  "method": "S3-FIFO",
+  "handoff": false,
+  "pair_id": "hobbiton_27397637_r1",
+  "finished_at": "2026-10-25T13:09:28.348Z",
+  "clients_done": 3,
+  "worker_error": null,
+  "capture_during_window": false,
+  "traffic": {
+    "origin_bytes": 237743600,
+    "peer_bytes": 0,
+    "requests": 567
+  },
+  "replay_window": {
+    "start_ms": 1792933407455,
+    "end_ms": 1792933477475,
+    "origin_bytes": 113955544,
+    "peer_bytes": 0,
+    "requests": 276,
+    "post_window_origin_bytes": 0
+  },
+  "structural_ok": true,
+  "clients": [
+    {
+      "client": "C3",
+      "pngs": 0,
+      "unique_hashes": 0,
+      "camera_moved": true,
+      "framebuffer_changed": false,
+      "post_window_png": true,
+      "post_window_ok": true,
+      "rows": [
+        {
+          "checkpoint_s": 2,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 5,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.7991,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 10,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0,
+            0.20000000000000007,
+            0.8
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 20,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 40,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.5925,
+            0.39780000000000004,
+            0.5844
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 60,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.6000000000000001,
+            0.4,
+            -0.6000000000000001
+          ],
+          "false_blank": false
+        }
+      ]
+    },
+    {
+      "client": "C4",
+      "pngs": 0,
+      "unique_hashes": 0,
+      "camera_moved": true,
+      "framebuffer_changed": false,
+      "post_window_png": true,
+      "post_window_ok": true,
+      "rows": [
+        {
+          "checkpoint_s": 2,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 5,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 10,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0,
+            0.20000000000000007,
+            0.8
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 20,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 40,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.5925,
+            0.39780000000000004,
+            0.5844
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 60,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.6000000000000001,
+            0.4,
+            -0.6000000000000001
+          ],
+          "false_blank": false
+        }
+      ]
+    },
+    {
+      "client": "C5",
+      "pngs": 0,
+      "unique_hashes": 0,
+      "camera_moved": true,
+      "framebuffer_changed": false,
+      "post_window_png": true,
+      "post_window_ok": true,
+      "rows": [
+        {
+          "checkpoint_s": 2,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 5,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 10,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0,
+            0.20000000000000007,
+            0.8
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 20,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.8,
+            0.20000000000000007,
+            0
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 40,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            0.5925,
+            0.39780000000000004,
+            0.5844
+          ],
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 60,
+          "png": false,
+          "bytes": 0,
+          "position": [
+            -0.6009000000000001,
+            0.4,
+            -0.5867
+          ],
+          "false_blank": false
+        }
+      ]
+    }
+  ],
+  "c3_stage_repaired": true,
+  "repair_note": "C3 evidence was copied into scp_stage root. Files were moved to C3 after all three workers had written DONE. No session was rerun."
+}

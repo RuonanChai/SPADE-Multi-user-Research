@@ -1,0 +1,64 @@
+{
+  "experiment_epoch": "SPADE_WWW_VISUAL_COS_20261025",
+  "origin_host": "streaming-1438331348.cos.ap-guangzhou.myqcloud.com",
+  "probed_at": "2026-10-25T01:30:00Z",
+  "full_sha256_coit": "3909e7f3eb897ba8197775e9ae7041115b860ad773c5d975cdb5befd3cdaa738",
+  "objects": [
+    {
+      "scene_id": "coit",
+      "canonical_object_key": "coit-40m-sh1-lod.rad",
+      "world": "Coit Tower, SF",
+      "head_status": 200,
+      "range_status": 206,
+      "content_range": "bytes 0-1023/1280517688",
+      "content_length": 1280517688,
+      "strong_etag": "\"c63451f94630f45659334d7d1ea5d20b-153\"",
+      "etag_matches_sealed_n3": true,
+      "content_type": "application/octet-stream",
+      "content_encoding": null,
+      "range_repeat_identical": true,
+      "version_id": null,
+      "full_sha256": "3909e7f3eb897ba8197775e9ae7041115b860ad773c5d975cdb5befd3cdaa738",
+      "full_sha_seconds": 27.808
+    },
+    {
+      "scene_id": "poland",
+      "canonical_object_key": "poland-lod.rad",
+      "world": "Jastrzębia Góra, Poland",
+      "head_status": 200,
+      "range_status": 206,
+      "content_range": "bytes 0-1023/2754086424",
+      "content_length": 2754086424,
+      "strong_etag": "\"b43e6c5c61cf33389277210b8b9b882f-329\"",
+      "etag_matches_sealed_n3": true,
+      "content_type": "text/plain",
+      "content_encoding": null,
+      "range_repeat_identical": true,
+      "version_id": null,
+      "full_sha256": "PENDING",
+      "deviation": "COS Content-Type is text/plain. Range body is still returned as 206 with the sealed ETag. Not treated as transcoding unless the full hash or renderer rejects it."
+    },
+    {
+      "scene_id": "hobbiton",
+      "canonical_object_key": "tijerin_w6_hobbiton-lod.rad",
+      "head_status": 200,
+      "range_status": 206,
+      "content_range": "bytes 0-1023/645971032",
+      "content_length": 645971032,
+      "strong_etag": "\"7791345817aa6dc4bcbf49e394d6452b-78\"",
+      "content_type": "text/plain",
+      "content_encoding": null,
+      "range_repeat_identical": true,
+      "version_id": null,
+      "full_sha256": "PENDING",
+      "renderer_compatibility": "NOT_RUN",
+      "formal_trials": "BLOCKED_UNTIL_PRIMARY_REFERENCE_AND_COS_GATES"
+    }
+  ],
+  "fallback_not_selected": "cozy-spaceship_2-lod.rad",
+  "deviations": [
+    "HEAD without Range returns 200. The Range probe returns 206. No 403, 404, or 416 was observed.",
+    "ETag is recorded and matched to the sealed Coit/Poland contracts, but it is not accepted as the content checksum. Full SHA-256 is a separate stream hash.",
+    "No bucket ACL or credential was changed."
+  ]
+}

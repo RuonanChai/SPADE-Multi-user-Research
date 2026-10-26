@@ -1,0 +1,41 @@
+{
+  "sealed_runtime": "F:/SPADE_WWW_EVIDENCE_V2_20261024/runtime",
+  "read_only": true,
+  "rows": [
+    {
+      "file": "proxy.js",
+      "sha256": "df258c1954fec028bd1067fcf1625e01b7a701c2ee30626e8a1edb6daac758a5",
+      "bytes": 21347
+    },
+    {
+      "file": "remote_worker_bundle.next.js",
+      "sha256": "b12c758064b1f96a00c4d4f27fb1db6e669696eb832d6127b8ad424fb51d2de8",
+      "bytes": 65433
+    },
+    {
+      "file": "capture_checkpoint.js",
+      "sha256": "b4a992a0b8de7a86630959ef604c211dbacd238f807acb22140a13a81bdfcf6e",
+      "bytes": 12393
+    },
+    {
+      "file": "client_handoff_buffer.js",
+      "sha256": "0362d8864f76c2238587da073e53437b5cf6fd31f76977fbe63e445f34759dc1",
+      "bytes": 2619
+    },
+    {
+      "file": "verified_peer.js",
+      "sha256": "b3bc789ccd1529f418c3647f0c1b5fcf3b12540652bd59ff5318127341a1c002",
+      "bytes": 7423
+    },
+    {
+      "file": "scene_trace_frame.js",
+      "sha256": "80e71686a9337d4a9973978c66d76aa5bbf18805df8270eddbd01c1b23ef8e49",
+      "bytes": 2485
+    },
+    {
+      "file": "stop_go.json",
+      "sha256": "2a22346c81dfc5992d8d5cad0651fd63396c4f85f2aec58ad7166f686089b0e2",
+      "bytes": 336928
+    }
+  ]
+}

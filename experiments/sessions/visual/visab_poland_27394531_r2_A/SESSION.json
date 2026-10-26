@@ -1,0 +1,264 @@
+{
+  "run_id": "visab_poland_27394531_r2_A",
+  "scene": "poland-lod",
+  "seed": 27394531,
+  "rep": 2,
+  "arm": "A",
+  "method": "S3-FIFO",
+  "handoff": false,
+  "pair_id": "poland_27394531_r2",
+  "finished_at": "2026-10-25T04:38:13.088Z",
+  "clients_done": 3,
+  "worker_error": null,
+  "traffic": {
+    "origin_bytes": 621094136,
+    "peer_bytes": 0,
+    "requests": 1374
+  },
+  "structural_ok": true,
+  "clients": [
+    {
+      "client": "C3",
+      "pngs": 6,
+      "unique_hashes": 6,
+      "camera_moved": true,
+      "framebuffer_changed": true,
+      "rows": [
+        {
+          "checkpoint_s": 2,
+          "png": true,
+          "bytes": 1725535,
+          "position": [
+            51.7,
+            -1.4999999999999996,
+            -1.7
+          ],
+          "sha256": "d28548263245feb00ff42e1c8abc1a4a219981a689edb4410ffc6ff4894a36cc",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 5,
+          "png": true,
+          "bytes": 1775750,
+          "position": [
+            51.7,
+            -1.4999999999999996,
+            -1.7
+          ],
+          "sha256": "093a725a5a46cf9c2ceb44b4280bb9489d0f547fa1f3afcda8e1fdfd205341ac",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 10,
+          "png": true,
+          "bytes": 1857223,
+          "position": [
+            43.7,
+            -1.4999999999999996,
+            6.3
+          ],
+          "sha256": "65160e1964e859a7a1b80a65c5e4b894a597321c9d6be8a5d039f29c3474ec3a",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 20,
+          "png": true,
+          "bytes": 1907949,
+          "position": [
+            35.709,
+            -1.4999999999999996,
+            -1.7
+          ],
+          "sha256": "11812ac425b87e3dec4f6ab19f983e506e16c8ef4d12e47af4f0f675c95119de",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 40,
+          "png": true,
+          "bytes": 1703226,
+          "position": [
+            49.7,
+            0.5,
+            4.3
+          ],
+          "sha256": "4d181b323be5a9ded033622f31bdeae4c97f5acf7998505949a275f342f08261",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 60,
+          "png": true,
+          "bytes": 1631833,
+          "position": [
+            37.7,
+            0.5,
+            -7.7
+          ],
+          "sha256": "4f6d729f5ea3debc86178e826062cea6d557df01c5664fe769d0877c6b42aa7e",
+          "false_blank": false
+        }
+      ]
+    },
+    {
+      "client": "C4",
+      "pngs": 6,
+      "unique_hashes": 6,
+      "camera_moved": true,
+      "framebuffer_changed": true,
+      "rows": [
+        {
+          "checkpoint_s": 2,
+          "png": true,
+          "bytes": 1727896,
+          "position": [
+            51.7,
+            -1.4999999999999996,
+            -1.7
+          ],
+          "sha256": "1093161db4b6e22874d74f60b92db888bdec80f9fd1b925d72a6e4dcb0f4991c",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 5,
+          "png": true,
+          "bytes": 1781486,
+          "position": [
+            51.709,
+            -1.4999999999999996,
+            -1.7
+          ],
+          "sha256": "d1547da82b3996326482d952244bc1dd7788d5651f8d39c1f4dd782a37883b18",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 10,
+          "png": true,
+          "bytes": 1893592,
+          "position": [
+            43.709,
+            -1.4999999999999996,
+            6.3
+          ],
+          "sha256": "2da853069f90e271c0de21cce453ffd522c9a135372ae4c9ee4178db59c50b58",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 20,
+          "png": true,
+          "bytes": 1907931,
+          "position": [
+            35.709,
+            -1.4999999999999996,
+            -1.7
+          ],
+          "sha256": "57ddbb1ecc3a3a39d61b6ec013e99b05fce2116fc5785c745ee8a5f323f13197",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 40,
+          "png": true,
+          "bytes": 1708452,
+          "position": [
+            49.709,
+            0.5,
+            4.3
+          ],
+          "sha256": "78f1b5441b42c857cbe427bd8f77b3e2ae89a22ac4040828179faf7ede81ae44",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 60,
+          "png": true,
+          "bytes": 1631060,
+          "position": [
+            37.7,
+            0.5,
+            -7.7
+          ],
+          "sha256": "88ae871ca3774c8d2b0b87c0829530d9a48a18553591a3f93f78a09fb1bb451c",
+          "false_blank": false
+        }
+      ]
+    },
+    {
+      "client": "C5",
+      "pngs": 6,
+      "unique_hashes": 6,
+      "camera_moved": true,
+      "framebuffer_changed": true,
+      "rows": [
+        {
+          "checkpoint_s": 2,
+          "png": true,
+          "bytes": 1727799,
+          "position": [
+            51.691,
+            -1.4999999999999996,
+            -1.7
+          ],
+          "sha256": "d5c53ccd46fde11f559139c831fa62d65bc91bbaad03bac503a8999dd8f1877f",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 5,
+          "png": true,
+          "bytes": 1776162,
+          "position": [
+            51.709,
+            -1.4999999999999996,
+            -1.7
+          ],
+          "sha256": "e91c4c5bd48b848e7dbf078f38d6a62b0560a9778cd7cfabfb275d25f7dd1d46",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 10,
+          "png": true,
+          "bytes": 1852105,
+          "position": [
+            43.7,
+            -1.4999999999999996,
+            6.3
+          ],
+          "sha256": "112a66bcf0c3dc016f72234a3e1aa2e01fadc263570147f4c6f87f7f9a17877e",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 20,
+          "png": true,
+          "bytes": 1900025,
+          "position": [
+            35.7,
+            -1.4999999999999996,
+            -1.7
+          ],
+          "sha256": "8a3ae0a57d502ccbe06c64ed891534031c5453ac4420e46856b0de9940e5fff3",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 40,
+          "png": true,
+          "bytes": 1684080,
+          "position": [
+            49.709,
+            0.5,
+            4.3
+          ],
+          "sha256": "7b978ff728fa29248ba035aa9ffd8ce705092ce96d1b048e5e694be37d5a6bbf",
+          "false_blank": false
+        },
+        {
+          "checkpoint_s": 60,
+          "png": true,
+          "bytes": 1636055,
+          "position": [
+            37.709,
+            0.5,
+            -7.7
+          ],
+          "sha256": "ce5f3bd62bee6e1fb1c79e42bee97c9e4c07898434f062b9435507dae72934f8",
+          "false_blank": false
+        }
+      ]
+    }
+  ]
+}

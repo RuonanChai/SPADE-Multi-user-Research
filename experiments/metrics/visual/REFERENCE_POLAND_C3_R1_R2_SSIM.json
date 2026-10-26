@@ -1,0 +1,18 @@
+{
+  "scene": "poland-lod",
+  "client": "C3",
+  "left_run": "visualref_poland_direct_c3_r1",
+  "right_run": "visualref_poland_direct_c3_r2",
+  "metric": "8x8 non-overlapping window SSIM on Rec.709 luminance",
+  "candidate_threshold": 0.995,
+  "all_six_closed_both_runs": true,
+  "capacity_limited": false,
+  "rows": [
+    { "checkpoint_s": 2, "resident": "174/174", "ssim": 0.999994 },
+    { "checkpoint_s": 5, "resident": "174/174", "ssim": 0.999994, "same_pose_as_t2": true },
+    { "checkpoint_s": 10, "resident": "192/192", "ssim": 0.999992 },
+    { "checkpoint_s": 20, "resident": "183/183", "ssim": 1 },
+    { "checkpoint_s": 40, "resident": "184/184", "ssim": 1 },
+    { "checkpoint_s": 60, "resident": "183/183", "ssim": 1 }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "scene_file": "coit-40m-sh1-lod",
+  "trace_sha256": "2a22346c81dfc5992d8d5cad0651fd63396c4f85f2aec58ad7166f686089b0e2",
+  "poses": [
+    {
+      "checkpoint_s": 2,
+      "position": [
+        7.142,
+        4.203,
+        -1.128
+      ],
+      "quaternion": [
+        -0.043,
+        -0.909,
+        -0.097,
+        0.402
+      ],
+      "fov": 75,
+      "source_time_s": 2,
+      "closure_timeout_ms": 180000
+    },
+    {
+      "checkpoint_s": 5,
+      "position": [
+        7.142,
+        4.203,
+        -1.128
+      ],
+      "quaternion": [
+        -0.043,
+        -0.909,
+        -0.097,
+        0.402
+      ],
+      "fov": 75,
+      "source_time_s": 5,
+      "closure_timeout_ms": 90000
+    },
+    {
+      "checkpoint_s": 10,
+      "position": [
+        -0.858,
+        4.203,
+        6.872
+      ],
+      "quaternion": [
+        -0.043,
+        -0.909,
+        -0.097,
+        0.402
+      ],
+      "fov": 75,
+      "source_time_s": 10,
+      "closure_timeout_ms": 90000
+    },
+    {
+      "checkpoint_s": 20,
+      "position": [
+        -8.858,
+        4.203,
+        -1.128
+      ],
+      "quaternion": [
+        -0.043,
+        -0.909,
+        -0.097,
+        0.402
+      ],
+      "fov": 75,
+      "source_time_s": 20,
+      "closure_timeout_ms": 90000
+    },
+    {
+      "checkpoint_s": 40,
+      "position": [
+        5.142,
+        6.203,
+        4.872
+      ],
+      "quaternion": [
+        -0.043,
+        -0.909,
+        -0.097,
+        0.402
+      ],
+      "fov": 75,
+      "source_time_s": 40,
+      "closure_timeout_ms": 90000
+    },
+    {
+      "checkpoint_s": 60,
+      "position": [
+        -6.858,
+        6.203,
+        -7.128
+      ],
+      "quaternion": [
+        -0.043,
+        -0.909,
+        -0.097,
+        0.402
+      ],
+      "fov": 75,
+      "source_time_s": 60,
+      "closure_timeout_ms": 90000
+    }
+  ]
+}

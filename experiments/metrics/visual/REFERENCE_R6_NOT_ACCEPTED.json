@@ -1,0 +1,6 @@
+{
+  "run_id": "visualref_coit_direct_r6",
+  "accepted": false,
+  "reason": "t=2 produced a 1908098-byte scene image and 216/216 resident chunks. t=10, t=20, and t=60 were accepted in under one second while the demanded-chunk count stayed on the previous pose. Pixel changes alone do not prove the new pose's chunks were resident. r6 is retained as negative evidence.",
+  "next_run": "visualref_coit_direct_r7 requires the demanded-chunk identity to change before a moved pose can close."
+}

@@ -1,0 +1,295 @@
+{
+  "declared_at": "2026-10-25T03:20:00.000Z",
+  "statistical_unit": "12 A/B session pairs",
+  "viewers_are_not_independent_replicates": true,
+  "seeds_are_demand_replicates_of_one_trajectory": true,
+  "t2_and_t5_are_separate_observations": true,
+  "phase": "synchronized",
+  "duration_s": 70,
+  "checkpoints_s": [
+    2,
+    5,
+    10,
+    20,
+    40,
+    60
+  ],
+  "thresholds": [
+    0.9,
+    0.95,
+    0.98
+  ],
+  "arms": {
+    "A": {
+      "label": "S3-FIFO",
+      "method": "S3-FIFO",
+      "handoff": false,
+      "cache_mb": 50,
+      "entries": 100
+    },
+    "B": {
+      "label": "SPADE",
+      "method": "SPADE-BYTE",
+      "handoff": true,
+      "cache_mb": 50,
+      "entries": 100,
+      "hold_ms": 15000,
+      "client_cap_bytes": 167772160,
+      "probe_ms": 1500
+    }
+  },
+  "references": {
+    "coit": {
+      "C3": "visualref_coit_direct_r8",
+      "C4": "visualref_coit_direct_c4_r1",
+      "C5": "visualref_coit_direct_c5_r1"
+    },
+    "poland": {
+      "C3": "visualref_poland_direct_c3_r1",
+      "C4": "visualref_poland_direct_c4_r3",
+      "C5": "visualref_poland_direct_c5_r1"
+    }
+  },
+  "sessions": [
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27391639,
+      "rep": 1,
+      "arm": "A",
+      "pairId": "coit_27391639_r1",
+      "runId": "visab_coit_27391639_r1_A"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27391639,
+      "rep": 1,
+      "arm": "B",
+      "pairId": "coit_27391639_r1",
+      "runId": "visab_coit_27391639_r1_B"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27391639,
+      "rep": 2,
+      "arm": "B",
+      "pairId": "coit_27391639_r2",
+      "runId": "visab_coit_27391639_r2_B"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27391639,
+      "rep": 2,
+      "arm": "A",
+      "pairId": "coit_27391639_r2",
+      "runId": "visab_coit_27391639_r2_A"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27396087,
+      "rep": 1,
+      "arm": "A",
+      "pairId": "coit_27396087_r1",
+      "runId": "visab_coit_27396087_r1_A"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27396087,
+      "rep": 1,
+      "arm": "B",
+      "pairId": "coit_27396087_r1",
+      "runId": "visab_coit_27396087_r1_B"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27396087,
+      "rep": 2,
+      "arm": "B",
+      "pairId": "coit_27396087_r2",
+      "runId": "visab_coit_27396087_r2_B"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27396087,
+      "rep": 2,
+      "arm": "A",
+      "pairId": "coit_27396087_r2",
+      "runId": "visab_coit_27396087_r2_A"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27397637,
+      "rep": 1,
+      "arm": "A",
+      "pairId": "coit_27397637_r1",
+      "runId": "visab_coit_27397637_r1_A"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27397637,
+      "rep": 1,
+      "arm": "B",
+      "pairId": "coit_27397637_r1",
+      "runId": "visab_coit_27397637_r1_B"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27397637,
+      "rep": 2,
+      "arm": "B",
+      "pairId": "coit_27397637_r2",
+      "runId": "visab_coit_27397637_r2_B"
+    },
+    {
+      "sceneId": "coit",
+      "sceneFile": "coit-40m-sh1-lod",
+      "world": "Coit Tower, SF",
+      "seed": 27397637,
+      "rep": 2,
+      "arm": "A",
+      "pairId": "coit_27397637_r2",
+      "runId": "visab_coit_27397637_r2_A"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27394061,
+      "rep": 1,
+      "arm": "A",
+      "pairId": "poland_27394061_r1",
+      "runId": "visab_poland_27394061_r1_A"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27394061,
+      "rep": 1,
+      "arm": "B",
+      "pairId": "poland_27394061_r1",
+      "runId": "visab_poland_27394061_r1_B"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27394061,
+      "rep": 2,
+      "arm": "B",
+      "pairId": "poland_27394061_r2",
+      "runId": "visab_poland_27394061_r2_B"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27394061,
+      "rep": 2,
+      "arm": "A",
+      "pairId": "poland_27394061_r2",
+      "runId": "visab_poland_27394061_r2_A"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27391244,
+      "rep": 1,
+      "arm": "A",
+      "pairId": "poland_27391244_r1",
+      "runId": "visab_poland_27391244_r1_A"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27391244,
+      "rep": 1,
+      "arm": "B",
+      "pairId": "poland_27391244_r1",
+      "runId": "visab_poland_27391244_r1_B"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27391244,
+      "rep": 2,
+      "arm": "B",
+      "pairId": "poland_27391244_r2",
+      "runId": "visab_poland_27391244_r2_B"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27391244,
+      "rep": 2,
+      "arm": "A",
+      "pairId": "poland_27391244_r2",
+      "runId": "visab_poland_27391244_r2_A"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27394531,
+      "rep": 1,
+      "arm": "A",
+      "pairId": "poland_27394531_r1",
+      "runId": "visab_poland_27394531_r1_A"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27394531,
+      "rep": 1,
+      "arm": "B",
+      "pairId": "poland_27394531_r1",
+      "runId": "visab_poland_27394531_r1_B"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27394531,
+      "rep": 2,
+      "arm": "B",
+      "pairId": "poland_27394531_r2",
+      "runId": "visab_poland_27394531_r2_B"
+    },
+    {
+      "sceneId": "poland",
+      "sceneFile": "poland-lod",
+      "world": "Jastrzębia Góra, Poland",
+      "seed": 27394531,
+      "rep": 2,
+      "arm": "A",
+      "pairId": "poland_27394531_r2",
+      "runId": "visab_poland_27394531_r2_A"
+    }
+  ]
+}

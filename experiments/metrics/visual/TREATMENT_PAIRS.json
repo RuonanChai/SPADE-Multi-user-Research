@@ -1,0 +1,3837 @@
+{
+  "generated_at": "2026-10-25T04:39:47.121Z",
+  "complete_pairs": 12,
+  "expected_pairs": 12,
+  "statistical_unit": "A/B session pair",
+  "image_count_is_not_the_sample_size": true,
+  "pairs": [
+    {
+      "pair_id": "coit_27391639_r1",
+      "scene": "coit-40m-sh1-lod",
+      "seed": 27391639,
+      "rep": 1,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 869190104,
+      "origin_bytes_b": 1182826288,
+      "peer_bytes_b": 62084024,
+      "origin_reduction": -0.360837,
+      "mean_delta_ssim_across_checkpoints": 0.032834,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.599183,
+          "mean_ssim_b": 0.628299,
+          "mean_delta_ssim": 0.029115,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.576168,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.58556
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.742649,
+          "mean_ssim_b": 0.861659,
+          "mean_delta_ssim": 0.119009,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.725931,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.848092
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.8402,
+          "mean_ssim_b": 0.893595,
+          "mean_delta_ssim": 0.053395,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.837192,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.889863
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.854525,
+          "mean_ssim_b": 0.872063,
+          "mean_delta_ssim": 0.017538,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.853003,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.870002
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.937382,
+          "mean_ssim_b": 0.934077,
+          "mean_delta_ssim": -0.003305,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.933626,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.931815
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.916552,
+          "mean_ssim_b": 0.897807,
+          "mean_delta_ssim": -0.018745,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.881685,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.893722
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.576168,
+              "ssim_b": 0.58556,
+              "delta_ssim_b_minus_a": 0.009392,
+              "psnr_a": 18.733,
+              "psnr_b": 18.85,
+              "delta_psnr_b_minus_a": 0.117
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.725931,
+              "ssim_b": 0.848092,
+              "delta_ssim_b_minus_a": 0.122161,
+              "psnr_a": 21.629,
+              "psnr_b": 24.889,
+              "delta_psnr_b_minus_a": 3.26
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.837192,
+              "ssim_b": 0.895565,
+              "delta_ssim_b_minus_a": 0.058372,
+              "psnr_a": 24.429,
+              "psnr_b": 26.682,
+              "delta_psnr_b_minus_a": 2.253
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.857125,
+              "ssim_b": 0.875476,
+              "delta_ssim_b_minus_a": 0.018351,
+              "psnr_a": 25.86,
+              "psnr_b": 26.404,
+              "delta_psnr_b_minus_a": 0.544
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.94417,
+              "ssim_b": 0.931815,
+              "delta_ssim_b_minus_a": -0.012354,
+              "psnr_a": 29.403,
+              "psnr_b": 28.466,
+              "delta_psnr_b_minus_a": -0.936
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.928909,
+              "ssim_b": 0.896771,
+              "delta_ssim_b_minus_a": -0.032138,
+              "psnr_a": 29.354,
+              "psnr_b": 27.495,
+              "delta_psnr_b_minus_a": -1.859
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 40,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 40,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.585551,
+              "ssim_b": 0.616212,
+              "delta_ssim_b_minus_a": 0.030661,
+              "psnr_a": 18.849,
+              "psnr_b": 19.422,
+              "delta_psnr_b_minus_a": 0.572
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.736225,
+              "ssim_b": 0.864822,
+              "delta_ssim_b_minus_a": 0.128597,
+              "psnr_a": 21.95,
+              "psnr_b": 25.478,
+              "delta_psnr_b_minus_a": 3.528
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.842412,
+              "ssim_b": 0.895356,
+              "delta_ssim_b_minus_a": 0.052944,
+              "psnr_a": 24.53,
+              "psnr_b": 26.671,
+              "delta_psnr_b_minus_a": 2.141
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.853448,
+              "ssim_b": 0.870002,
+              "delta_ssim_b_minus_a": 0.016554,
+              "psnr_a": 25.736,
+              "psnr_b": 26.23,
+              "delta_psnr_b_minus_a": 0.494
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.93435,
+              "ssim_b": 0.932606,
+              "delta_ssim_b_minus_a": -0.001744,
+              "psnr_a": 28.653,
+              "psnr_b": 28.547,
+              "delta_psnr_b_minus_a": -0.106
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.939062,
+              "ssim_b": 0.902927,
+              "delta_ssim_b_minus_a": -0.036135,
+              "psnr_a": 30.057,
+              "psnr_b": 27.775,
+              "delta_psnr_b_minus_a": -2.282
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 40,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 40,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.635831,
+              "ssim_b": 0.683125,
+              "delta_ssim_b_minus_a": 0.047293,
+              "psnr_a": 19.734,
+              "psnr_b": 20.689,
+              "delta_psnr_b_minus_a": 0.955
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.765792,
+              "ssim_b": 0.872062,
+              "delta_ssim_b_minus_a": 0.10627,
+              "psnr_a": 22.681,
+              "psnr_b": 25.625,
+              "delta_psnr_b_minus_a": 2.943
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.840995,
+              "ssim_b": 0.889863,
+              "delta_ssim_b_minus_a": 0.048869,
+              "psnr_a": 24.562,
+              "psnr_b": 26.419,
+              "delta_psnr_b_minus_a": 1.858
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.853003,
+              "ssim_b": 0.870712,
+              "delta_ssim_b_minus_a": 0.017709,
+              "psnr_a": 25.697,
+              "psnr_b": 26.258,
+              "delta_psnr_b_minus_a": 0.561
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.933626,
+              "ssim_b": 0.937809,
+              "delta_ssim_b_minus_a": 0.004183,
+              "psnr_a": 28.662,
+              "psnr_b": 28.87,
+              "delta_psnr_b_minus_a": 0.208
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.881685,
+              "ssim_b": 0.893722,
+              "delta_ssim_b_minus_a": 0.012038,
+              "psnr_a": 26.575,
+              "psnr_b": 27.345,
+              "delta_psnr_b_minus_a": 0.77
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 40,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 40,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "coit_27391639_r2",
+      "scene": "coit-40m-sh1-lod",
+      "seed": 27391639,
+      "rep": 2,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 981321600,
+      "origin_bytes_b": 1453758040,
+      "peer_bytes_b": 83119552,
+      "origin_reduction": -0.481429,
+      "mean_delta_ssim_across_checkpoints": 0.00192,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.888286,
+          "mean_ssim_b": 0.899794,
+          "mean_delta_ssim": 0.011508,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.862088,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.887186
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.909214,
+          "mean_ssim_b": 0.93442,
+          "mean_delta_ssim": 0.025207,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.891013,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.918456
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.905652,
+          "mean_ssim_b": 0.896504,
+          "mean_delta_ssim": -0.009147,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.898301,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.883404
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.880919,
+          "mean_ssim_b": 0.872469,
+          "mean_delta_ssim": -0.00845,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.878946,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.870083
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.932247,
+          "mean_ssim_b": 0.93869,
+          "mean_delta_ssim": 0.006443,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.930295,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.933281
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.910478,
+          "mean_ssim_b": 0.896435,
+          "mean_delta_ssim": -0.014042,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.894618,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.893319
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.862088,
+              "ssim_b": 0.88725,
+              "delta_ssim_b_minus_a": 0.025162,
+              "psnr_a": 24.918,
+              "psnr_b": 25.773,
+              "delta_psnr_b_minus_a": 0.855
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.891013,
+              "ssim_b": 0.918597,
+              "delta_ssim_b_minus_a": 0.027585,
+              "psnr_a": 25.92,
+              "psnr_b": 26.927,
+              "delta_psnr_b_minus_a": 1.007
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.904228,
+              "ssim_b": 0.883404,
+              "delta_ssim_b_minus_a": -0.020823,
+              "psnr_a": 27.139,
+              "psnr_b": 25.985,
+              "delta_psnr_b_minus_a": -1.154
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.878946,
+              "ssim_b": 0.870855,
+              "delta_ssim_b_minus_a": -0.008091,
+              "psnr_a": 26.628,
+              "psnr_b": 26.334,
+              "delta_psnr_b_minus_a": -0.293
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.932959,
+              "ssim_b": 0.933281,
+              "delta_ssim_b_minus_a": 0.000322,
+              "psnr_a": 28.577,
+              "psnr_b": 28.612,
+              "delta_psnr_b_minus_a": 0.035
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.913927,
+              "ssim_b": 0.893912,
+              "delta_ssim_b_minus_a": -0.020015,
+              "psnr_a": 28.51,
+              "psnr_b": 27.342,
+              "delta_psnr_b_minus_a": -1.168
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 10,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.903817,
+              "ssim_b": 0.887186,
+              "delta_ssim_b_minus_a": -0.016631,
+              "psnr_a": 26.795,
+              "psnr_b": 25.769,
+              "delta_psnr_b_minus_a": -1.027
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.924996,
+              "ssim_b": 0.918456,
+              "delta_ssim_b_minus_a": -0.006539,
+              "psnr_a": 28.014,
+              "psnr_b": 26.92,
+              "delta_psnr_b_minus_a": -1.094
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.914426,
+              "ssim_b": 0.903933,
+              "delta_ssim_b_minus_a": -0.010493,
+              "psnr_a": 27.677,
+              "psnr_b": 27.056,
+              "delta_psnr_b_minus_a": -0.621
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.882753,
+              "ssim_b": 0.876469,
+              "delta_ssim_b_minus_a": -0.006284,
+              "psnr_a": 26.648,
+              "psnr_b": 26.581,
+              "delta_psnr_b_minus_a": -0.067
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.933488,
+              "ssim_b": 0.939726,
+              "delta_ssim_b_minus_a": 0.006238,
+              "psnr_a": 28.607,
+              "psnr_b": 29.049,
+              "delta_psnr_b_minus_a": 0.441
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.922888,
+              "ssim_b": 0.893319,
+              "delta_ssim_b_minus_a": -0.029569,
+              "psnr_a": 28.954,
+              "psnr_b": 27.288,
+              "delta_psnr_b_minus_a": -1.666
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.898953,
+              "ssim_b": 0.924945,
+              "delta_ssim_b_minus_a": 0.025992,
+              "psnr_a": 26.531,
+              "psnr_b": 27.982,
+              "delta_psnr_b_minus_a": 1.451
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.911634,
+              "ssim_b": 0.966208,
+              "delta_ssim_b_minus_a": 0.054574,
+              "psnr_a": 27.149,
+              "psnr_b": 31.089,
+              "delta_psnr_b_minus_a": 3.939
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.898301,
+              "ssim_b": 0.902176,
+              "delta_ssim_b_minus_a": 0.003875,
+              "psnr_a": 26.868,
+              "psnr_b": 26.91,
+              "delta_psnr_b_minus_a": 0.042
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.881059,
+              "ssim_b": 0.870083,
+              "delta_ssim_b_minus_a": -0.010975,
+              "psnr_a": 26.647,
+              "psnr_b": 26.193,
+              "delta_psnr_b_minus_a": -0.455
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.930295,
+              "ssim_b": 0.943063,
+              "delta_ssim_b_minus_a": 0.012768,
+              "psnr_a": 28.311,
+              "psnr_b": 29.329,
+              "delta_psnr_b_minus_a": 1.018
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.894618,
+              "ssim_b": 0.902074,
+              "delta_ssim_b_minus_a": 0.007457,
+              "psnr_a": 27.357,
+              "psnr_b": 27.889,
+              "delta_psnr_b_minus_a": 0.532
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "coit_27396087_r1",
+      "scene": "coit-40m-sh1-lod",
+      "seed": 27396087,
+      "rep": 1,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 1007499880,
+      "origin_bytes_b": 1481795128,
+      "peer_bytes_b": 77802592,
+      "origin_reduction": -0.470765,
+      "mean_delta_ssim_across_checkpoints": 0.00541,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.910251,
+          "mean_ssim_b": 0.925043,
+          "mean_delta_ssim": 0.014793,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.900982,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.925001
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.92745,
+          "mean_ssim_b": 0.964893,
+          "mean_delta_ssim": 0.037442,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.923491,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.96415
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.905694,
+          "mean_ssim_b": 0.903893,
+          "mean_delta_ssim": -0.001801,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.896442,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.900912
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.884622,
+          "mean_ssim_b": 0.873118,
+          "mean_delta_ssim": -0.011505,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.88439,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.870456
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.935768,
+          "mean_ssim_b": 0.934676,
+          "mean_delta_ssim": -0.001092,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.93273,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.930756
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.907075,
+          "mean_ssim_b": 0.901699,
+          "mean_delta_ssim": -0.005376,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.898025,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.893571
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.911766,
+              "ssim_b": 0.925001,
+              "delta_ssim_b_minus_a": 0.013235,
+              "psnr_a": 27.151,
+              "psnr_b": 27.986,
+              "delta_psnr_b_minus_a": 0.835
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.923491,
+              "ssim_b": 0.96415,
+              "delta_ssim_b_minus_a": 0.040659,
+              "psnr_a": 27.922,
+              "psnr_b": 31.04,
+              "delta_psnr_b_minus_a": 3.118
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.896442,
+              "ssim_b": 0.905324,
+              "delta_ssim_b_minus_a": 0.008882,
+              "psnr_a": 26.721,
+              "psnr_b": 27.095,
+              "delta_psnr_b_minus_a": 0.374
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.88486,
+              "ssim_b": 0.871074,
+              "delta_ssim_b_minus_a": -0.013786,
+              "psnr_a": 26.781,
+              "psnr_b": 26.351,
+              "delta_psnr_b_minus_a": -0.429
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.935524,
+              "ssim_b": 0.93324,
+              "delta_ssim_b_minus_a": -0.002284,
+              "psnr_a": 28.775,
+              "psnr_b": 28.605,
+              "delta_psnr_b_minus_a": -0.17
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.91978,
+              "ssim_b": 0.90408,
+              "delta_ssim_b_minus_a": -0.0157,
+              "psnr_a": 28.592,
+              "psnr_b": 27.974,
+              "delta_psnr_b_minus_a": -0.618
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.918004,
+              "ssim_b": 0.925017,
+              "delta_ssim_b_minus_a": 0.007013,
+              "psnr_a": 27.52,
+              "psnr_b": 27.989,
+              "delta_psnr_b_minus_a": 0.469
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.930907,
+              "ssim_b": 0.964298,
+              "delta_ssim_b_minus_a": 0.03339,
+              "psnr_a": 28.41,
+              "psnr_b": 31.06,
+              "delta_psnr_b_minus_a": 2.649
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.910758,
+              "ssim_b": 0.905442,
+              "delta_ssim_b_minus_a": -0.005316,
+              "psnr_a": 27.491,
+              "psnr_b": 27.093,
+              "delta_psnr_b_minus_a": -0.397
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.884617,
+              "ssim_b": 0.877823,
+              "delta_ssim_b_minus_a": -0.006795,
+              "psnr_a": 26.914,
+              "psnr_b": 26.61,
+              "delta_psnr_b_minus_a": -0.304
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.93905,
+              "ssim_b": 0.940033,
+              "delta_ssim_b_minus_a": 0.000983,
+              "psnr_a": 28.976,
+              "psnr_b": 29.08,
+              "delta_psnr_b_minus_a": 0.104
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.898025,
+              "ssim_b": 0.907447,
+              "delta_ssim_b_minus_a": 0.009422,
+              "psnr_a": 27.553,
+              "psnr_b": 28.149,
+              "delta_psnr_b_minus_a": 0.596
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.900982,
+              "ssim_b": 0.925112,
+              "delta_ssim_b_minus_a": 0.02413,
+              "psnr_a": 26.643,
+              "psnr_b": 27.995,
+              "delta_psnr_b_minus_a": 1.352
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.927951,
+              "ssim_b": 0.96623,
+              "delta_ssim_b_minus_a": 0.038278,
+              "psnr_a": 28.184,
+              "psnr_b": 31.105,
+              "delta_psnr_b_minus_a": 2.921
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.909881,
+              "ssim_b": 0.900912,
+              "delta_ssim_b_minus_a": -0.008968,
+              "psnr_a": 27.404,
+              "psnr_b": 26.828,
+              "delta_psnr_b_minus_a": -0.576
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.88439,
+              "ssim_b": 0.870456,
+              "delta_ssim_b_minus_a": -0.013934,
+              "psnr_a": 26.74,
+              "psnr_b": 26.305,
+              "delta_psnr_b_minus_a": -0.435
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.93273,
+              "ssim_b": 0.930756,
+              "delta_ssim_b_minus_a": -0.001974,
+              "psnr_a": 28.531,
+              "psnr_b": 28.372,
+              "delta_psnr_b_minus_a": -0.159
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.90342,
+              "ssim_b": 0.893571,
+              "delta_ssim_b_minus_a": -0.009849,
+              "psnr_a": 27.933,
+              "psnr_b": 27.304,
+              "delta_psnr_b_minus_a": -0.629
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "coit_27396087_r2",
+      "scene": "coit-40m-sh1-lod",
+      "seed": 27396087,
+      "rep": 2,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 1068638528,
+      "origin_bytes_b": 1463343352,
+      "peer_bytes_b": 94218528,
+      "origin_reduction": -0.369353,
+      "mean_delta_ssim_across_checkpoints": 0.006595,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.902291,
+          "mean_ssim_b": 0.925151,
+          "mean_delta_ssim": 0.02286,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.891645,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.925073
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.923645,
+          "mean_ssim_b": 0.962895,
+          "mean_delta_ssim": 0.039251,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.913559,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.9619
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.903078,
+          "mean_ssim_b": 0.904502,
+          "mean_delta_ssim": 0.001424,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.90127,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.900586
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.880075,
+          "mean_ssim_b": 0.871939,
+          "mean_delta_ssim": -0.008136,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.877759,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.869303
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.94,
+          "mean_ssim_b": 0.936006,
+          "mean_delta_ssim": -0.003994,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.933027,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.931118
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.911758,
+          "mean_ssim_b": 0.899924,
+          "mean_delta_ssim": -0.011834,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.903337,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.892584
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.908528,
+              "ssim_b": 0.925258,
+              "delta_ssim_b_minus_a": 0.01673,
+              "psnr_a": 27.013,
+              "psnr_b": 28.003,
+              "delta_psnr_b_minus_a": 0.99
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.933884,
+              "ssim_b": 0.9619,
+              "delta_ssim_b_minus_a": 0.028017,
+              "psnr_a": 28.597,
+              "psnr_b": 30.769,
+              "delta_psnr_b_minus_a": 2.173
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.905764,
+              "ssim_b": 0.904109,
+              "delta_ssim_b_minus_a": -0.001655,
+              "psnr_a": 27.23,
+              "psnr_b": 27.06,
+              "delta_psnr_b_minus_a": -0.17
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.877759,
+              "ssim_b": 0.876321,
+              "delta_ssim_b_minus_a": -0.001437,
+              "psnr_a": 26.565,
+              "psnr_b": 26.576,
+              "delta_psnr_b_minus_a": 0.011
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.933027,
+              "ssim_b": 0.934681,
+              "delta_ssim_b_minus_a": 0.001654,
+              "psnr_a": 28.568,
+              "psnr_b": 28.711,
+              "delta_psnr_b_minus_a": 0.143
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.924567,
+              "ssim_b": 0.894196,
+              "delta_ssim_b_minus_a": -0.030371,
+              "psnr_a": 29.095,
+              "psnr_b": 27.401,
+              "delta_psnr_b_minus_a": -1.694
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.9067,
+              "ssim_b": 0.925123,
+              "delta_ssim_b_minus_a": 0.018423,
+              "psnr_a": 26.873,
+              "psnr_b": 27.996,
+              "delta_psnr_b_minus_a": 1.123
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.923491,
+              "ssim_b": 0.961986,
+              "delta_ssim_b_minus_a": 0.038495,
+              "psnr_a": 27.922,
+              "psnr_b": 30.778,
+              "delta_psnr_b_minus_a": 2.856
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.90127,
+              "ssim_b": 0.908811,
+              "delta_ssim_b_minus_a": 0.007541,
+              "psnr_a": 27.006,
+              "psnr_b": 27.312,
+              "delta_psnr_b_minus_a": 0.306
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.878434,
+              "ssim_b": 0.870192,
+              "delta_ssim_b_minus_a": -0.008243,
+              "psnr_a": 26.58,
+              "psnr_b": 26.222,
+              "delta_psnr_b_minus_a": -0.357
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.948573,
+              "ssim_b": 0.942219,
+              "delta_ssim_b_minus_a": -0.006354,
+              "psnr_a": 29.773,
+              "psnr_b": 29.254,
+              "delta_psnr_b_minus_a": -0.519
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.907371,
+              "ssim_b": 0.912992,
+              "delta_ssim_b_minus_a": 0.005621,
+              "psnr_a": 27.957,
+              "psnr_b": 28.256,
+              "delta_psnr_b_minus_a": 0.299
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.891645,
+              "ssim_b": 0.925073,
+              "delta_ssim_b_minus_a": 0.033428,
+              "psnr_a": 26.276,
+              "psnr_b": 27.994,
+              "delta_psnr_b_minus_a": 1.718
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.913559,
+              "ssim_b": 0.9648,
+              "delta_ssim_b_minus_a": 0.051241,
+              "psnr_a": 27.258,
+              "psnr_b": 30.935,
+              "delta_psnr_b_minus_a": 3.678
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.902201,
+              "ssim_b": 0.900586,
+              "delta_ssim_b_minus_a": -0.001615,
+              "psnr_a": 27.066,
+              "psnr_b": 26.807,
+              "delta_psnr_b_minus_a": -0.259
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.884032,
+              "ssim_b": 0.869303,
+              "delta_ssim_b_minus_a": -0.014729,
+              "psnr_a": 26.728,
+              "psnr_b": 26.128,
+              "delta_psnr_b_minus_a": -0.6
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.938401,
+              "ssim_b": 0.931118,
+              "delta_ssim_b_minus_a": -0.007283,
+              "psnr_a": 28.911,
+              "psnr_b": 28.402,
+              "delta_psnr_b_minus_a": -0.509
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.903337,
+              "ssim_b": 0.892584,
+              "delta_ssim_b_minus_a": -0.010753,
+              "psnr_a": 27.943,
+              "psnr_b": 27.281,
+              "delta_psnr_b_minus_a": -0.663
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "coit_27397637_r1",
+      "scene": "coit-40m-sh1-lod",
+      "seed": 27397637,
+      "rep": 1,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 1013822968,
+      "origin_bytes_b": 1194371464,
+      "peer_bytes_b": 100147872,
+      "origin_reduction": -0.178087,
+      "mean_delta_ssim_across_checkpoints": -0.063061,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.892917,
+          "mean_ssim_b": 0.606478,
+          "mean_delta_ssim": -0.286438,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.86763,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.501351
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.916964,
+          "mean_ssim_b": 0.855724,
+          "mean_delta_ssim": -0.06124,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.89167,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.841109
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.904206,
+          "mean_ssim_b": 0.886362,
+          "mean_delta_ssim": -0.017845,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.901088,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.865289
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.881323,
+          "mean_ssim_b": 0.872902,
+          "mean_delta_ssim": -0.008421,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.879955,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.87113
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.938235,
+          "mean_ssim_b": 0.93903,
+          "mean_delta_ssim": 0.000795,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.934508,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.937303
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.907494,
+          "mean_ssim_b": 0.902279,
+          "mean_delta_ssim": -0.005215,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.895883,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.893231
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.86763,
+              "ssim_b": 0.501351,
+              "delta_ssim_b_minus_a": -0.366278,
+              "psnr_a": 25.051,
+              "psnr_b": 17.08,
+              "delta_psnr_b_minus_a": -7.971
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.92794,
+              "ssim_b": 0.841109,
+              "delta_ssim_b_minus_a": -0.086831,
+              "psnr_a": 28.183,
+              "psnr_b": 24.626,
+              "delta_psnr_b_minus_a": -3.558
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.901088,
+              "ssim_b": 0.865289,
+              "delta_ssim_b_minus_a": -0.035799,
+              "psnr_a": 27.001,
+              "psnr_b": 25.234,
+              "delta_psnr_b_minus_a": -1.767
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.879955,
+              "ssim_b": 0.87113,
+              "delta_ssim_b_minus_a": -0.008825,
+              "psnr_a": 26.699,
+              "psnr_b": 26.273,
+              "delta_psnr_b_minus_a": -0.426
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.941252,
+              "ssim_b": 0.939207,
+              "delta_ssim_b_minus_a": -0.002044,
+              "psnr_a": 29.169,
+              "psnr_b": 29.006,
+              "delta_psnr_b_minus_a": -0.163
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.915539,
+              "ssim_b": 0.916268,
+              "delta_ssim_b_minus_a": 0.000729,
+              "psnr_a": 28.387,
+              "psnr_b": 28.617,
+              "delta_psnr_b_minus_a": 0.23
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 40,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.910231,
+              "ssim_b": 0.638799,
+              "delta_ssim_b_minus_a": -0.271432,
+              "psnr_a": 27.109,
+              "psnr_b": 19.814,
+              "delta_psnr_b_minus_a": -7.295
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.931281,
+              "ssim_b": 0.864822,
+              "delta_ssim_b_minus_a": -0.06646,
+              "psnr_a": 28.385,
+              "psnr_b": 25.478,
+              "delta_psnr_b_minus_a": -2.907
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.905299,
+              "ssim_b": 0.89911,
+              "delta_ssim_b_minus_a": -0.006189,
+              "psnr_a": 27.179,
+              "psnr_b": 26.829,
+              "delta_psnr_b_minus_a": -0.35
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.881768,
+              "ssim_b": 0.876434,
+              "delta_ssim_b_minus_a": -0.005334,
+              "psnr_a": 26.814,
+              "psnr_b": 26.547,
+              "delta_psnr_b_minus_a": -0.267
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.938946,
+              "ssim_b": 0.940579,
+              "delta_ssim_b_minus_a": 0.001633,
+              "psnr_a": 29.004,
+              "psnr_b": 29.134,
+              "delta_psnr_b_minus_a": 0.13
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.911061,
+              "ssim_b": 0.897339,
+              "delta_ssim_b_minus_a": -0.013722,
+              "psnr_a": 27.713,
+              "psnr_b": 27.505,
+              "delta_psnr_b_minus_a": -0.208
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 40,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.90089,
+              "ssim_b": 0.679284,
+              "delta_ssim_b_minus_a": -0.221605,
+              "psnr_a": 26.639,
+              "psnr_b": 20.581,
+              "delta_psnr_b_minus_a": -6.058
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.89167,
+              "ssim_b": 0.861241,
+              "delta_ssim_b_minus_a": -0.030429,
+              "psnr_a": 25.947,
+              "psnr_b": 25.295,
+              "delta_psnr_b_minus_a": -0.652
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.906232,
+              "ssim_b": 0.894686,
+              "delta_ssim_b_minus_a": -0.011546,
+              "psnr_a": 27.261,
+              "psnr_b": 26.655,
+              "delta_psnr_b_minus_a": -0.606
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.882247,
+              "ssim_b": 0.871142,
+              "delta_ssim_b_minus_a": -0.011105,
+              "psnr_a": 26.752,
+              "psnr_b": 26.179,
+              "delta_psnr_b_minus_a": -0.573
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.934508,
+              "ssim_b": 0.937303,
+              "delta_ssim_b_minus_a": 0.002795,
+              "psnr_a": 28.706,
+              "psnr_b": 28.82,
+              "delta_psnr_b_minus_a": 0.114
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.895883,
+              "ssim_b": 0.893231,
+              "delta_ssim_b_minus_a": -0.002652,
+              "psnr_a": 27.44,
+              "psnr_b": 27.323,
+              "delta_psnr_b_minus_a": -0.117
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 40,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "coit_27397637_r2",
+      "scene": "coit-40m-sh1-lod",
+      "seed": 27397637,
+      "rep": 2,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 996577504,
+      "origin_bytes_b": 1490102576,
+      "peer_bytes_b": 76514960,
+      "origin_reduction": -0.49522,
+      "mean_delta_ssim_across_checkpoints": 0.009999,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.883304,
+          "mean_ssim_b": 0.899848,
+          "mean_delta_ssim": 0.016544,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.860904,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.887194
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.911615,
+          "mean_ssim_b": 0.964903,
+          "mean_delta_ssim": 0.053288,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.902024,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.963928
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.898543,
+          "mean_ssim_b": 0.90356,
+          "mean_delta_ssim": 0.005017,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.898212,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.900943
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.885318,
+          "mean_ssim_b": 0.869458,
+          "mean_delta_ssim": -0.015861,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.883937,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.868309
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.936049,
+          "mean_ssim_b": 0.945947,
+          "mean_delta_ssim": 0.009897,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.930274,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.94426
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.90575,
+          "mean_ssim_b": 0.896859,
+          "mean_delta_ssim": -0.008891,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.893264,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.877708
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.860904,
+              "ssim_b": 0.887194,
+              "delta_ssim_b_minus_a": 0.02629,
+              "psnr_a": 24.891,
+              "psnr_b": 25.77,
+              "delta_psnr_b_minus_a": 0.879
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.903753,
+              "ssim_b": 0.964295,
+              "delta_ssim_b_minus_a": 0.060542,
+              "psnr_a": 26.747,
+              "psnr_b": 31.06,
+              "delta_psnr_b_minus_a": 4.313
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.898565,
+              "ssim_b": 0.900943,
+              "delta_ssim_b_minus_a": 0.002378,
+              "psnr_a": 26.865,
+              "psnr_b": 26.851,
+              "delta_psnr_b_minus_a": -0.015
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.884597,
+              "ssim_b": 0.870972,
+              "delta_ssim_b_minus_a": -0.013625,
+              "psnr_a": 26.787,
+              "psnr_b": 26.305,
+              "delta_psnr_b_minus_a": -0.482
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.943059,
+              "ssim_b": 0.948032,
+              "delta_ssim_b_minus_a": 0.004972,
+              "psnr_a": 29.3,
+              "psnr_b": 29.724,
+              "delta_psnr_b_minus_a": 0.424
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.929893,
+              "ssim_b": 0.911849,
+              "delta_ssim_b_minus_a": -0.018044,
+              "psnr_a": 29.415,
+              "psnr_b": 28.195,
+              "delta_psnr_b_minus_a": -1.22
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.898929,
+              "ssim_b": 0.887351,
+              "delta_ssim_b_minus_a": -0.011578,
+              "psnr_a": 26.53,
+              "psnr_b": 25.78,
+              "delta_psnr_b_minus_a": -0.75
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.929068,
+              "ssim_b": 0.966486,
+              "delta_ssim_b_minus_a": 0.037418,
+              "psnr_a": 28.287,
+              "psnr_b": 31.131,
+              "delta_psnr_b_minus_a": 2.844
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.898853,
+              "ssim_b": 0.908229,
+              "delta_ssim_b_minus_a": 0.009377,
+              "psnr_a": 26.866,
+              "psnr_b": 27.245,
+              "delta_psnr_b_minus_a": 0.379
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.887421,
+              "ssim_b": 0.869092,
+              "delta_ssim_b_minus_a": -0.018329,
+              "psnr_a": 26.952,
+              "psnr_b": 26.08,
+              "delta_psnr_b_minus_a": -0.872
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.934815,
+              "ssim_b": 0.945549,
+              "delta_ssim_b_minus_a": 0.010733,
+              "psnr_a": 28.686,
+              "psnr_b": 29.503,
+              "delta_psnr_b_minus_a": 0.817
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.893264,
+              "ssim_b": 0.877708,
+              "delta_ssim_b_minus_a": -0.015556,
+              "psnr_a": 27.232,
+              "psnr_b": 26.391,
+              "delta_psnr_b_minus_a": -0.841
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.890079,
+              "ssim_b": 0.924999,
+              "delta_ssim_b_minus_a": 0.03492,
+              "psnr_a": 26.223,
+              "psnr_b": 27.991,
+              "delta_psnr_b_minus_a": 1.768
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.902024,
+              "ssim_b": 0.963928,
+              "delta_ssim_b_minus_a": 0.061904,
+              "psnr_a": 26.68,
+              "psnr_b": 31.017,
+              "delta_psnr_b_minus_a": 4.337
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.898212,
+              "ssim_b": 0.901508,
+              "delta_ssim_b_minus_a": 0.003296,
+              "psnr_a": 26.858,
+              "psnr_b": 26.859,
+              "delta_psnr_b_minus_a": 0.001
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.883937,
+              "ssim_b": 0.868309,
+              "delta_ssim_b_minus_a": -0.015628,
+              "psnr_a": 26.773,
+              "psnr_b": 26.056,
+              "delta_psnr_b_minus_a": -0.717
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.930274,
+              "ssim_b": 0.94426,
+              "delta_ssim_b_minus_a": 0.013986,
+              "psnr_a": 28.309,
+              "psnr_b": 29.42,
+              "delta_psnr_b_minus_a": 1.111
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.894093,
+              "ssim_b": 0.901019,
+              "delta_ssim_b_minus_a": 0.006927,
+              "psnr_a": 27.334,
+              "psnr_b": 27.736,
+              "delta_psnr_b_minus_a": 0.401
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "poland_27394061_r1",
+      "scene": "poland-lod",
+      "seed": 27394061,
+      "rep": 1,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 581782472,
+      "origin_bytes_b": 618000272,
+      "peer_bytes_b": 3457048,
+      "origin_reduction": -0.062253,
+      "mean_delta_ssim_across_checkpoints": 0.01232,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.867566,
+          "mean_ssim_b": 0.93394,
+          "mean_delta_ssim": 0.066374,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.863575,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.933934
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.935538,
+          "mean_ssim_b": 0.961186,
+          "mean_delta_ssim": 0.025648,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.921882,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.948803
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.761472,
+          "mean_ssim_b": 0.763331,
+          "mean_delta_ssim": 0.001859,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.757619,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.745872
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.9203,
+          "mean_ssim_b": 0.892284,
+          "mean_delta_ssim": -0.028016,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.905331,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.884431
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.820678,
+          "mean_ssim_b": 0.826139,
+          "mean_delta_ssim": 0.00546,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.806031,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.811763
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.935568,
+          "mean_ssim_b": 0.938166,
+          "mean_delta_ssim": 0.002598,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.913149,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.920669
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.874745,
+              "ssim_b": 0.933939,
+              "delta_ssim_b_minus_a": 0.059194,
+              "psnr_a": 29.872,
+              "psnr_b": 32.624,
+              "delta_psnr_b_minus_a": 2.752
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.927461,
+              "ssim_b": 0.967487,
+              "delta_ssim_b_minus_a": 0.040027,
+              "psnr_a": 32.262,
+              "psnr_b": 35.545,
+              "delta_psnr_b_minus_a": 3.283
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.75813,
+              "ssim_b": 0.764593,
+              "delta_ssim_b_minus_a": 0.006464,
+              "psnr_a": 26.221,
+              "psnr_b": 26.478,
+              "delta_psnr_b_minus_a": 0.257
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.905331,
+              "ssim_b": 0.884431,
+              "delta_ssim_b_minus_a": -0.0209,
+              "psnr_a": 31.926,
+              "psnr_b": 30.693,
+              "delta_psnr_b_minus_a": -1.233
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.806031,
+              "ssim_b": 0.848716,
+              "delta_ssim_b_minus_a": 0.042685,
+              "psnr_a": 27.384,
+              "psnr_b": 28.709,
+              "delta_psnr_b_minus_a": 1.325
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.957579,
+              "ssim_b": 0.956569,
+              "delta_ssim_b_minus_a": -0.00101,
+              "psnr_a": 36.373,
+              "psnr_b": 36.265,
+              "delta_psnr_b_minus_a": -0.107
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": 60,
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.863575,
+              "ssim_b": 0.933934,
+              "delta_ssim_b_minus_a": 0.07036,
+              "psnr_a": 29.444,
+              "psnr_b": 32.623,
+              "delta_psnr_b_minus_a": 3.179
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.921882,
+              "ssim_b": 0.948803,
+              "delta_ssim_b_minus_a": 0.02692,
+              "psnr_a": 31.967,
+              "psnr_b": 33.978,
+              "delta_psnr_b_minus_a": 2.011
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.768667,
+              "ssim_b": 0.745872,
+              "delta_ssim_b_minus_a": -0.022796,
+              "psnr_a": 26.535,
+              "psnr_b": 25.923,
+              "delta_psnr_b_minus_a": -0.612
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.940157,
+              "ssim_b": 0.892008,
+              "delta_ssim_b_minus_a": -0.048149,
+              "psnr_a": 33.907,
+              "psnr_b": 30.983,
+              "delta_psnr_b_minus_a": -2.923
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.827663,
+              "ssim_b": 0.811763,
+              "delta_ssim_b_minus_a": -0.0159,
+              "psnr_a": 27.998,
+              "psnr_b": 27.512,
+              "delta_psnr_b_minus_a": -0.485
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.935977,
+              "ssim_b": 0.920669,
+              "delta_ssim_b_minus_a": -0.015307,
+              "psnr_a": 34.474,
+              "psnr_b": 33.302,
+              "delta_psnr_b_minus_a": -1.173
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.864379,
+              "ssim_b": 0.933947,
+              "delta_ssim_b_minus_a": 0.069568,
+              "psnr_a": 29.483,
+              "psnr_b": 32.624,
+              "delta_psnr_b_minus_a": 3.141
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.957271,
+              "ssim_b": 0.967269,
+              "delta_ssim_b_minus_a": 0.009998,
+              "psnr_a": 34.546,
+              "psnr_b": 35.53,
+              "delta_psnr_b_minus_a": 0.985
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.757619,
+              "ssim_b": 0.779527,
+              "delta_ssim_b_minus_a": 0.021908,
+              "psnr_a": 26.172,
+              "psnr_b": 26.904,
+              "delta_psnr_b_minus_a": 0.732
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.915412,
+              "ssim_b": 0.900412,
+              "delta_ssim_b_minus_a": -0.015,
+              "psnr_a": 32.39,
+              "psnr_b": 31.493,
+              "delta_psnr_b_minus_a": -0.897
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.828341,
+              "ssim_b": 0.817937,
+              "delta_ssim_b_minus_a": -0.010404,
+              "psnr_a": 28.022,
+              "psnr_b": 27.7,
+              "delta_psnr_b_minus_a": -0.322
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.913149,
+              "ssim_b": 0.93726,
+              "delta_ssim_b_minus_a": 0.024111,
+              "psnr_a": 33.016,
+              "psnr_b": 34.597,
+              "delta_psnr_b_minus_a": 1.581
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "poland_27394061_r2",
+      "scene": "poland-lod",
+      "seed": 27394061,
+      "rep": 2,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 598524232,
+      "origin_bytes_b": 621221624,
+      "peer_bytes_b": 2584280,
+      "origin_reduction": -0.037922,
+      "mean_delta_ssim_across_checkpoints": 0.002458,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.887302,
+          "mean_ssim_b": 0.943515,
+          "mean_delta_ssim": 0.056214,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.86212,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.928406
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.947337,
+          "mean_ssim_b": 0.975883,
+          "mean_delta_ssim": 0.028547,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.928485,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.967272
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.80255,
+          "mean_ssim_b": 0.757316,
+          "mean_delta_ssim": -0.045233,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.796197,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.742412
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.907809,
+          "mean_ssim_b": 0.926279,
+          "mean_delta_ssim": 0.018469,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.885084,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.912854
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.819883,
+          "mean_ssim_b": 0.799264,
+          "mean_delta_ssim": -0.020618,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.794175,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.79324
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.952992,
+          "mean_ssim_b": 0.930364,
+          "mean_delta_ssim": -0.022628,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.947481,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.913556
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.86212,
+              "ssim_b": 0.968209,
+              "delta_ssim_b_minus_a": 0.106089,
+              "psnr_a": 29.402,
+              "psnr_b": 35.633,
+              "delta_psnr_b_minus_a": 6.231
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.956872,
+              "ssim_b": 0.967272,
+              "delta_ssim_b_minus_a": 0.010401,
+              "psnr_a": 34.506,
+              "psnr_b": 35.531,
+              "delta_psnr_b_minus_a": 1.026
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.796197,
+              "ssim_b": 0.759223,
+              "delta_ssim_b_minus_a": -0.036973,
+              "psnr_a": 27.364,
+              "psnr_b": 26.249,
+              "delta_psnr_b_minus_a": -1.115
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.935516,
+              "ssim_b": 0.912854,
+              "delta_ssim_b_minus_a": -0.022662,
+              "psnr_a": 33.654,
+              "psnr_b": 32.318,
+              "delta_psnr_b_minus_a": -1.336
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.794175,
+              "ssim_b": 0.79324,
+              "delta_ssim_b_minus_a": -0.000934,
+              "psnr_a": 27.029,
+              "psnr_b": 26.988,
+              "delta_psnr_b_minus_a": -0.041
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.958486,
+              "ssim_b": 0.956697,
+              "delta_ssim_b_minus_a": -0.001789,
+              "psnr_a": 36.447,
+              "psnr_b": 36.284,
+              "delta_psnr_b_minus_a": -0.163
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 2,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.927458,
+              "ssim_b": 0.928406,
+              "delta_ssim_b_minus_a": 0.000949,
+              "psnr_a": 32.262,
+              "psnr_b": 32.297,
+              "delta_psnr_b_minus_a": 0.034
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.928485,
+              "ssim_b": 0.992878,
+              "delta_ssim_b_minus_a": 0.064393,
+              "psnr_a": 32.328,
+              "psnr_b": 44.022,
+              "delta_psnr_b_minus_a": 11.694
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.807147,
+              "ssim_b": 0.742412,
+              "delta_ssim_b_minus_a": -0.064735,
+              "psnr_a": 27.707,
+              "psnr_b": 25.863,
+              "delta_psnr_b_minus_a": -1.845
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.885084,
+              "ssim_b": 0.933605,
+              "delta_ssim_b_minus_a": 0.048521,
+              "psnr_a": 30.686,
+              "psnr_b": 33.577,
+              "delta_psnr_b_minus_a": 2.891
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.846534,
+              "ssim_b": 0.809606,
+              "delta_ssim_b_minus_a": -0.036928,
+              "psnr_a": 28.629,
+              "psnr_b": 27.481,
+              "delta_psnr_b_minus_a": -1.148
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.947481,
+              "ssim_b": 0.920838,
+              "delta_ssim_b_minus_a": -0.026644,
+              "psnr_a": 35.32,
+              "psnr_b": 33.32,
+              "delta_psnr_b_minus_a": -2
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": 5
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.872327,
+              "ssim_b": 0.93393,
+              "delta_ssim_b_minus_a": 0.061603,
+              "psnr_a": 29.777,
+              "psnr_b": 32.624,
+              "delta_psnr_b_minus_a": 2.846
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.956653,
+              "ssim_b": 0.9675,
+              "delta_ssim_b_minus_a": 0.010848,
+              "psnr_a": 34.496,
+              "psnr_b": 35.547,
+              "delta_psnr_b_minus_a": 1.05
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.804305,
+              "ssim_b": 0.770314,
+              "delta_ssim_b_minus_a": -0.033991,
+              "psnr_a": 27.563,
+              "psnr_b": 26.599,
+              "delta_psnr_b_minus_a": -0.964
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.902828,
+              "ssim_b": 0.932377,
+              "delta_ssim_b_minus_a": 0.029549,
+              "psnr_a": 31.745,
+              "psnr_b": 33.41,
+              "delta_psnr_b_minus_a": 1.665
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.818939,
+              "ssim_b": 0.794947,
+              "delta_ssim_b_minus_a": -0.023992,
+              "psnr_a": 27.734,
+              "psnr_b": 27.039,
+              "delta_psnr_b_minus_a": -0.695
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.953009,
+              "ssim_b": 0.913556,
+              "delta_ssim_b_minus_a": -0.039452,
+              "psnr_a": 35.776,
+              "psnr_b": 33.044,
+              "delta_psnr_b_minus_a": -2.731
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "poland_27391244_r1",
+      "scene": "poland-lod",
+      "seed": 27391244,
+      "rep": 1,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 595601160,
+      "origin_bytes_b": 625127624,
+      "peer_bytes_b": 1238528,
+      "origin_reduction": -0.049574,
+      "mean_delta_ssim_across_checkpoints": 0.007471,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.886808,
+          "mean_ssim_b": 0.890592,
+          "mean_delta_ssim": 0.003783,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.874164,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.868559
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.929046,
+          "mean_ssim_b": 0.975941,
+          "mean_delta_ssim": 0.046895,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.921917,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.967288
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.790356,
+          "mean_ssim_b": 0.757014,
+          "mean_delta_ssim": -0.033342,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.772313,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.737353
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.912645,
+          "mean_ssim_b": 0.926048,
+          "mean_delta_ssim": 0.013403,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.893887,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.91757
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.811156,
+          "mean_ssim_b": 0.812367,
+          "mean_delta_ssim": 0.001211,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.792888,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.804684
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.932456,
+          "mean_ssim_b": 0.945335,
+          "mean_delta_ssim": 0.012879,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.917426,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.941019
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.875718,
+              "ssim_b": 0.868559,
+              "delta_ssim_b_minus_a": -0.00716,
+              "psnr_a": 29.893,
+              "psnr_b": 29.643,
+              "delta_psnr_b_minus_a": -0.25
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.92709,
+              "ssim_b": 0.967288,
+              "delta_ssim_b_minus_a": 0.040198,
+              "psnr_a": 32.237,
+              "psnr_b": 35.533,
+              "delta_psnr_b_minus_a": 3.296
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.797051,
+              "ssim_b": 0.790564,
+              "delta_ssim_b_minus_a": -0.006487,
+              "psnr_a": 27.384,
+              "psnr_b": 27.214,
+              "delta_psnr_b_minus_a": -0.17
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.893887,
+              "ssim_b": 0.92957,
+              "delta_ssim_b_minus_a": 0.035682,
+              "psnr_a": 31.073,
+              "psnr_b": 33.304,
+              "delta_psnr_b_minus_a": 2.231
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.800997,
+              "ssim_b": 0.804684,
+              "delta_ssim_b_minus_a": 0.003687,
+              "psnr_a": 27.201,
+              "psnr_b": 27.291,
+              "delta_psnr_b_minus_a": 0.09
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.958506,
+              "ssim_b": 0.946827,
+              "delta_ssim_b_minus_a": -0.011678,
+              "psnr_a": 36.449,
+              "psnr_b": 35.402,
+              "delta_psnr_b_minus_a": -1.048
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": 60,
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.910543,
+              "ssim_b": 0.934414,
+              "delta_ssim_b_minus_a": 0.023872,
+              "psnr_a": 31.508,
+              "psnr_b": 32.658,
+              "delta_psnr_b_minus_a": 1.149
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.938132,
+              "ssim_b": 0.993046,
+              "delta_ssim_b_minus_a": 0.054915,
+              "psnr_a": 32.982,
+              "psnr_b": 43.978,
+              "delta_psnr_b_minus_a": 10.996
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.801703,
+              "ssim_b": 0.737353,
+              "delta_ssim_b_minus_a": -0.064351,
+              "psnr_a": 27.621,
+              "psnr_b": 25.603,
+              "delta_psnr_b_minus_a": -2.018
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.918777,
+              "ssim_b": 0.931004,
+              "delta_ssim_b_minus_a": 0.012227,
+              "psnr_a": 32.666,
+              "psnr_b": 33.336,
+              "delta_psnr_b_minus_a": 0.67
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.839584,
+              "ssim_b": 0.808105,
+              "delta_ssim_b_minus_a": -0.031479,
+              "psnr_a": 28.451,
+              "psnr_b": 27.438,
+              "delta_psnr_b_minus_a": -1.013
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.921435,
+              "ssim_b": 0.941019,
+              "delta_ssim_b_minus_a": 0.019584,
+              "psnr_a": 33.322,
+              "psnr_b": 34.793,
+              "delta_psnr_b_minus_a": 1.471
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": 5
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.874164,
+              "ssim_b": 0.868802,
+              "delta_ssim_b_minus_a": -0.005362,
+              "psnr_a": 29.834,
+              "psnr_b": 29.649,
+              "delta_psnr_b_minus_a": -0.185
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.921917,
+              "ssim_b": 0.96749,
+              "delta_ssim_b_minus_a": 0.045573,
+              "psnr_a": 31.97,
+              "psnr_b": 35.546,
+              "delta_psnr_b_minus_a": 3.576
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.772313,
+              "ssim_b": 0.743125,
+              "delta_ssim_b_minus_a": -0.029188,
+              "psnr_a": 26.613,
+              "psnr_b": 25.801,
+              "delta_psnr_b_minus_a": -0.812
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.92527,
+              "ssim_b": 0.91757,
+              "delta_ssim_b_minus_a": -0.0077,
+              "psnr_a": 32.971,
+              "psnr_b": 32.525,
+              "delta_psnr_b_minus_a": -0.447
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.792888,
+              "ssim_b": 0.824312,
+              "delta_ssim_b_minus_a": 0.031424,
+              "psnr_a": 26.989,
+              "psnr_b": 27.885,
+              "delta_psnr_b_minus_a": 0.896
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.917426,
+              "ssim_b": 0.948158,
+              "delta_ssim_b_minus_a": 0.030732,
+              "psnr_a": 33.151,
+              "psnr_b": 35.361,
+              "delta_psnr_b_minus_a": 2.21
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "poland_27391244_r2",
+      "scene": "poland-lod",
+      "seed": 27391244,
+      "rep": 2,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 621239696,
+      "origin_bytes_b": 606240760,
+      "peer_bytes_b": 65536,
+      "origin_reduction": 0.024144,
+      "mean_delta_ssim_across_checkpoints": -0.001601,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.88811,
+          "mean_ssim_b": 0.887077,
+          "mean_delta_ssim": -0.001033,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.87321,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.858829
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.947303,
+          "mean_ssim_b": 0.948246,
+          "mean_delta_ssim": 0.000943,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.92795,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.928098
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.773216,
+          "mean_ssim_b": 0.785986,
+          "mean_delta_ssim": 0.01277,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.756898,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.774513
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.911011,
+          "mean_ssim_b": 0.903614,
+          "mean_delta_ssim": -0.007397,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.886771,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.889756
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.821338,
+          "mean_ssim_b": 0.815314,
+          "mean_delta_ssim": -0.006025,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.801254,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.799936
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.943139,
+          "mean_ssim_b": 0.934279,
+          "mean_delta_ssim": -0.008861,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.929407,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.927904
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.875051,
+              "ssim_b": 0.858829,
+              "delta_ssim_b_minus_a": -0.016222,
+              "psnr_a": 29.881,
+              "psnr_b": 29.294,
+              "delta_psnr_b_minus_a": -0.587
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.957216,
+              "ssim_b": 0.96727,
+              "delta_ssim_b_minus_a": 0.010053,
+              "psnr_a": 34.542,
+              "psnr_b": 35.53,
+              "delta_psnr_b_minus_a": 0.988
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.797558,
+              "ssim_b": 0.775862,
+              "delta_ssim_b_minus_a": -0.021696,
+              "psnr_a": 27.478,
+              "psnr_b": 26.762,
+              "delta_psnr_b_minus_a": -0.715
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.934773,
+              "ssim_b": 0.889756,
+              "delta_ssim_b_minus_a": -0.045018,
+              "psnr_a": 33.632,
+              "psnr_b": 30.907,
+              "delta_psnr_b_minus_a": -2.724
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.801254,
+              "ssim_b": 0.801942,
+              "delta_ssim_b_minus_a": 0.000688,
+              "psnr_a": 27.21,
+              "psnr_b": 27.22,
+              "delta_psnr_b_minus_a": 0.01
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.958379,
+              "ssim_b": 0.941783,
+              "delta_ssim_b_minus_a": -0.016596,
+              "psnr_a": 36.41,
+              "psnr_b": 34.983,
+              "delta_psnr_b_minus_a": -1.427
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.91607,
+              "ssim_b": 0.933926,
+              "delta_ssim_b_minus_a": 0.017856,
+              "psnr_a": 31.755,
+              "psnr_b": 32.623,
+              "delta_psnr_b_minus_a": 0.868
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.92795,
+              "ssim_b": 0.949371,
+              "delta_ssim_b_minus_a": 0.021421,
+              "psnr_a": 32.295,
+              "psnr_b": 34.03,
+              "delta_psnr_b_minus_a": 1.734
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.765193,
+              "ssim_b": 0.807584,
+              "delta_ssim_b_minus_a": 0.042391,
+              "psnr_a": 26.625,
+              "psnr_b": 27.99,
+              "delta_psnr_b_minus_a": 1.365
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.886771,
+              "ssim_b": 0.890045,
+              "delta_ssim_b_minus_a": 0.003274,
+              "psnr_a": 30.787,
+              "psnr_b": 30.882,
+              "delta_psnr_b_minus_a": 0.095
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.837176,
+              "ssim_b": 0.844063,
+              "delta_ssim_b_minus_a": 0.006887,
+              "psnr_a": 28.317,
+              "psnr_b": 28.561,
+              "delta_psnr_b_minus_a": 0.244
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.941632,
+              "ssim_b": 0.933149,
+              "delta_ssim_b_minus_a": -0.008483,
+              "psnr_a": 34.899,
+              "psnr_b": 33.986,
+              "delta_psnr_b_minus_a": -0.913
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.87321,
+              "ssim_b": 0.868477,
+              "delta_ssim_b_minus_a": -0.004733,
+              "psnr_a": 29.797,
+              "psnr_b": 29.644,
+              "delta_psnr_b_minus_a": -0.153
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.956742,
+              "ssim_b": 0.928098,
+              "delta_ssim_b_minus_a": -0.028644,
+              "psnr_a": 34.495,
+              "psnr_b": 32.273,
+              "delta_psnr_b_minus_a": -2.223
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.756898,
+              "ssim_b": 0.774513,
+              "delta_ssim_b_minus_a": 0.017615,
+              "psnr_a": 26.085,
+              "psnr_b": 26.771,
+              "delta_psnr_b_minus_a": 0.686
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.911488,
+              "ssim_b": 0.931041,
+              "delta_ssim_b_minus_a": 0.019552,
+              "psnr_a": 32.213,
+              "psnr_b": 33.352,
+              "delta_psnr_b_minus_a": 1.139
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.825585,
+              "ssim_b": 0.799936,
+              "delta_ssim_b_minus_a": -0.025649,
+              "psnr_a": 27.944,
+              "psnr_b": 27.154,
+              "delta_psnr_b_minus_a": -0.79
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.929407,
+              "ssim_b": 0.927904,
+              "delta_ssim_b_minus_a": -0.001503,
+              "psnr_a": 34.12,
+              "psnr_b": 33.963,
+              "delta_psnr_b_minus_a": -0.156
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "poland_27394531_r1",
+      "scene": "poland-lod",
+      "seed": 27394531,
+      "rep": 1,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 607916344,
+      "origin_bytes_b": 625800728,
+      "peer_bytes_b": 3483464,
+      "origin_reduction": -0.029419,
+      "mean_delta_ssim_across_checkpoints": 0.016039,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.867211,
+          "mean_ssim_b": 0.931438,
+          "mean_delta_ssim": 0.064227,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.86374,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.858828
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.936008,
+          "mean_ssim_b": 0.964747,
+          "mean_delta_ssim": 0.028739,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.921895,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.93394
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.766356,
+          "mean_ssim_b": 0.771086,
+          "mean_delta_ssim": 0.00473,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.736771,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.734199
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.896282,
+          "mean_ssim_b": 0.918979,
+          "mean_delta_ssim": 0.022697,
+          "worst_viewer_a": "C4",
+          "worst_ssim_a": 0.883924,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.902265
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.82508,
+          "mean_ssim_b": 0.802228,
+          "mean_delta_ssim": -0.022852,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.812398,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.801395
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.939562,
+          "mean_ssim_b": 0.938254,
+          "mean_delta_ssim": -0.001308,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.9284,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.932269
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.863746,
+              "ssim_b": 0.968214,
+              "delta_ssim_b_minus_a": 0.104468,
+              "psnr_a": 29.451,
+              "psnr_b": 35.634,
+              "delta_psnr_b_minus_a": 6.183
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.927481,
+              "ssim_b": 0.93394,
+              "delta_ssim_b_minus_a": 0.006459,
+              "psnr_a": 32.263,
+              "psnr_b": 32.624,
+              "delta_psnr_b_minus_a": 0.361
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.757338,
+              "ssim_b": 0.772928,
+              "delta_ssim_b_minus_a": 0.015589,
+              "psnr_a": 26.196,
+              "psnr_b": 26.659,
+              "delta_psnr_b_minus_a": 0.463
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.903228,
+              "ssim_b": 0.924422,
+              "delta_ssim_b_minus_a": 0.021193,
+              "psnr_a": 31.787,
+              "psnr_b": 32.959,
+              "delta_psnr_b_minus_a": 1.172
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.820458,
+              "ssim_b": 0.801395,
+              "delta_ssim_b_minus_a": -0.019063,
+              "psnr_a": 27.818,
+              "psnr_b": 27.215,
+              "delta_psnr_b_minus_a": -0.603
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.945915,
+              "ssim_b": 0.950214,
+              "delta_ssim_b_minus_a": 0.004299,
+              "psnr_a": 35.324,
+              "psnr_b": 35.661,
+              "delta_psnr_b_minus_a": 0.337
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 2,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.874146,
+              "ssim_b": 0.967271,
+              "delta_ssim_b_minus_a": 0.093125,
+              "psnr_a": 29.833,
+              "psnr_b": 35.531,
+              "delta_psnr_b_minus_a": 5.697
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.958649,
+              "ssim_b": 0.992815,
+              "delta_ssim_b_minus_a": 0.034166,
+              "psnr_a": 34.681,
+              "psnr_b": 43.912,
+              "delta_psnr_b_minus_a": 9.231
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.804958,
+              "ssim_b": 0.806131,
+              "delta_ssim_b_minus_a": 0.001173,
+              "psnr_a": 27.712,
+              "psnr_b": 27.944,
+              "delta_psnr_b_minus_a": 0.232
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.883924,
+              "ssim_b": 0.930251,
+              "delta_ssim_b_minus_a": 0.046327,
+              "psnr_a": 30.74,
+              "psnr_b": 33.294,
+              "delta_psnr_b_minus_a": 2.554
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.842385,
+              "ssim_b": 0.803097,
+              "delta_ssim_b_minus_a": -0.039288,
+              "psnr_a": 28.49,
+              "psnr_b": 27.286,
+              "delta_psnr_b_minus_a": -1.204
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.944371,
+              "ssim_b": 0.93228,
+              "delta_ssim_b_minus_a": -0.012091,
+              "psnr_a": 35.077,
+              "psnr_b": 34.228,
+              "delta_psnr_b_minus_a": -0.849
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 2,
+            "0.98": 5
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.86374,
+              "ssim_b": 0.858828,
+              "delta_ssim_b_minus_a": -0.004912,
+              "psnr_a": 29.451,
+              "psnr_b": 29.294,
+              "delta_psnr_b_minus_a": -0.156
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.921895,
+              "ssim_b": 0.967487,
+              "delta_ssim_b_minus_a": 0.045591,
+              "psnr_a": 31.968,
+              "psnr_b": 35.545,
+              "delta_psnr_b_minus_a": 3.576
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.736771,
+              "ssim_b": 0.734199,
+              "delta_ssim_b_minus_a": -0.002572,
+              "psnr_a": 25.806,
+              "psnr_b": 25.561,
+              "delta_psnr_b_minus_a": -0.246
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.901694,
+              "ssim_b": 0.902265,
+              "delta_ssim_b_minus_a": 0.000571,
+              "psnr_a": 31.609,
+              "psnr_b": 31.695,
+              "delta_psnr_b_minus_a": 0.087
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.812398,
+              "ssim_b": 0.802193,
+              "delta_ssim_b_minus_a": -0.010205,
+              "psnr_a": 27.525,
+              "psnr_b": 27.252,
+              "delta_psnr_b_minus_a": -0.273
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.9284,
+              "ssim_b": 0.932269,
+              "delta_ssim_b_minus_a": 0.003869,
+              "psnr_a": 34.03,
+              "psnr_b": 34.313,
+              "delta_psnr_b_minus_a": 0.284
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    },
+    {
+      "pair_id": "poland_27394531_r2",
+      "scene": "poland-lod",
+      "seed": 27394531,
+      "rep": 2,
+      "seeds_are_not_independent_camera_paths": true,
+      "origin_bytes_a": 621094136,
+      "origin_bytes_b": 612949760,
+      "peer_bytes_b": 1419032,
+      "origin_reduction": 0.013113,
+      "mean_delta_ssim_across_checkpoints": 0.020519,
+      "checkpoints": [
+        {
+          "checkpoint_s": 2,
+          "mean_ssim_a": 0.869385,
+          "mean_ssim_b": 0.932419,
+          "mean_delta_ssim": 0.063034,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.862905,
+          "worst_viewer_b": "C5",
+          "worst_ssim_b": 0.928405
+        },
+        {
+          "checkpoint_s": 5,
+          "mean_ssim_a": 0.937437,
+          "mean_ssim_b": 0.961548,
+          "mean_delta_ssim": 0.024111,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.92206,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.949887
+        },
+        {
+          "checkpoint_s": 10,
+          "mean_ssim_a": 0.761353,
+          "mean_ssim_b": 0.769883,
+          "mean_delta_ssim": 0.008531,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.756323,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.766386
+        },
+        {
+          "checkpoint_s": 20,
+          "mean_ssim_a": 0.892047,
+          "mean_ssim_b": 0.925366,
+          "mean_delta_ssim": 0.033319,
+          "worst_viewer_a": "C3",
+          "worst_ssim_a": 0.886383,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.915468
+        },
+        {
+          "checkpoint_s": 40,
+          "mean_ssim_a": 0.821929,
+          "mean_ssim_b": 0.814198,
+          "mean_delta_ssim": -0.007731,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.802083,
+          "worst_viewer_b": "C3",
+          "worst_ssim_b": 0.793388
+        },
+        {
+          "checkpoint_s": 60,
+          "mean_ssim_a": 0.937198,
+          "mean_ssim_b": 0.939048,
+          "mean_delta_ssim": 0.001851,
+          "worst_viewer_a": "C5",
+          "worst_ssim_a": 0.926854,
+          "worst_viewer_b": "C4",
+          "worst_ssim_b": 0.916676
+        }
+      ],
+      "viewers": [
+        {
+          "client": "C3",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.872069,
+              "ssim_b": 0.934418,
+              "delta_ssim_b_minus_a": 0.062349,
+              "psnr_a": 29.765,
+              "psnr_b": 32.658,
+              "delta_psnr_b_minus_a": 2.894
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.957629,
+              "ssim_b": 0.967487,
+              "delta_ssim_b_minus_a": 0.009858,
+              "psnr_a": 34.578,
+              "psnr_b": 35.545,
+              "delta_psnr_b_minus_a": 0.967
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.761297,
+              "ssim_b": 0.766386,
+              "delta_ssim_b_minus_a": 0.005089,
+              "psnr_a": 26.333,
+              "psnr_b": 26.536,
+              "delta_psnr_b_minus_a": 0.204
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.886383,
+              "ssim_b": 0.915468,
+              "delta_ssim_b_minus_a": 0.029085,
+              "psnr_a": 30.783,
+              "psnr_b": 32.436,
+              "delta_psnr_b_minus_a": 1.653
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.83446,
+              "ssim_b": 0.793388,
+              "delta_ssim_b_minus_a": -0.041072,
+              "psnr_a": 28.221,
+              "psnr_b": 27.001,
+              "delta_psnr_b_minus_a": -1.22
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.944378,
+              "ssim_b": 0.954348,
+              "delta_ssim_b_minus_a": 0.00997,
+              "psnr_a": 35.207,
+              "psnr_b": 36.076,
+              "delta_psnr_b_minus_a": 0.869
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C4",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.87318,
+              "ssim_b": 0.934434,
+              "delta_ssim_b_minus_a": 0.061254,
+              "psnr_a": 29.802,
+              "psnr_b": 32.659,
+              "delta_psnr_b_minus_a": 2.856
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.932622,
+              "ssim_b": 0.949887,
+              "delta_ssim_b_minus_a": 0.017266,
+              "psnr_a": 32.555,
+              "psnr_b": 34.079,
+              "delta_psnr_b_minus_a": 1.524
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.766438,
+              "ssim_b": 0.7715,
+              "delta_ssim_b_minus_a": 0.005063,
+              "psnr_a": 26.664,
+              "psnr_b": 26.616,
+              "delta_psnr_b_minus_a": -0.048
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.886512,
+              "ssim_b": 0.933261,
+              "delta_ssim_b_minus_a": 0.046749,
+              "psnr_a": 30.756,
+              "psnr_b": 33.517,
+              "delta_psnr_b_minus_a": 2.761
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.829244,
+              "ssim_b": 0.80978,
+              "delta_ssim_b_minus_a": -0.019465,
+              "psnr_a": 28.092,
+              "psnr_b": 27.486,
+              "delta_psnr_b_minus_a": -0.606
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.940361,
+              "ssim_b": 0.916676,
+              "delta_ssim_b_minus_a": -0.023684,
+              "psnr_a": 34.804,
+              "psnr_b": 33.121,
+              "delta_psnr_b_minus_a": -1.682
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        },
+        {
+          "client": "C5",
+          "checkpoints": [
+            {
+              "checkpoint_s": 2,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.862905,
+              "ssim_b": 0.928405,
+              "delta_ssim_b_minus_a": 0.0655,
+              "psnr_a": 29.425,
+              "psnr_b": 32.297,
+              "delta_psnr_b_minus_a": 2.872
+            },
+            {
+              "checkpoint_s": 5,
+              "same_pose_as_t2": true,
+              "separate_observation": true,
+              "ssim_a": 0.92206,
+              "ssim_b": 0.967269,
+              "delta_ssim_b_minus_a": 0.045209,
+              "psnr_a": 31.976,
+              "psnr_b": 35.53,
+              "delta_psnr_b_minus_a": 3.554
+            },
+            {
+              "checkpoint_s": 10,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.756323,
+              "ssim_b": 0.771764,
+              "delta_ssim_b_minus_a": 0.015441,
+              "psnr_a": 26.16,
+              "psnr_b": 26.672,
+              "delta_psnr_b_minus_a": 0.512
+            },
+            {
+              "checkpoint_s": 20,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.903247,
+              "ssim_b": 0.92737,
+              "delta_ssim_b_minus_a": 0.024124,
+              "psnr_a": 31.797,
+              "psnr_b": 33.086,
+              "delta_psnr_b_minus_a": 1.289
+            },
+            {
+              "checkpoint_s": 40,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.802083,
+              "ssim_b": 0.839426,
+              "delta_ssim_b_minus_a": 0.037343,
+              "psnr_a": 27.248,
+              "psnr_b": 28.424,
+              "delta_psnr_b_minus_a": 1.176
+            },
+            {
+              "checkpoint_s": 60,
+              "same_pose_as_t2": false,
+              "separate_observation": true,
+              "ssim_a": 0.926854,
+              "ssim_b": 0.94612,
+              "delta_ssim_b_minus_a": 0.019266,
+              "psnr_a": 33.593,
+              "psnr_b": 35.257,
+              "delta_psnr_b_minus_a": 1.664
+            }
+          ],
+          "time_to_quality_a": {
+            "0.9": 5,
+            "0.95": "NOT_REACHED_BY_60S",
+            "0.98": "NOT_REACHED_BY_60S"
+          },
+          "time_to_quality_b": {
+            "0.9": 2,
+            "0.95": 5,
+            "0.98": "NOT_REACHED_BY_60S"
+          }
+        }
+      ]
+    }
+  ]
+}

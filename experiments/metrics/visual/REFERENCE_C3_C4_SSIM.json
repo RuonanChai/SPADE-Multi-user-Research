@@ -1,0 +1,17 @@
+{
+  "scene": "coit-40m-sh1-lod",
+  "left_run": "visualref_coit_direct_r8",
+  "left_client": "C3",
+  "right_run": "visualref_coit_direct_c4_r1",
+  "right_client": "C4",
+  "metric": "8x8 non-overlapping window SSIM on Rec.709 luminance",
+  "numerically_equivalent": false,
+  "rows": [
+    { "checkpoint_s": 2, "ssim": 1, "identical_bytes": false },
+    { "checkpoint_s": 5, "ssim": 1, "identical_bytes": false },
+    { "checkpoint_s": 10, "ssim": 0.999998, "identical_bytes": false },
+    { "checkpoint_s": 20, "ssim": 0.999995, "identical_bytes": false, "status": "RENDERER_CAPACITY_LIMITED" },
+    { "checkpoint_s": 40, "ssim": 1, "identical_bytes": true },
+    { "checkpoint_s": 60, "ssim": 1, "identical_bytes": false, "status": "RENDERER_CAPACITY_LIMITED" }
+  ]
+}

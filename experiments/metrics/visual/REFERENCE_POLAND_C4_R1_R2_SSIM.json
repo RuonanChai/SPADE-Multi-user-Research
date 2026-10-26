@@ -1,0 +1,17 @@
+{
+  "scene": "poland-lod",
+  "client": "C4",
+  "left_run": "visualref_poland_direct_c4_r1",
+  "right_run": "visualref_poland_direct_c4_r2",
+  "candidate_threshold": 0.995,
+  "accepted": false,
+  "reason": "t=20 SSIM 0.908743. r1 closed in 1920 ms at 192/192. r2 settled in 9819 ms at 183/183. r1 captured a transient resident set.",
+  "rows": [
+    { "checkpoint_s": 2, "ssim": 1 },
+    { "checkpoint_s": 5, "ssim": 1 },
+    { "checkpoint_s": 10, "ssim": 0.999995 },
+    { "checkpoint_s": 20, "ssim": 0.908743, "r1_resident": "192/192", "r2_resident": "183/183" },
+    { "checkpoint_s": 40, "ssim": 0.995115 },
+    { "checkpoint_s": 60, "ssim": 0.999311 }
+  ]
+}

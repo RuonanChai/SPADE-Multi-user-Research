@@ -1,0 +1,173 @@
+{
+  "declared_at": "2026-10-25T12:35:00.000Z",
+  "continues": "visab_poland_27394531_r2_A",
+  "statistical_unit": "6 A/B session pairs",
+  "viewers_are_not_independent_replicates": true,
+  "seeds_are_demand_replicates_of_one_trajectory": true,
+  "phase": "synchronized",
+  "duration_s": 70,
+  "checkpoints_s": [
+    2,
+    5,
+    10,
+    20,
+    40,
+    60
+  ],
+  "capture_during_window": false,
+  "screenshot_policy": "No WebGL readPixels during the 70s replay. One screenshot_post_window.png is taken after measurement_end. Checkpoint JSON stores pose and demand only.",
+  "camera_mapping": "Frozen scene_trace_frame gain 0.1 for tijerin_w6_hobbiton-lod. Path is not retuned.",
+  "arms": {
+    "A": {
+      "label": "S3-FIFO",
+      "method": "S3-FIFO",
+      "handoff": false,
+      "cache_mb": 50,
+      "entries": 100
+    },
+    "B": {
+      "label": "SPADE",
+      "method": "SPADE-BYTE",
+      "handoff": true,
+      "cache_mb": 50,
+      "entries": 100,
+      "hold_ms": 15000,
+      "client_cap_bytes": 167772160,
+      "probe_ms": 1500
+    }
+  },
+  "sessions": [
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27391639,
+      "rep": 1,
+      "arm": "A",
+      "pairId": "hobbiton_27391639_r1",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27391639_r1_A"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27391639,
+      "rep": 1,
+      "arm": "B",
+      "pairId": "hobbiton_27391639_r1",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27391639_r1_B"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27391639,
+      "rep": 2,
+      "arm": "B",
+      "pairId": "hobbiton_27391639_r2",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27391639_r2_B"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27391639,
+      "rep": 2,
+      "arm": "A",
+      "pairId": "hobbiton_27391639_r2",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27391639_r2_A"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27396087,
+      "rep": 1,
+      "arm": "A",
+      "pairId": "hobbiton_27396087_r1",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27396087_r1_A"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27396087,
+      "rep": 1,
+      "arm": "B",
+      "pairId": "hobbiton_27396087_r1",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27396087_r1_B"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27396087,
+      "rep": 2,
+      "arm": "B",
+      "pairId": "hobbiton_27396087_r2",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27396087_r2_B"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27396087,
+      "rep": 2,
+      "arm": "A",
+      "pairId": "hobbiton_27396087_r2",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27396087_r2_A"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27397637,
+      "rep": 1,
+      "arm": "A",
+      "pairId": "hobbiton_27397637_r1",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27397637_r1_A"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27397637,
+      "rep": 1,
+      "arm": "B",
+      "pairId": "hobbiton_27397637_r1",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27397637_r1_B"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27397637,
+      "rep": 2,
+      "arm": "B",
+      "pairId": "hobbiton_27397637_r2",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27397637_r2_B"
+    },
+    {
+      "sceneId": "hobbiton",
+      "sceneFile": "tijerin_w6_hobbiton-lod",
+      "world": "Hobbiton",
+      "seed": 27397637,
+      "rep": 2,
+      "arm": "A",
+      "pairId": "hobbiton_27397637_r2",
+      "capture_during_window": false,
+      "runId": "visab_hobbiton_27397637_r2_A"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "run_id": "visualref_coit_direct_r7",
+  "client": "C3",
+  "scene": "coit-40m-sh1-lod",
+  "accepted_as_full_reference": false,
+  "checkpoints": {
+    "2": { "status": "VIEW_CLOSURE_PROVEN", "resident": "216/216", "png_bytes": 1908110, "wall_ms": 36037 },
+    "5": { "status": "VIEW_CLOSURE_PROVEN", "resident": "216/216", "png_bytes": 1908101, "wall_ms": 463, "same_pose_as_t2": true },
+    "10": { "status": "VIEW_CLOSURE_PROVEN", "resident": "235/235", "png_bytes": 1909059, "wall_ms": 17648, "demand_identity_changed": true },
+    "20": { "status": "NOT_CLOSED", "resident": "256/284", "png_bytes": 0, "wall_ms": 90023 },
+    "40": { "status": "VIEW_CLOSURE_PROVEN", "resident": "187/187", "png_bytes": 1866297, "wall_ms": 12789, "demand_identity_changed": true },
+    "60": { "status": "NOT_CLOSED", "resident": "256/284", "png_bytes": 0, "wall_ms": 90317 }
+  },
+  "origin": { "requests": 576, "max_ms": 1188, "errors": 0 },
+  "capacity": "Spark SplatPager maxPages = ceil(16777216/65536) = 256. t=20 and t=60 demanded 284 pages and remained at 256 resident with no slow origin request.",
+  "reference_stable": "NOT_RUN",
+  "full_view_reference_proven": false
+}

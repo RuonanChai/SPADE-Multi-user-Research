@@ -1,0 +1,7 @@
+{
+  "id": "v02_victim_no_larger",
+  "patch": {},
+  "rule": {
+    "victimNoLarger": true
+  }
+}

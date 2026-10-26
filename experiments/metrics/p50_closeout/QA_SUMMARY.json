@@ -1,0 +1,90 @@
+{
+  "generated_at": "2026-10-25T12:28:04.254Z",
+  "status": "READ_ONLY_COMPLETE",
+  "isolating_canary": "NOT_EXECUTED",
+  "canary_reason": "Optional 2x2 was not started. The paper branch is not waiting on it, and a physical N=1 session would be a new executor rather than a repair of sealed runs.",
+  "active_scientific_executor_count": 0,
+  "sealed_inputs_modified": false,
+  "answers": {
+    "capture_caused_browser_p50": {
+      "verdict": "AGAINST_AS_MAIN_CAUSE",
+      "confidence": "moderate",
+      "limitation": "Both P2 arms used the same readPixels checkpoints. Visual capture_ms medians differ by 3 ms. Overlap versus non-overlap proxy-span median delta is +1 ms. No capture-off arm was measured, and GPU fence time is not separately timestamped."
+    },
+    "client_route_caused_browser_p50": {
+      "verdict": "CONFIRMED_CONFOUND_FOR_VISUAL_24_NOT_THE_CAUSE_OF_P2_12_OF_12",
+      "confidence": "high_for_code_asymmetry",
+      "limitation": "Visual B alone calls page.route, route.fetch, response.body and route.fulfill. P2 remote_worker_bundle.js has no page.route, yet its 12 pairs are all slower. The millisecond contribution of the visual route was not isolated."
+    },
+    "n3_crosswalk": {
+      "p2_b_digest_match_with_wait": 3488,
+      "p2_b_peer_delivery_rows": 3503,
+      "p2_b_peer_bytes": 5587506304,
+      "demand_source_holder_rows": 0,
+      "same_events": false
+    }
+  },
+  "recommended_manuscript_text": "浏览器完成时间的 12/12 变慢来自 P2：CDP 时间戳相减，单位是秒，两臂都有画布读回，worker 没有 page.route。视觉 24 场则是另一条客户端路径：只有 B 臂用 route.fetch 读完整正文再 fulfill，而且 A/B 的代理方法也不同。3488 次 DIGEST_MATCH 属于 P2 的 B 臂；六条 b30c 需求来源日志的 holder 为 0。论文保留不利的浏览器 p50，不把截图或这条路由写成已经证实的根因，也不把验证重放的源站节省写成浏览器 QoE 提升。",
+  "artifacts": [
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/CAPTURE_432.csv",
+      "bytes": 59597,
+      "sha256": "6f2107f9af4fc58d63523b6eb96e1b5c1963630af346d05b5471ff827228bc00"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/CAPTURE_INTERFERENCE_FINDINGS.md",
+      "bytes": 1573,
+      "sha256": "2c40c1865dd23a6cf9dbdfb7ccff70064463231de6bffa46eb321966bbbe4a1c"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/CAPTURE_VS_REQUEST_TIMING.csv",
+      "bytes": 25698,
+      "sha256": "598a3d158546718666e4b04be4e67312a79870c6e57ffd35dda4888cc4d800cb"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/N3_HOLDER_DISCREPANCY.md",
+      "bytes": 1239,
+      "sha256": "af2c52b3113feb0c7eccdb24b8521d160abc24b27e5badfb7638649ab3d5f926"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/N3_PROVENANCE_CROSSWALK.csv",
+      "bytes": 11931,
+      "sha256": "4586446669f32c925aeefd58f76e13065360741476a79c93354c781b7d4dc743"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/ORIGINAL_N3_P50_IMPLEMENTATION.md",
+      "bytes": 1274,
+      "sha256": "150381c1a781d4b459e2d0f332d9de7f6cfb0c9fc5ca77b3df1c3f60c2bc173d"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/ROUTE_ASYMMETRY_24.csv",
+      "bytes": 12516,
+      "sha256": "bb1fe8b311e22de2783f450861f7269bc472a50f568fc66400680684ae3a5c96"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/ROUTE_MECHANISM_AUDIT.md",
+      "bytes": 1923,
+      "sha256": "336bcbc69730e309d364f854a78a99f3f85498712cf344e978753004271e656f"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/TIMING_METRIC_PROVENANCE.csv",
+      "bytes": 1432,
+      "sha256": "8445b181c4efd95a72a6dddff9eb6873cb525e00671c01f95db935be21b30fa1"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/UNCONTROLLED_CLIENT_DIFFERENCE.md",
+      "bytes": 1005,
+      "sha256": "bd451d62bfadf4742a24960affecbc058de4bf16ede26cb2c9f634c5b40bf3e7"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/audit/HASHES.json",
+      "bytes": 947,
+      "sha256": "031bceacc105c49baca4ebfd21960634e026ea413702a1494090309c81f00844"
+    },
+    {
+      "path": "F:/SPADE_WWW27_P50_CLOSEOUT_20261025/audit/p50_audit.js",
+      "bytes": 22547,
+      "sha256": "5776baaa4f8a39a5c3d6326d5da43bd09b7bb11afe537577a30c4c8b0085145d"
+    }
+  ]
+}

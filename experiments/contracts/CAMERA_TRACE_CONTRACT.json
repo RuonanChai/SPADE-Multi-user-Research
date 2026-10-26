@@ -1,0 +1,26 @@
+{
+  "trace_file": "D:/Program/SPADE/SPADE_BYTE_N23_20261023/physical_runtime/traces/stop_go.json",
+  "trace_role": "READ_ONLY_SEALED",
+  "mapper": "F:/SPADE_WWW_EVIDENCE_V2_20261024/runtime/scene_trace_frame.js",
+  "checkpoints_s": [2, 5, 10, 20, 40, 60],
+  "checkpoint_clock": "each viewer's own replay start",
+  "render": { "width": 1280, "height": 720, "fov": 75, "capture": "webgl_readpixels_after_render" },
+  "scenes": [
+    {
+      "scene_id": "coit",
+      "scene_file": "coit-40m-sh1-lod",
+      "regime": "staggered",
+      "phase_offsets_s": [0, 5, 10],
+      "seeds": [27391639, 27396087, 27397637]
+    },
+    {
+      "scene_id": "poland",
+      "scene_file": "poland-lod",
+      "regime": "synchronized",
+      "phase_offsets_s": [0, 0, 0],
+      "seeds": [27394061, 27391244, 27394531]
+    }
+  ],
+  "camera_fact": "The page plays stop_go with deterministic:true. The URL seed is not applied by MiniTracePlayer. The three sealed seeds are demand replicates of one trajectory per scene, not three authored camera paths. Reference frames are therefore keyed by scene, checkpoint, client GPU, and trace hash. Treatment cells still use all three seeds because their request schedules differ.",
+  "no_new_paths": true
+}

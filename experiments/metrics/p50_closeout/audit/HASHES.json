@@ -1,0 +1,32 @@
+{
+  "hashes": {
+    "visual_worker": "375f8ed1e0312f790ad34e9e0b0234d74b6ec1b017d9f99e4dde0799c9e01522",
+    "capture_checkpoint": "b4a992a0b8de7a86630959ef604c211dbacd238f807acb22140a13a81bdfcf6e",
+    "n3_worker_bundle": "b94e42ca8b4fdaf066807adfcfeacb01743982f2d52342dd211f5aa7e89528da",
+    "n23_proxy": "7b0cb92e970db710aa3d15c3d1a6a7b188da437868555d9df4ddea89a0aa6d82",
+    "verified_proxy": "df258c1954fec028bd1067fcf1625e01b7a701c2ee30626e8a1edb6daac758a5",
+    "p2_metrics": "d92cb5ed2f6dba9451de8549f18dd49d1357c340a0bfe2fb82ed30bc9b4b55e5"
+  },
+  "captureSummary": {
+    "A": {
+      "n": 216,
+      "p50": 376,
+      "p95": 499,
+      "max": 591,
+      "mean": 376.23
+    },
+    "B": {
+      "n": 216,
+      "p50": 379,
+      "p95": 510,
+      "max": 686,
+      "mean": 381.45
+    }
+  },
+  "matchSum": 3488,
+  "peerByteSum": 5587506304,
+  "deliverySum": 3503,
+  "routeOnlyWhenHandoff": true,
+  "n3HasRoute": false,
+  "n3HasCdp": true
+}

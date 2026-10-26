@@ -1,0 +1,17 @@
+{
+  "scene": "coit-40m-sh1-lod",
+  "client": "C4",
+  "left_run": "visualref_coit_direct_c4_r1",
+  "right_run": "visualref_coit_direct_c4_r2",
+  "metric": "8x8 non-overlapping window SSIM on Rec.709 luminance",
+  "candidate_threshold": 0.995,
+  "full_view_reference_proven_for_scene": false,
+  "rows": [
+    { "checkpoint_s": 2, "status": "VIEW_CLOSURE_PROVEN", "ssim": 0.999996, "identical_bytes": false },
+    { "checkpoint_s": 5, "status": "VIEW_CLOSURE_PROVEN", "ssim": 0.999996, "identical_bytes": false, "same_pose_as_t2": true },
+    { "checkpoint_s": 10, "status": "VIEW_CLOSURE_PROVEN", "ssim": 0.999999, "identical_bytes": false },
+    { "checkpoint_s": 20, "status": "RENDERER_CAPACITY_LIMITED", "resident": "256/284", "ssim": 1, "identical_bytes": true },
+    { "checkpoint_s": 40, "status": "VIEW_CLOSURE_PROVEN", "ssim": 1, "identical_bytes": false },
+    { "checkpoint_s": 60, "status": "RENDERER_CAPACITY_LIMITED", "resident": "256/284", "ssim": 0.999999, "identical_bytes": false }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "manifest_sha256": "c2d2680ed206268d5afa244757ac752e12e60dc5128f765bddc58a6a10e48846",
+  "manifest_matches_candidate": true,
+  "worker_sha256": "b12c758064b1f96a00c4d4f27fb1db6e669696eb832d6127b8ad424fb51d2de8",
+  "worker_matches_candidate": true,
+  "cap_530_bytes": 555745280,
+  "cap_50_bytes": 52428800,
+  "client_cap_bytes": 167772160,
+  "global_entry_cap": 1024,
+  "sealed_cells": 24,
+  "chain": {
+    "handoff_rows": 3488,
+    "proven_rows": 3488,
+    "proven_bytes": 5567460832,
+    "orphan_evictions": 0,
+    "statuses": {
+      "PROVEN_POST_EVICTION": 3488
+    },
+    "suppliers_distinct_from_requester": 3488,
+    "gap_min_ms": 1,
+    "gap_p50_ms": 2115,
+    "gap_p95_ms": 6530,
+    "gap_p99_ms": 10470,
+    "gap_max_ms": 14371,
+    "ttl_exceeded": 0,
+    "range_p50": 1652648,
+    "range_min": 1098480,
+    "range_max": 1816680,
+    "verify_reasons_all_b": {
+      "origin|ORIGIN_TRUSTED": 6390,
+      "peer|DIGEST_MATCH": 3488
+    },
+    "bytes_from_origin_on_proven": 0
+  },
+  "protocol_rows": 17,
+  "protocol_pass": 17,
+  "protocol_bad_delivered": 0,
+  "protocol_bad_cached": 0,
+  "qoe": {
+    "rows": 432,
+    "blank": 0,
+    "stale": 7,
+    "canvas_present": 432,
+    "no_reference": 432,
+    "numeric_psnr": 0,
+    "score_statuses": {
+      "NO_LOCKED_REFERENCE": 432
+    }
+  },
+  "fixedPairs": [
+    {
+      "seed": "27391639",
+      "s3_origin": 3291540664,
+      "peer_origin": 1348691208,
+      "adapt_origin": 1348691208,
+      "sieve_origin": 1328667504,
+      "adapt_minus_peer": 0,
+      "sieve_minus_peer": -20023704,
+      "peer_vs_s3": 0.5902553406826148,
+      "latency_model": "MODELLED_NOT_PHYSICAL_ARRIVAL_PLUS_SOURCE_ORIGIN_TTFB"
+    },
+    {
+      "seed": "27394061",
+      "s3_origin": 1209338696,
+      "peer_origin": 710745856,
+      "adapt_origin": 710745856,
+      "sieve_origin": 710745856,
+      "adapt_minus_peer": 0,
+      "sieve_minus_peer": 0,
+      "peer_vs_s3": 0.4122855256754308,
+      "latency_model": "MODELLED_NOT_PHYSICAL_ARRIVAL_PLUS_SOURCE_ORIGIN_TTFB"
+    },
+    {
+      "seed": "27396087",
+      "s3_origin": 3265526688,
+      "peer_origin": 1480418864,
+      "adapt_origin": 1482121440,
+      "sieve_origin": 1448457976,
+      "adapt_minus_peer": 1702576,
+      "sieve_minus_peer": -31960888,
+      "peer_vs_s3": 0.546652345718021,
+      "latency_model": "MODELLED_NOT_PHYSICAL_ARRIVAL_PLUS_SOURCE_ORIGIN_TTFB"
+    },
+    {
+      "seed": "27397637",
+      "s3_origin": 2829000128,
+      "peer_origin": 1213411344,
+      "adapt_origin": 1213411344,
+      "sieve_origin": 1196594960,
+      "adapt_minus_peer": 0,
+      "sieve_minus_peer": -16816384,
+      "peer_vs_s3": 0.5710811986219889,
+      "latency_model": "MODELLED_NOT_PHYSICAL_ARRIVAL_PLUS_SOURCE_ORIGIN_TTFB"
+    },
+    {
+      "seed": "27391244",
+      "s3_origin": 1155442112,
+      "peer_origin": 679645864,
+      "adapt_origin": 679645864,
+      "sieve_origin": 679645864,
+      "adapt_minus_peer": 0,
+      "sieve_minus_peer": 0,
+      "peer_vs_s3": 0.41178717917458074,
+      "latency_model": "MODELLED_NOT_PHYSICAL_ARRIVAL_PLUS_SOURCE_ORIGIN_TTFB"
+    },
+    {
+      "seed": "27394531",
+      "s3_origin": 1142260528,
+      "peer_origin": 669213248,
+      "adapt_origin": 669213248,
+      "sieve_origin": 669213248,
+      "adapt_minus_peer": 0,
+      "sieve_minus_peer": 0,
+      "peer_vs_s3": 0.4141325629348894,
+      "latency_model": "MODELLED_NOT_PHYSICAL_ARRIVAL_PLUS_SOURCE_ORIGIN_TTFB"
+    }
+  ]
+}

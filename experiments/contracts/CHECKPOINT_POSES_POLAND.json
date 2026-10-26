@@ -1,0 +1,108 @@
+{
+  "scene_file": "poland-lod",
+  "trace_sha256": "2a22346c81dfc5992d8d5cad0651fd63396c4f85f2aec58ad7166f686089b0e2",
+  "poses": [
+    {
+      "checkpoint_s": 2,
+      "position": [
+        51.7,
+        -1.4999999999999996,
+        -1.7
+      ],
+      "quaternion": [
+        -0.23,
+        0.241,
+        0.006,
+        0.943
+      ],
+      "fov": 75,
+      "source_time_s": 2,
+      "closure_timeout_ms": 180000
+    },
+    {
+      "checkpoint_s": 5,
+      "position": [
+        51.7,
+        -1.4999999999999996,
+        -1.7
+      ],
+      "quaternion": [
+        -0.23,
+        0.241,
+        0.006,
+        0.943
+      ],
+      "fov": 75,
+      "source_time_s": 5,
+      "closure_timeout_ms": 90000
+    },
+    {
+      "checkpoint_s": 10,
+      "position": [
+        43.7,
+        -1.4999999999999996,
+        6.3
+      ],
+      "quaternion": [
+        -0.23,
+        0.241,
+        0.006,
+        0.943
+      ],
+      "fov": 75,
+      "source_time_s": 10,
+      "closure_timeout_ms": 90000
+    },
+    {
+      "checkpoint_s": 20,
+      "position": [
+        35.7,
+        -1.4999999999999996,
+        -1.7
+      ],
+      "quaternion": [
+        -0.23,
+        0.241,
+        0.006,
+        0.943
+      ],
+      "fov": 75,
+      "source_time_s": 20,
+      "closure_timeout_ms": 90000
+    },
+    {
+      "checkpoint_s": 40,
+      "position": [
+        49.7,
+        0.5,
+        4.3
+      ],
+      "quaternion": [
+        -0.23,
+        0.241,
+        0.006,
+        0.943
+      ],
+      "fov": 75,
+      "source_time_s": 40,
+      "closure_timeout_ms": 90000
+    },
+    {
+      "checkpoint_s": 60,
+      "position": [
+        37.7,
+        0.5,
+        -7.7
+      ],
+      "quaternion": [
+        -0.23,
+        0.241,
+        0.006,
+        0.943
+      ],
+      "fov": 75,
+      "source_time_s": 60,
+      "closure_timeout_ms": 90000
+    }
+  ]
+}

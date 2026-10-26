@@ -1,0 +1,15 @@
+{
+  "isolation": "Reference sessions use ORIGIN_PASSTHROUGH on port 18081. They do not use S3-FIFO admission, eviction, or verified handoff. Treatment A/B frames are not ground truth.",
+  "renderer": "Frozen Spark streaming-lod page served by the already running vite.g1.config.js on port 18080.",
+  "worker_bytes": "Copied read-only from F:/SPADE_WWW_EVIDENCE_V2_20261024/runtime. The sealed worker is not edited.",
+  "completeness_rule": "FULL_VIEW_REFERENCE_PROVEN means every chunk currently demanded by the pager for the held pose is resident, none are pending, fetchers are idle, and visible splats are positive. full_file_proven stays false because capture_checkpoint.js hardcodes it and these RAD files do not fit in the renderer as a whole file.",
+  "paper_grade_rule": "Cross-treatment SSIM is allowed only for checkpoints whose reference repeat reaches the predeclared stability gate and whose treatment pose hash matches that reference.",
+  "gates": {
+    "VIEW_CLOSURE_PROVEN": "Every chunk demanded for the held pose is resident, none are pending, fetchers are idle, and visible splats are positive.",
+    "REFERENCE_STABLE": "An independently restarted renderer repeats the same six poses. Repeat SSIM is computed only after closure. Candidate threshold 0.995, calibrated from repeats only.",
+    "FULL_VIEW_REFERENCE_PROVEN": "Both gates pass. Repeat SSIM alone is not completeness."
+  },
+  "acceleration": "The reference loads once, then switches among the six frozen poses. A moved pose closes only after its demanded-chunk identity changes and every demanded page is resident. Spark's pager holds 256 pages. A pose that still demands more than 256 pages after the resident count has stayed at 256 is saved as RENDERER_CAPACITY_LIMITED and is not view closure. One reference may be reused across the three seeds of the same scene, client GPU, and renderer. A capture below 100000 bytes is not a scene image. Treatment A/B still uses the real-time trajectory.",
+  "hold_limit_ms": 60000,
+  "failure_status": "REFERENCE_NOT_PROVEN"
+}

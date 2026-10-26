@@ -1,0 +1,29 @@
+{
+  "campaign": "SPADE_WWW_EVIDENCE_V2_20261024",
+  "source_commit": "a0900026b4cd7ff9579e669ec7e5784051a6c5f4",
+  "runtime_version": "SPADE-VERIFIED-20261024",
+  "prior_runtime_version": "SPADE-BYTE-UNVERIFIED-20261023",
+  "runtime_tree_sha256": "17da935491bd6de44dee61ac236b8f940e3652695a0e363ce486f82810458bd9",
+  "proxy_configuration_sha256": "db72bcaa421145c50d672377983fb9d1cbf31f95efddc732efb98f98e4c08621",
+  "storage_real_path": "F:/SPADE_WWW_EVIDENCE_V2_20261024",
+  "mandated_path": "D:/Program/SPADE_WWW_EVIDENCE_V2_20261024",
+  "origin": {
+    "coit": {
+      "url": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com/coit-40m-sh1-lod.rad",
+      "status": 206,
+      "etag": "\"c63451f94630f45659334d7d1ea5d20b-153\"",
+      "content_range": "bytes 0-0/1280517688",
+      "last_modified": "Fri, 29 May 2026 16:52:13 GMT"
+    },
+    "poland": {
+      "url": "https://streaming-1438331348.cos.ap-guangzhou.myqcloud.com/poland-lod.rad",
+      "status": 206,
+      "etag": "\"b43e6c5c61cf33389277210b8b9b882f-329\"",
+      "content_range": "bytes 0-0/2754086424",
+      "last_modified": "Sat, 30 May 2026 19:57:17 GMT"
+    }
+  },
+  "p0": "P0_PASS",
+  "p0_wire": "P0_WIRE_PASS",
+  "locked_utc": "2026-10-24T02:04:40.980Z"
+}

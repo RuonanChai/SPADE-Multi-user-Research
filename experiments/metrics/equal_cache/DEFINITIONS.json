@@ -1,0 +1,14 @@
+{
+  "demand": "sealed S3-FIFO proxy.jsonl request multiset, same sort, version fill, and sequence hash as P1",
+  "cap_50": 52428800,
+  "cap_530": 555745280,
+  "cap_530_meaning": "50 MiB proxy plus 3 clients times 160 MiB configured residual",
+  "entries_50": 100,
+  "fair_entry_cap": "distinct versioned range keys in that sequence, so one resident copy per key cannot hit the entry ceiling",
+  "diagnostic_530_entries_100": "shows the unfair comparison in which the historical 100-object ceiling binds before 530 MiB",
+  "close_rule": "B_CLOSE when abs(large-handoff)/max(large,handoff) <= 0.05; otherwise the lower origin decides A or C",
+  "close_rule_locked_before_results": true,
+  "s3_small_fraction": 0.1,
+  "latency": "not reported; modelled hit delay is zero and is not a physical latency",
+  "regression": "50 MiB arms must match FIXED_DEMAND_RESULTS.csv origin and cache bytes"
+}

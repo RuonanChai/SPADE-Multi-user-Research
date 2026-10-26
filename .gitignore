@@ -71,3 +71,15 @@
 *.fls
 /paper/**/*.pdf
 /writing/**/*.pdf
+# Keep paper figures and plotting scripts out of this research artifact
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.gif
+*.webp
+draw*.py
+*_draw.py
+plot*.py
+**/PAPER_SCREENSHOTS*/
+**/figures/
